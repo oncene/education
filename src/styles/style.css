@@ -1,0 +1,302 @@
+
+
+
+/* === teacher dashboard====*/
+.newParallels button {
+    background: #e5eeff;
+    border: 1px solid #e5eeff;
+    padding: 0;
+    color: #5189f4;
+    border-radius: 8px;
+    width: 185px;
+    height: 50px;
+    font-size: 17px;
+    text-align: center;
+}
+.parallelsHeading p {
+    text-align: left;
+    font: Medium 26px/39px Poppins;
+    letter-spacing: 0px;
+    color: #39507C;
+    opacity: 1;
+    font-size: 26px;
+    margin-bottom: 0;
+}
+ .newParallels {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    float: left;
+}
+.parallelsHeading {
+    width: 100%;
+    float: left;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.flexnme1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.parlTop {
+    background: #f6f9fd;
+    padding: 2% 4%;
+    width: 100%;
+    float: left;
+    border-radius: 0px 30px 0px 0px;
+    height: 100%;
+}
+
+.pxPralllels1 {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 16px 10px;
+    margin: 11px 2px;
+    width: 100%;
+    float: left;
+}
+.px_high h3 {
+    font-size: 26px;
+    color: #39507C;
+    margin-bottom: 4px;
+}
+.px_high p {
+    font-size: 14px;
+    text-align: left;
+    /*font-family: Poppins,Regular;*/
+    color: #7287B0;
+    margin-bottom: 2px;
+}
+.tchtestpage {
+    background: #fff;
+    width: 100%;
+    float: left;
+    overflow: hidden;
+}
+.tchbtx {
+    width: 100%;
+    float: left;
+    margin: 10px 0px;
+}
+.txsubjTab1 {
+    background: #ffffff;
+    padding: 2% 2%;
+    width: 100%;
+    float: left;
+}
+.treedots {
+    display: flex;
+    justify-content: center;
+    font-size: 28px;
+    line-height: 18px;
+    color: #39507C;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.pdding0 {
+    margin: 0!important;
+    padding: 0!important;
+}
+.subcls1 {
+    background: #f6f9fd;
+    border-radius: 12px;
+    margin: 11px 2px;
+    width: 100%;
+    float: left;
+}
+
+.plstxth h3 {
+    font-size: 26px;
+    color: #39507C;
+}
+.plstxth h3 {
+    font-size: 26px;
+    margin-bottom: 1px;
+}
+span.extraInfo-1Y8H {
+    font-size: 13px;
+    line-height: 18px;
+    text-align: left;
+    color: #7287B0;
+}
+.treedotw img {
+    width: 45px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-top: 10px;
+}
+.bluepxs {
+    width: 100%;
+    float: left;
+    padding: 10px 12px;
+    padding-right: 0px;
+        height: 100%;
+}
+.treedotw {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.treedotw span{
+	    font-size: 28px;
+    line-height: 18px;
+    color: #39507C;
+        margin-right: 11px;
+}
+.jytecxt {
+    width: 100%;
+    float: left;
+        margin-top: 5px;
+}
+.jytecxt a {
+    color: #B0BED7;
+    font-size: 14px;
+    text-align: left;
+}
+.tag5s span {
+    color: #C1CDE2;
+    border: 1px solid #C1CDE2;
+    border-radius: 100px;
+    padding: 4px 8px;
+}
+.tag5s {
+    width: 100%;
+    float: left;
+    margin-top: 2px;
+}
+.technotiction {
+    background: #f6f9fd;
+    padding: 2% 4%;
+    width: 100%;
+    float: left;
+    height: 100%;
+}
+.techntionHdg h3 {
+    font-size: 23px;
+    color: #39507C;
+    line-height: 39px;
+}
+.techntionHdg {
+    width: 100%;
+    float: left;
+    margin-top: 5%;
+}
+.ntfnbox1 {
+    width: 100%;
+    float: left;
+    background: #fff;
+    border-radius: 10px;
+        margin: 8px 0px;
+}
+.notinPara {
+    width: 80%;
+    float: left;
+}
+.notinImg {
+    width: 20%;
+    float: left;
+}
+.notinImg img {
+    width: 48px;
+    height: 48px;
+    border: 1px solid #0000001A;
+    border-radius: 100px;
+}
+.ntfnbox1 {
+    width: 100%;
+    float: left;
+    background: #fff;
+    border-radius: 10px;
+    padding: 10px 10px;
+}
+.notinPara h3 {
+    font-size: 19px;
+    color: #39507C;
+    margin-bottom: 0px;
+}
+.notinPara p {
+    color: #7287B0;
+    font-size: 14px;
+    line-height: 21px;
+    padding: 0;
+    margin-bottom: 0;
+}
+.pxPralllels1.active {
+    background: #548bf4;
+    color: #fff;
+}
+.pxPralllels1.active .px_high h3 {
+    color: #fff;
+}
+.pxPralllels1.active .px_high p{
+	color: #fff;
+}
+.pxPralllels1.active .treedots{
+	color: #fff;
+}
+.subcls1.active {
+    background: #4D86F4;
+    width: 100%;
+    float: left;
+}
+.subcls1.active .plstxth h3 {
+    color: #fff;
+}
+.subcls1.active span.extraInfo-1Y8H{
+	color: #fff;
+}
+.subcls1.active .jytecxt a {
+    color: #fff;
+}
+.subcls1.active .tag5s span {
+    color: #fff;
+    border: 1px solid #fff;
+}
+.subcls1.active .treedotw span {
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* === end teacher dashboard====*/
