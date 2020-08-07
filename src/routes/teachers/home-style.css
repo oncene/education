@@ -1,0 +1,345 @@
+.wrtPosttec {
+    background: #F6F9FD;
+    width: 100%;
+    float: left;
+    padding: 3% 3%;
+}
+.wrboz {
+    background: #fff;
+    border-radius: 15px;
+    border: 1px solid #DBE2EF;
+    width: 100%;
+    float: left;
+        box-shadow: 1px 7px 7px #DBE2EF;
+}
+.textase2 {
+    width: 100%;
+    float: left;
+}
+.textase2 textarea#txtarea {
+    width: 100%;
+    float: left;
+    border: 1px solid #fff;
+    border-radius: 15px;
+    padding: 12px 18px;
+    color: #B0BED7;
+    resize: none;
+}
+.wrtPosttec1 {
+    width: 100%;
+    float: left;
+}
+.textase2 textarea::placeholder{
+	color: #B0BED7;
+}
+.textase2 textarea:focus {
+	 border: 1px solid #fff!important;
+	 outline: none;
+}
+.txtareabtnPart {
+    float: left;
+    width: 100%;
+    display: flex;
+    border-top: 1px solid #ebeff6;
+    padding: 15px 14px;
+}
+.textbtnleft2 {
+    width: 80%;
+    float: left;
+    display: flex;
+}
+.textRgt2 {
+    float: left;
+    width: 20%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+a.tchaddbtn0 {
+    border: 1px solid #657596;
+    border-radius: 5px;
+    margin-right: 4%;
+        padding: 7px 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #657596;
+}
+a.tchaddbtn0 img {
+    width: 18px;
+    margin-right: 6px;
+}
+a.tchpostbtn0 img {
+    width: 18px;
+    margin-right: 6px;
+}
+a.tchpostbtn0 {
+    border: 1px solid #4D86F4;
+    border-radius: 5px;
+    padding: 7px 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background: #4D86F4;
+        font-size: 14px;
+}
+.techHomepricl {
+    width: 100%;
+    float: left;
+    background: #fff;
+    border: 1px solid #707070;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    border-radius: 15px;
+}
+.pricilMain {
+    float: left;
+    width: 100%;
+}
+
+.priciName1 {
+    float: left;
+    width: 92%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.pricileft2 {
+    width: 90%;
+    float: left;
+    padding: 15px 15px;
+}
+.priciProfl {
+    float: left;
+    width: 8%;
+}
+.priciName1 h4 {
+    margin: 0;
+    font-size: 20px;
+    color: #39507C;
+}
+p.priciTime1 {
+    margin: 0;
+    padding: 0;
+    color: #7287B0;
+    font-size: 11px;
+}
+span.redTechbtn {
+    background: #FF5E3A;
+    color: #fff;
+    border-radius: 2px;
+    font-size: 10px;
+    padding: 1px 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.pricirgt2 {
+    float: left;
+    width: 10%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+.pricirgt2 span {
+    padding: 0px 9px;
+    font-size: 28px;
+    color: #B0BED7;
+    padding-left: 2px;
+}
+.secondParativ {
+    float: left;
+    width: 100%;
+    padding: 0px 15px;
+}
+.secondParativ h4 {
+    color: #39507C;
+    font-size: 24px;
+    text-align: left;
+}
+.secondParativ p {
+    color: #657596;
+    font-size: 16px;
+    line-height: 25px;
+    padding: 0;
+    margin-bottom: 0;
+}
+.busin1d {
+    width: 100%;
+    float: left;
+    /* border: 1px solid #B0BED7; */
+    /* border-radius: 5px; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding:15px 15px;
+}
+.busin1d a {
+    border: 1px solid #B0BED7;
+    border-radius: 5px;
+    width: 30%;
+    float: left;
+}
+.buzleft1 {
+    float: left;
+    width: 20%;
+}
+.buzleft1 {
+    float: left;
+    width: 33%;
+}
+.buzleft1 img {
+    width: 100%;
+    padding: 2px 1px;
+}
+.buzrgt {
+    float: left;
+    width: 67%;
+    padding: 11px 10px;
+}
+.buzrgt p {
+    color: #39507C;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+}
+.buzrgt span {
+    color: #7287B0;
+    font-size: 12px;
+}
+.liksIcons3 {
+    float: left;
+    width: 100%;
+    display: flex;
+    padding: 5px 15px;
+}
+p.like2 span {
+    color: #B0BED7;
+    font-size: 16px;
+    margin-right: 17px;
+}
+p.like3 span {
+    color: #B0BED7;
+    font-size: 16px;
+    margin-right: 17px;
+}
+p.like2 img {
+    width: 29px;
+    height: 25px;
+}
+.jabmbox0 {
+    float: left;
+    width: 100%;
+    border-top: 1px solid #ebeff6;
+}
+.jabmbox0 .pricileft2 {
+    width: 100%;
+    float: left;
+}
+.jabmbox0 .priciProfl {
+    width: 7%;
+}
+.jabmbox0 .secondParativ {
+    padding: 0 7%;
+    padding-right: 0;
+}
+.jabmbox0 .liksIcons3 {
+	 padding: 0 7%;
+    padding-right: 0;
+}
+.jabmbox0 .secondParativ p{
+	font-size: 14px;
+}
+.thirdpart3 {
+    float: left;
+    background: #fff;
+    width: 100%;
+    border-radius: 15px;
+}
+.publictinsrgt {
+    float: left;
+    width: 100%;
+    background: #fff;
+    height: 100%;
+         padding: 7% 4%;
+}
+.home2tech {
+    background: #fff;
+    width: 100%;
+    float: left;
+
+}
+.publictinsrgt h3 {
+    color: #39507C;
+    font-size: 20px;
+    line-height: 30px;
+}
+.hmeFooter2 .txtareabtnPart {
+	border: none;
+}
+.hmeFooter2 {
+    float: left;
+    width: 100%;
+        border-top: 1px solid #ebeff6;
+}
+.hmeFooter2 .form0te .ant-input {
+    background-color: #fff;
+    border: 1px solid #DBE2EF!important;
+    margin-top: 8px;
+    border-radius: 5px;
+}
+.hmeFooter2 .ant-row.ant-form-item.form0te {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hmeFooter2 a.tchaddbtn0 {
+    border: none;
+    padding: 0;
+    margin-right: 1%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

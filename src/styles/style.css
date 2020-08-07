@@ -12,6 +12,7 @@
     height: 50px;
     font-size: 17px;
     text-align: center;
+        margin: 0;
 }
 .parallelsHeading p {
     text-align: left;
@@ -260,7 +261,64 @@ span.extraInfo-1Y8H {
 .subcls1.active .treedotw span {
     color: #fff;
 }
-
+.newParallels .ant-btn:hover, .newParallels .ant-btn:focus, .newParallels .ant-btn:active, .newParallels .ant-btn.active {
+    background: #e5eeff;
+    border-color:  #e5eeff;
+}
+.form002 .ant-select-selection {
+    background-color: #fff;
+    border: 1px solid #B0BED7!important;
+    border-radius: 0px!important;
+    margin-top:8px;
+}
+.ant-modal-content {
+    border-radius: 0px!important;
+    border-color: #707070;
+   /*     float: left;*/
+    width: 100%;
+}
+.form002 .ant-input{
+       background-color: #fff;
+    border: 1px solid #B0BED7!important;
+    border-radius: 0px!important;
+    margin-top:8px;
+}
+.form002 .ant-modal-title {
+    color: #657596;
+    font-size: 20px;
+    font-weight: 400;
+}
+form.ant-form.ant-form-horizontal.form002 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+   /* float: left;*/
+}
+.ant-modal-content .ant-form label {
+    font-size: 16px!important;
+    color: #657596!important;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    padding-left: 3%;
+   /* float: left;*/
+}
+.sbtrgt {
+    justify-content: flex-end;
+    display: flex;
+    padding-right: 3%;
+    width: 100%;
+ /*   float: left;*/
+}
+.sbtrgt button.ant-btn.ant-btn-primary {
+    background: #4D86F4;
+    border-radius: 10px;
+        font-size: 18px;
+}
 
 
 
