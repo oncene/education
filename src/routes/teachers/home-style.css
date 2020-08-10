@@ -3,6 +3,8 @@
     width: 100%;
     float: left;
     padding: 3% 3%;
+    overflow-y: scroll;
+    height: 100%;
 }
 .wrboz {
     background: #fff;
@@ -88,7 +90,8 @@ a.tchpostbtn0 {
     width: 100%;
     float: left;
     background: #fff;
-    border: 1px solid #707070;
+    box-shadow: 1px 7px 7px #DBE2EF;
+    border: 1px solid #DBE2EF;
     margin-top: 2%;
     margin-bottom: 2%;
     border-radius: 15px;
@@ -109,7 +112,7 @@ a.tchpostbtn0 {
 .pricileft2 {
     width: 90%;
     float: left;
-    padding: 15px 15px;
+    padding: 20px 20px;
 }
 .priciProfl {
     float: left;
@@ -258,13 +261,27 @@ p.like2 img {
     background: #fff;
     width: 100%;
     border-radius: 15px;
+    box-shadow: 1px 7px 7px #DBE2EF;
+    border: 1px solid #DBE2EF;
 }
 .publictinsrgt {
     float: left;
     width: 100%;
     background: #fff;
     height: 100%;
-         padding: 7% 4%;
+    padding: 2% 1%;
+    position: fixed;
+    padding-right: 0px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+
+.publictinsrgt ul.ant-timeline {
+    overflow-y: scroll;
+    position: absolute;
+    width: 100%;
+    float: left;
 }
 .home2tech {
     background: #fff;
@@ -303,6 +320,617 @@ p.like2 img {
     margin-right: 1%;
 }
 
+ /*==========start presentation css===========*/
+
+ .presentationPage1 {
+    width: 100%;
+    float: left;
+    background: #fff;
+    height: 100%;
+    padding: 0px 23px;
+    padding-bottom: 20px;
+}
+.createneHeding {
+    width: 100%;
+    float: left;
+    border-bottom: 1px solid rgb(235 239 246);
+}
+.ct-heding p {
+    color: #657596;
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 3%;
+}
+.prefrmkij {
+    float: left;
+    width: 100%;
+}
+.ct-heding {
+    float: left;
+    width: 90%;
+    margin-bottom: 10px;
+}
+.ct-ptag {
+    width: 10%;
+    float: left;
+    display: flex;
+    justify-content: flex-end;
+}
+.prefrmkij {
+    float: left;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.innerprestin {
+    width: 47%;
+    float: left;
+    padding: 5% 0%;
+}
+.ant-switch-checked {
+    background-color: #00D53A;
+}
+.ant-row.ant-form-item.toggle0btn .ant-col.ant-col-8.ant-form-item-label {
+    display: flex;
+    justify-content: flex-start;
+}
+.ant-row.ant-form-item.toggle0btn .ant-col.ant-col-16.ant-form-item-control-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 42px;
+}
+.innerprestin .ant-form label {
+    font-size: 16px;
+    color: #657596;
+    line-height: 25px;
+    padding-bottom: 5px;
+    width: 100%;
+    float: left;
+}
+.innerprestin input.ant-input {
+    border-radius: 0px;
+    border-color: #B0BED7;
+    width: 100%;
+    float: left;
+}
+.innerprestin textarea.ant-input {
+    width: 100%;
+    float: left;
+    border-radius: 0px!important;
+    border-color: #B0BED7;
+}
+.toggle0btn .ant-col.ant-col-8.ant-form-item-label label {
+    width: 100%;
+    float: left;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.toggle0btn  .ant-switch-checked {
+    background-color: #00D53A;
+}
+.ant-row.ant-form-item.btnCnlnt {
+    display: flex;
+    width: 100%;
+    float: left;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.btnCnlnt .ant-col.ant-form-item-control-wrapper.ant-col-sm-24 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 100%;
+    float: left;
+}
+.btnCnlnt  button.ant-btn.ant-btn-primary {
+    background: #DBE2EF!important;
+    border: 1px solid #DBE2EF!important;
+    color: #7287B0!important;
+    border-radius: 10px!important;
+}
+.btnCnlnt button.ant-btn.nectbtn0.ant-btn-primary{
+    background: #4D86F4!important;
+    border: 1px solid #4D86F4!important;
+    color: #fff!important;
+    border-radius: 10px!important;
+}
+.toggle0btn .ant-switch {
+    min-width: 60px;
+    height: 32px;
+}
+.toggle0btn .ant-switch-loading-icon, .ant-switch::after {
+    width: 28px;
+    height: 28px;
+}
+
+.blackqiz {
+    width: 100%;
+    float: left;
+    border: 1px solid #f3f3f5;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+
+}
+.blkq1 {
+    width: 15%;
+    float: left;
+}
+.quizpara {
+    width: 75%;
+    float: left;
+    padding: 7px 11px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    height: 100%;
+}
+.crosssign7 {
+    width: 10%;
+    float: left;
+}
+.blkq1 img {
+    border-radius: 10px;
+    width: 98%;
+}
+.quizpara h3 {
+    color: #3d78d8;
+    font-size: 17px;
+    margin-bottom: 2px;
+}
+.quizpara p {
+    margin: 0;
+    font-size: 12px;
+}
+.crosssign7 span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    float: left;
+    height: 100%;
+    font-size: 18px;
+}
+.quizpara a {
+    border: 1px solid #f8f9fa;
+    background: #f8f9fa;
+    width: 55%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 9px 8px;
+    color: #656167;
+}
+.btn3d4 {
+    float: left;
+    display: flex;
+    width: 100%;
+    margin-top: 30px;
+}
+.pros3{
+    float: left;
+    width: 100%;
+}
+.textbar3{
+    float: left;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color:#39507C;
+}
+.pros3 .ant-progress-success-bg, .ant-progress-bg {
+    background-color: #437cea;
+    border-radius: 100px;
+    border-radius: 0px!important;
+    height: 22px!important;
+}
+.pros3 .ant-progress-inner {
+    background-color: #bed4ff!important;
+    border-radius: 0px;
+}
+.textbar3 p, .textbar3 span{
+    margin: 0;
+    color: #39507C;
+    font-size:20px;
+}
+.playbtn9m{
+    float: left;
+    width: 100%;
+
+}
+.playbtn9m button {
+    background: transparent;
+    border: 1px solid #657596;
+    border-radius: 5px;
+    padding: 6px 22px;
+    width: 100%;
+    font-size: 16px;
+}
+.slider02g textarea {
+    height: 219px;
+}
+.slider02g {
+    float: left;
+    width: 100%;
+}
+.sliderpt1next {
+    float: left;
+    width: 100%;
+}
+.slider01g {
+    float: left;
+    width: 100%;
+    padding: 10px 24px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}  
+.textRgt6 {
+    float: left;
+    width: 20%;
+}
+.textRgt6 a.tchpostbtn0 {
+    border: 1px solid #657596;
+    border-radius: 5px;
+    padding: 7px 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #657596;
+    background: transparent;
+    font-size: 14px;
+}
+.textbtnlj72 {
+    width: 80%;
+    float: left;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.textbtnlj72  a.tchaddbtn1 {
+    background: #F3F5F9;
+    border: 1px solid #f3f5f9;
+    border-radius: 5px;
+    padding: 7px 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #7e91b7;
+    background: #F3F5F9;
+    font-size: 14px;
+    margin-right: 15px;
+}
+.textbtnlj72  a.tchaddbtn0 {
+    border: 1px solid #4d86f4;
+    border-radius: 5px;
+    margin-right: 0;
+    padding: 7px 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background: #4D86F4;
+}
+.textbtnlj72  a.tchaddbtn1 img {
+    width: 18px;
+    margin-right: 6px;
+}
+.priuxdd {
+    width: 100%;
+    float: left;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+ /*===========end presentation css===========*/
+
+
+/*===========start Exam css===========*/
+.cardtimedrw {
+    width: 100%;
+    float: left;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.middlcolm {
+    width: 70%;
+    float: left;
+}
+.caerdrow1 {
+    background: #FBFDFF;
+    width: 100%;
+    float: left;
+}
+.caerdrow1 {
+    background: #FBFDFF;
+    width: 100%;
+    float: left;
+    border: 1px solid #BED4FF;
+    border-radius: 5px;
+    padding: 4% 10%;
+    margin-top: 4%;
+}
+.ex-paracard h4 {
+    color: #657596;
+    font-size: 16px;
+    line-height: 25px;
+}
+.ex-paracard p {
+    color: #A3AFC5;
+    font-size: 12px;
+    line-height: 18px;
+}
+span.ex-paracard {
+    width: 100%;
+    float: left;
+    margin-bottom: 3%;
+    border-bottom: 1px solid #d5ddeb;
+}
+.caerdrow2 {
+    background: #FBFDFF;
+    width: 100%;
+    float: left;
+    border: 1px solid #BED4FF;
+    border-radius: 5px;
+    padding: 4% 3%;
+    margin-top: 2%;
+}
+.ex-iconLeft img {
+    width: 60%;
+}
+.ex-iconLeft {
+    width: 100%;
+    float: left;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.radiobtn1d {
+    width: 100%;
+    float: left;
+}
+.radiobtn1d  .ant-row.ant-form-item {
+    margin: 0;
+}
+.radiobtn1d  .ant-radio-inner::after {
+    background-color: #8391ab!important;
+}
+.radiobtn1d  .ant-radio-checked::after {
+    border: 1px solid #8391ab!important;
+    border-radius: 50%;
+}
+.radiobtn1d  .ant-radio-checked .ant-radio-inner {
+    border-color: #8391ab!important;
+}
+.radiobtn1d  .ant-radio-wrapper {
+    color: #A3AFC5;
+    line-height: 25px;
+    font-size: 16px;
+}
+.radiobtn1d  .ant-radio-inner {
+    background-color: #FBFDFF;
+    border-color: #A3AFC5;
+}
+.radiobtn1d  .ant-form-item-control {
+    line-height: 25px;
+    font-size: 16px;
+}
+.caerdrow2 span.ex-paracard {
+    border-bottom: none;
+    margin: 0;
+}
+span.ex-paracard1 .ant-col.ant-form-item-control-wrapper.ant-col-sm-24 {
+    padding: 0px;
+}
+span.ex-paracard1 {
+    width: 100%;
+    float: left;
+}
+.ex-paracard1 .ant-checkbox-wrapper {
+    color: #A3AFC5;
+    line-height: 25px;
+    font-size: 16px;
+}
+.ex-paracard1 .ant-checkbox-checked .ant-checkbox-inner {
+    background-color: #a5b3cd;
+    border-color: #a5b3cd;
+}
+.ex-paracard1 .ant-checkbox-input:focus + .ant-checkbox-inner {
+    border-color: #a5b3cd;
+}
+
+h4.ex-heading {
+    color: #657596;
+    font-size: 20px;
+    line-height: 30px;
+    margin: 0;
+    letter-spacing: 0.6px;
+}
+p.ex-para1 {
+    color: #A3AFC5;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.36px;
+}
+.line-btm {
+    border-bottom: 1px solid #d5ddeb;
+    margin: 6px 0px;
+    width: 100%;
+    float: left;
+}
+.radiobtn1d .ant-checkbox-inner {
+    background-color: #fbfdff;
+    border: 1px solid #a5b3cd;
+    border-radius: 4px;
+    border-collapse: separate;
+}
+.disHg {
+    width: 100%;
+    float: left;
+}
+.exm-hdig {
+    width: 65%;
+    float: left;
+}
+.wxm-dropg {
+    width: 35%;
+    float: left;
+    padding-left: 2%;
+}
+.exm-hdig h3 {
+    border: 1px solid #C1CDE2;
+    padding: 14px 16px;
+    color: #8a97b0;
+    font-size: 16px;
+}
+.wxm-dropg a.ant-dropdown-link.ant-dropdown-trigger {
+    border: 1px solid #C1CDE2;
+    width: 100%;
+    float: left;
+    height: 100%;
+}
+.dropbtn9j {
+    width: 100%;
+    float: left;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 8px;
+    color: #7786a3;
+}
+
+.menuicons4 li.ant-dropdown-menu-item {
+    line-height: 0px;
+    padding: 1px 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.menuicons4 li.ant-dropdown-menu-item a {
+    width: 100%;
+    float: left;
+    padding: 0;
+}
+input.ant-input.addicmng {
+    border: none;
+    background: initial;
+    width: 10%;
+    border-bottom: 1px solid #d3dbea;
+    border-radius: 0;
+    padding: 1px 5px;
+    height: 19px;
+    font-size: 16px;
+    color: #7287B0;
+}
+.checksyf .ant-input:focus {
+    border-color: #d3dbea;
+    border-right-width: 1px !important;
+    box-shadow: inherit;
+}
+.checksyf {
+    width: 100%;
+    float: left;
+}
+.exm-btmd {
+    width: 100%;
+    float: left;
+}
+.exm-btmOne {
+    width: 50%;
+    float: left;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+.exm-btmTwo{
+    width: 50%;
+    float: left;
+    display: flex;
+}
+.exm-btmOne p{
+    margin: 0;
+}
+.exm-btmOne  a {
+    padding: 0;
+    margin: 0;
+    margin-left: 15px;
+    font-size: 16px;
+    color: #657596;
+    text-decoration: underline;
+}
+.exm-btmTwo {
+    width: 50%;
+    float: left;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.exm-btmTwo img {
+    margin-left: 3%;
+}
+.btnBtom {
+    width: 100%;
+    float: left;
+    margin-top: 15px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.menuicons4 .dropbtn9j{
+    padding: 8px 8px;
+}
+.dropbtn9j p {
+    margin: 0;
+}
+
+ /*===========end Exam css===========*/
+
+ /*===========start group css===========*/
+ .pricirgt2.crn1 {
+    position: relative;
+}
+.pricirgt2.crn1 a.priciarrrow, .pricirgt2.crn1  a.priciarrrow img{
+    position: relative;
+}
+.pricirgt2.crn1 span {
+    position: absolute;
+    left: 0;
+    text-align: center;
+    right: -8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 21px;
+    bottom: 0;
+    font-size: 19px;
+    color: #fff;
+}
+span.blueTechbtn {
+    background: #38a7fc;
+    color: #fff;
+    border-radius: 2px;
+    font-size: 10px;
+    padding: 1px 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 16px;
+}
 
 
 
@@ -313,12 +941,7 @@ p.like2 img {
 
 
 
-
-
-
-
-
-
+ /*===========end group  css===========*/
 
 
 

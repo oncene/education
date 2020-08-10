@@ -74,10 +74,10 @@ class SignUp extends React.Component {
             <div className="gx-app-login-content">
               <Form onSubmit={this.handleSubmit} className="gx-signup-form gx-form-row0">
                 <FormItem>
-                  {getFieldDecorator('userName', {
-                    rules: [{required: true, message: 'Please input your username!'}],
+                  {getFieldDecorator('name', {
+                    rules: [{required: true, message: 'Please input your name!'}],
                   })(
-                    <Input placeholder="Username"/>
+                    <Input placeholder="name"/>
                   )}
                 </FormItem>
 
@@ -98,18 +98,15 @@ class SignUp extends React.Component {
                   )}
                 </FormItem>
                 <FormItem>
-                  {getFieldDecorator('remember', {
-                    valuePropName: 'checked',
-                    initialValue: true,
+                  {getFieldDecorator('confirm_password', {
+                    rules: [{required: true, message: 'Please input your Confirm Password!'}],
                   })(
-                    <Checkbox><IntlMessages id="appModule.iAccept"/></Checkbox>
+                    <Input type="password" placeholder="Confirm Password"/>
                   )}
-                  <span className="gx-link gx-signup-form-forgot"><IntlMessages
-                    id="appModule.termAndCondition"/></span>
                 </FormItem>
                 <FormItem>
                   <Button type="primary" className="gx-mb-0" htmlType="submit">
-                    <IntlMessages id="app.userAuth.signUp"/>
+                    Create an Account
                   </Button>
                   <span><IntlMessages id="app.userAuth.or"/></span> <Link to="/signin"><IntlMessages
                   id="app.userAuth.signIn"/></Link>
@@ -129,7 +126,7 @@ class SignUp extends React.Component {
                         this.props.userFacebookSignIn();
                       }}/>
                     </li>
-                    <li>
+                    {/*<li>
                       <Icon type="github" onClick={() => {
                         this.props.showAuthLoader();
                         this.props.userGithubSignIn();
@@ -140,7 +137,7 @@ class SignUp extends React.Component {
                         this.props.showAuthLoader();
                         this.props.userTwitterSignIn();
                       }}/>
-                    </li>
+                    </li>*/}
                   </ul>
                 </div>
               </Form>

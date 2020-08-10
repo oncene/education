@@ -46,17 +46,17 @@ export default class Home extends React.Component{
 			const menu = (
 				<Menu>
 				  <Menu.Item>
-					<a target="_blank" rel="noopener noreferrer" href="http://www.alipay.com/">
+					<a target="_blank" rel="noopener noreferrer" href="#">
 					  1st menu item
 					</a>
 				  </Menu.Item>
 				  <Menu.Item>
-					<a target="_blank" rel="noopener noreferrer" href="http://www.taobao.com/">
+					<a target="_blank" rel="noopener noreferrer" href="#">
 					  2nd menu item
 					</a>
 				  </Menu.Item>
 				  <Menu.Item>
-					<a target="_blank" rel="noopener noreferrer" href="http://www.tmall.com/">
+					<a target="_blank" rel="noopener noreferrer" href="#">
 					  3rd menu item
 					</a>
 				  </Menu.Item>
@@ -66,18 +66,23 @@ export default class Home extends React.Component{
 			  const menu2 = (
 				<Menu>
 				  <Menu.Item>
-					<a target="_blank" rel="noopener noreferrer" href="http://www.alipay.com/">
-					  1st menu item
+					<a target="_blank" rel="noopener noreferrer" href="#">
+					  Google Drive
 					</a>
 				  </Menu.Item>
 				  <Menu.Item>
-					<a target="_blank" rel="noopener noreferrer" href="http://www.taobao.com/">
-					  2nd menu item
+					<a target="_blank" rel="noopener noreferrer" href="#">
+					 Enlace
 					</a>
 				  </Menu.Item>
 				  <Menu.Item>
-					<a target="_blank" rel="noopener noreferrer" href="http://www.tmall.com/">
-					  3rd menu item
+					<a target="_blank" rel="noopener noreferrer" href="#">
+					 Archive
+					</a>
+				  </Menu.Item>
+				  <Menu.Item>
+					<a target="_blank" rel="noopener noreferrer" href="#">
+					YouTube
 					</a>
 				  </Menu.Item>
 				</Menu>
@@ -86,18 +91,18 @@ export default class Home extends React.Component{
 			  const menu3 = (
 				<Menu>
 				  <Menu.Item>
-					<a target="_blank" rel="noopener noreferrer" href="http://www.alipay.com/">
-					  1st menu item
+					<a target="_blank" rel="noopener noreferrer" href="#">
+					  Presentation
 					</a>
 				  </Menu.Item>
 				  <Menu.Item>
-					<a target="_blank" rel="noopener noreferrer" href="http://www.taobao.com/">
-					  2nd menu item
+					<a target="_blank" rel="noopener noreferrer" href="#">
+					  Activity
 					</a>
 				  </Menu.Item>
 				  <Menu.Item>
-					<a target="_blank" rel="noopener noreferrer" href="http://www.tmall.com/">
-					  3rd menu item
+					<a target="_blank" rel="noopener noreferrer" href="#">
+					  Exam
 					</a>
 				  </Menu.Item>
 				</Menu>
@@ -121,12 +126,12 @@ export default class Home extends React.Component{
 						  			<div className="textbtnleft2">
 									  <Dropdown overlay={menu2} trigger={['click']}>
    
-	<a href="#" className="tchaddbtn0 ant-dropdown-link" onClick={e => e.preventDefault()}> <img src={require('assets/images/surface13.png')} /> Add</a>
-  </Dropdown>
-  <Dropdown overlay={menu3} trigger={['click']}>
-   
-   <a href="#" className="tchaddbtn0 ant-dropdown-link" onClick={e => e.preventDefault()}> <img src={require('assets/images/surface13.png')} />  Exercise</a>
- </Dropdown>
+												<a href="#" className="tchaddbtn0 ant-dropdown-link" onClick={e => e.preventDefault()}> <img src={require('assets/images/surface13.png')} /> Add</a>
+											</Dropdown>
+											<Dropdown overlay={menu3} trigger={['click']}>
+											
+											<a href="#" className="tchaddbtn0 ant-dropdown-link" onClick={e => e.preventDefault()}> <img src={require('assets/images/surface13.png')} />  Exercise</a>
+											</Dropdown>
 							  		
 							  		</div>
 							  		<div className="textRgt2">	
@@ -265,6 +270,26 @@ export default class Home extends React.Component{
 				  		<h3>Publications</h3>
 				  		<Timeline>
 						   <Timeline.Item>Create a services site 2015-09-01</Timeline.Item>
+						    <Timeline.Item>Solve initial network problems 2015-09-01</Timeline.Item>
+						    <Timeline.Item>Technical testing 2015-09-01</Timeline.Item>
+						    <Timeline.Item>Network problems being solved 2015-09-01</Timeline.Item>
+							<Timeline.Item>Create a services site 2015-09-01</Timeline.Item>
+						    <Timeline.Item>Solve initial network problems 2015-09-01</Timeline.Item>
+						    <Timeline.Item>Technical testing 2015-09-01</Timeline.Item>
+						    <Timeline.Item>Network problems being solved 2015-09-01</Timeline.Item>
+							<Timeline.Item>Create a services site 2015-09-01</Timeline.Item>
+						    <Timeline.Item>Solve initial network problems 2015-09-01</Timeline.Item>
+						    <Timeline.Item>Technical testing 2015-09-01</Timeline.Item>
+						    <Timeline.Item>Network problems being solved 2015-09-01</Timeline.Item>
+							<Timeline.Item>Create a services site 2015-09-01</Timeline.Item>
+						    <Timeline.Item>Solve initial network problems 2015-09-01</Timeline.Item>
+						    <Timeline.Item>Technical testing 2015-09-01</Timeline.Item>
+						    <Timeline.Item>Network problems being solved 2015-09-01</Timeline.Item>
+							<Timeline.Item>Create a services site 2015-09-01</Timeline.Item>
+						    <Timeline.Item>Solve initial network problems 2015-09-01</Timeline.Item>
+						    <Timeline.Item>Technical testing 2015-09-01</Timeline.Item>
+						    <Timeline.Item>Network problems being solved 2015-09-01</Timeline.Item>
+							<Timeline.Item>Create a services site 2015-09-01</Timeline.Item>
 						    <Timeline.Item>Solve initial network problems 2015-09-01</Timeline.Item>
 						    <Timeline.Item>Technical testing 2015-09-01</Timeline.Item>
 						    <Timeline.Item>Network problems being solved 2015-09-01</Timeline.Item>

@@ -1,6 +1,8 @@
 import {all, call, fork, put, takeEvery} from "redux-saga/effects";
 import {
   auth,
+  database,
+  db,
   facebookAuthProvider,
   githubAuthProvider,
   googleAuthProvider,
@@ -63,6 +65,18 @@ function* createUserWithEmailPassword({payload}) {
   const {email, password} = payload;
   try {
     const signUpUser = yield call(createUserWithEmailPasswordRequest, email, password);
+	console.log(signUpUser);
+	console.log(signUpUser.user);
+	console.log(signUpUser.user.uid);
+	db.collection("users").doc(signUpUser.user.uid).set({
+		email: email,
+		usertype: 'teacher'
+	  }).then(function() {
+		console.log("Document successfully written!");
+	})
+	.catch(function(error) {
+		console.error("Error writing document: ", error);
+	});
     if (signUpUser.message) {
       yield put(showAuthMessage(signUpUser.message));
     } else {
@@ -141,8 +155,8 @@ function* signInUserWithEmailPassword({payload}) {
   const {email, password} = payload;
   try {
     const signInUser = yield call(signInUserWithEmailPasswordRequest, email, password);
-	localStorage.setItem('user_id', 'vZ8Q6IxQUtbYAjVL6Z1CTNgLqF93');
-      yield put(userSignInSuccess('vZ8Q6IxQUtbYAjVL6Z1CTNgLqF93'));
+	//localStorage.setItem('user_id', 'vZ8Q6IxQUtbYAjVL6Z1CTNgLqF93');
+      //yield put(userSignInSuccess('vZ8Q6IxQUtbYAjVL6Z1CTNgLqF93'));
     if (signInUser.message) {
       yield put(showAuthMessage(signInUser.message));
     } else {
