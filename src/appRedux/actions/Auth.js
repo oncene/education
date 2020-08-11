@@ -66,7 +66,7 @@ export const showAuthMessage = (message) => {
 
 export const userGoogleSignIn = () => {
   return {
-    type: SIGNIN_GOOGLE_USER
+     type: SIGNIN_GOOGLE_USER
   };
 };
 export const userGoogleSignInSuccess = (authUser) => {

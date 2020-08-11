@@ -95,6 +95,7 @@ a.tchpostbtn0 {
     margin-top: 2%;
     margin-bottom: 2%;
     border-radius: 15px;
+    position: relative;
 }
 .pricilMain {
     float: left;
@@ -930,7 +931,268 @@ span.blueTechbtn {
     justify-content: center;
     align-items: center;
     line-height: 16px;
+    margin-top: 5px;
 }
+ul.flexlineo3 {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.profiles3 {
+    width: 100%;
+    float: left;
+    position: relative;
+    margin-bottom: 1%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0% 2%;
+}
+ul.flexlineo3 li {
+    width: 2.5rem;
+    position: relative;
+    box-sizing: border-box;
+    border-width: 0;
+    border-style: solid;
+    border-color: #e2e8f0;
+    overflow: visible;
+}
+/* .rounded-full1 {
+    width: 3rem;
+    height: 3rem;
+    border-width: 2px;
+    border-radius: 9999px;
+    background-size: cover;
+    background-position: center;
+
+}
+.rounded-full1 img {
+    width: 40px;
+    height: 40px;
+    border-width: 2px;
+    border-radius: 9999px;
+    background-size: cover;
+    background-position: center;
+} */
+.rounded-full1 img {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #fff;
+    position: relative;
+    border-radius: 100px;
+}
+.rounded-ful2 img {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    border: 1px solid #fff;
+    right: 20px;
+    border-radius: 100px;
+}
+.rounded-full3 img {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    border: 1px solid #fff;
+    border-radius: 100px;
+    right: 38px;
+}
+.rounded-full4 img {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    border: 1px solid #fff;
+    border-radius: 100px;
+    right: 55px;
+}
+.rounded-full5 img {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    border: 1px solid #fff;
+    border-radius: 100px;
+    right: 70px;
+}
+.profiles3 p {
+    margin: 0;
+}
+.jabmbox2 .secondParativ {
+    padding: 0 8%;
+    padding-right: 0;
+}
+.jabmbox2 .busin1d {
+    padding: 0 9%;
+}
+.jabmbox2 .secondParativ p {
+    font-size: 14px;
+    line-height: 21px;
+}
+.jabmbox2 {
+    width: 100%;
+    float: left;
+}
+.wrtPosttec2  .liksIcons3 {
+    padding: 0% 2%;
+}
+.wrtPosttec2 {
+    width: 100%;
+    float: left;
+}
+.jabmbox2 .pricileft2 {
+    padding-bottom: 5px;
+    padding: 0px 20px;
+}
+.jabmbox2 .liksIcons3 {
+    padding: 0% 9%;
+    margin-top: 10px;
+    width: 100%;
+    float: left;
+}
+.profiles3 p {
+    margin: 0;
+    position: absolute;
+    left: 15%;
+}
+.wrtPosttec2 .techHomepricl {
+    padding-bottom: 1%;
+}
+.jabmbox2 .busin1d a {
+    width: 37%;
+}
+.gropBtn button {
+    border: 1px solid #4D86F4;
+    border-radius: 10px;
+    padding: 21px 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background: #4D86F4;
+    font-size: 18px;
+    line-height: 27px;
+    width: 85%;
+    float: left;
+    margin-left: 8%;
+}
+.lftSidebrgruop {
+    overflow-y: scroll;
+    position: absolute;
+    width: 23%;
+    float: left;
+    padding-right: 2%;
+    display: inline-table;
+}
+.sidegrp1 {
+    width: 100%;
+    float: left;
+}
+.gropBtn {
+    width: 100%;
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.gropBtn img {
+    margin-right: 5%;
+}
+.line-btm0 {
+    float: left;
+    width: 100%;
+    border-bottom: 2px solid #e9edf5;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 20px 0px;   
+}
+.gpsleft2 {
+    width: 100%;
+    float: left;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 2%;
+}
+.gp-Img {
+    width: 15%;
+    float: left;
+}
+.gp-paras {
+    width: 85%;
+    float: left;
+    padding: 0% 4%;
+}
+h4.gphging1 {
+    color: #39507C;
+    font-size: 16px;
+    line-height: 25px;
+    margin: 0;
+}
+p.gp_para2 {
+    color: #657596;
+    font-size: 14px;
+    line-height: 25px;
+    margin: 0;
+}
+.gp-Img1{
+    width: 15%;
+    float: left;
+}
+h4.ex-heading1 {
+    color: #657596;
+    font-size: 20px;
+    line-height: 30px;
+    margin: 0;
+    letter-spacing: 0.6px;
+    margin-top: 10% ;
+}
+.gp-Img1 img {
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+}
+.gropBtn .ant-btn:hover, .gropBtn .ant-btn:focus {
+    color: #fff;
+    background-color:#28aaeb;
+    border-color: #28aaeb;
+}
+.rightside2{
+    width: 80%;
+    float: left;
+}
+.leftSidebr {
+    width: 20%;
+    float: left;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

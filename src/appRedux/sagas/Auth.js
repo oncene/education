@@ -155,8 +155,6 @@ function* signInUserWithEmailPassword({payload}) {
   const {email, password} = payload;
   try {
     const signInUser = yield call(signInUserWithEmailPasswordRequest, email, password);
-	//localStorage.setItem('user_id', 'vZ8Q6IxQUtbYAjVL6Z1CTNgLqF93');
-      //yield put(userSignInSuccess('vZ8Q6IxQUtbYAjVL6Z1CTNgLqF93'));
     if (signInUser.message) {
       yield put(showAuthMessage(signInUser.message));
     } else {

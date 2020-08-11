@@ -34,171 +34,337 @@ export default class Group extends React.Component {
 
 		const menu = (
 			<Menu>
-			  <Menu.Item>
-				<a target="_blank" rel="noopener noreferrer" href="#">
-				  1st menu item
+				<Menu.Item>
+					<a target="_blank" rel="noopener noreferrer" href="#">
+						1st menu item
 				</a>
-			  </Menu.Item>
-			  <Menu.Item>
-				<a target="_blank" rel="noopener noreferrer" href="#">
-				  2nd menu item
+				</Menu.Item>
+				<Menu.Item>
+					<a target="_blank" rel="noopener noreferrer" href="#">
+						2nd menu item
 				</a>
-			  </Menu.Item>
-			  <Menu.Item>
-				<a target="_blank" rel="noopener noreferrer" href="#">
-				  3rd menu item
+				</Menu.Item>
+				<Menu.Item>
+					<a target="_blank" rel="noopener noreferrer" href="#">
+						3rd menu item
 				</a>
-			  </Menu.Item>
+				</Menu.Item>
 			</Menu>
-			
-		  );
-		  const menu2 = (
+
+		);
+		const menu2 = (
 			<Menu>
-			  <Menu.Item>
-				<a target="_blank" rel="noopener noreferrer" href="#">
-				  Google Drive
+				<Menu.Item>
+					<a target="_blank" rel="noopener noreferrer" href="#">
+						Google Drive
 				</a>
-			  </Menu.Item>
-			  <Menu.Item>
-				<a target="_blank" rel="noopener noreferrer" href="#">
-				 Enlace
+				</Menu.Item>
+				<Menu.Item>
+					<a target="_blank" rel="noopener noreferrer" href="#">
+						Enlace
 				</a>
-			  </Menu.Item>
-			  <Menu.Item>
-				<a target="_blank" rel="noopener noreferrer" href="#">
-				 Archive
+				</Menu.Item>
+				<Menu.Item>
+					<a target="_blank" rel="noopener noreferrer" href="#">
+						Archive
 				</a>
-			  </Menu.Item>
-			  <Menu.Item>
-				<a target="_blank" rel="noopener noreferrer" href="#">
-				YouTube
+				</Menu.Item>
+				<Menu.Item>
+					<a target="_blank" rel="noopener noreferrer" href="#">
+						YouTube
 				</a>
-			  </Menu.Item>
+				</Menu.Item>
 			</Menu>
-			
-		  );
-		  const menu3 = (
+
+		);
+		const menu3 = (
 			<Menu>
-			  <Menu.Item>
-				<a target="_blank" rel="noopener noreferrer" href="#">
-				  Presentation
+				<Menu.Item>
+					<a target="_blank" rel="noopener noreferrer" href="#">
+						Presentation
 				</a>
-			  </Menu.Item>
-			  <Menu.Item>
-				<a target="_blank" rel="noopener noreferrer" href="#">
-				  Activity
+				</Menu.Item>
+				<Menu.Item>
+					<a target="_blank" rel="noopener noreferrer" href="#">
+						Activity
 				</a>
-			  </Menu.Item>
-			  <Menu.Item>
-				<a target="_blank" rel="noopener noreferrer" href="#">
-				  Exam
+				</Menu.Item>
+				<Menu.Item>
+					<a target="_blank" rel="noopener noreferrer" href="#">
+						Exam
 				</a>
-			  </Menu.Item>
+				</Menu.Item>
 			</Menu>
-			
-		  );
+
+		);
 
 
 
 		return (
 			<div className="home2tech">
-			<Row gutter={[8, 16]}>
-			  <Col span={18} >
-				  <div className="wrtPosttec">
-					  <div className="wrtPosttec2">
-						  <div className="techHomepricl">
-							  <div className="pricilMain">
-								  <div className="pricileft2">
-									  <div className="priciProfl">
-										  <img src={require('assets/images/group1d.png')} />
-									  </div>
-									  <div className="priciName1">
-										  <h4>Grupo los ACOPLADOS</h4>
-										  <span className="blueTechbtn">ACEPTADO</span>
-									  </div>
-								  </div>	
-								  <div className="pricirgt2 crn1">
-								  <a href="#" className="priciarrrow"> <img src={require('assets/images/crownicon1.png')} /></a>
-									   <span>3</span>
+				<Row gutter={[8, 16]}>
+					<Col span={18} >
+						<div className="wrtPosttec">
+							<div className="wrtPosttec2">
+								<div className="techHomepricl">
+									<div className="pricilMain">
+										<div className="pricileft2">
+											<div className="priciProfl">
+												<img src={require('assets/images/group1d.png')} />
+											</div>
+											<div className="priciName1">
+												<h4>Grupo los ACOPLADOS</h4>
+												<span className="blueTechbtn">ACEPTADO</span>
+											</div>
+										</div>
+										<div className="pricirgt2 crn1">
+											<a href="#" className="priciarrrow"> <img src={require('assets/images/crownicon1.png')} /></a>
+											<span>3</span>
 
-								  </div>
-							  </div>
+										</div>
+									</div>
+									<div className="profiles3">
+										<ul className="flexlineo3">
+											<li>
+												<div className="rounded-full1">
+													<img src={require('assets/images/avatar50-sm1.png')} />
+												</div>
+											</li>
+											<li>
+												<div className="rounded-ful2">
+													<img src={require('assets/images/avatar7-sm2.png')} />
+												</div>
+											</li>
+											<li>
+												<div className="rounded-full3">
+													<img src={require('assets/images/avatar6-sm3.png')} />
+												</div>
+											</li>
+											<li>
+												<div className="rounded-full4">
+													<img src={require('assets/images/avatar3-sm4.png')} />
+												</div>
+											</li>
+											<li>
+												<div className="rounded-full5">
+													<img src={require('assets/images/avatar9-sm5.png')} />
+												</div>
+											</li>
+										</ul>
+										<p>5 Personas</p>
+									</div>
 
-							  
-						  </div>
-						  
-					  </div>
-					  <div className="thirdpart3">
-								  <div className="pricilMain">
-									  <div className="pricileft2">
-										  <div className="priciProfl">
-											  <img src={require('assets/images/avatar7-sm.png')} />
-										  </div>
-										  <div className="priciName1">
-											  <h4>Pricila Talia Vergara</h4>
-											  <p className="priciTime1">10 minutes ago</p>
-										  </div>
-									  </div>	
-									  <div className="pricirgt2">
-										   <span>&#8942;</span>
-									  </div>
-								  </div>
-							  
-							  <div class="secondParativ"><h4>Second part activity</h4><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempo incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris consequat.</p></div>
-							  <div className="liksIcons3">
-								  <p className="like2"><img src={require('assets/images/surface16.png')} /> <span>5</span></p>
-								  <p className="like3"><img src={require('assets/images/msg.png')} /> <span>5</span></p>
-							  </div>
-						  <div className="hmeFooter2">
-								<Form
-									  {...layout}
-									  name="basic"
-									  initialValues={{
-										remember: true,
-									  }}
+									<div className="liksIcons3 ">
+										<p className="like3"><img src={require('assets/images/msg.png')} /> <span>2</span></p>
+									</div>
+									<div className="line-btm">
+									</div>
+									<div className="jabmbox2">
+										<div className="pricileft2">
+											<div className="priciProfl">
+												<img src={require('assets/images/avatar7-sm.png')} />
+											</div>
+											<div className="priciName1">
+												<h4>Monica Salinas</h4>
+												<p className="priciTime1">Hace 50 minutos</p>
+											</div>
+											<div className="secondParativ">
+												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+											</div>
+										</div>
+										<div className="busin1d">
+											<a href="#">
+												<div className="buzleft1">
+													<img src={require('assets/images/BMC.png')} />
+												</div>
+												<div className="buzrgt">
+													<p>Business Model Canvas files...</p>
+													<span>Hojas de Calculo de Google</span>
+												</div>
+											</a>
+										</div>
+										<div className="liksIcons3">
+											<p className="like2"><img src={require('assets/images/surface16.png')} /> <span>5</span></p>
+										</div>
+									</div>
+									<div className="jabmbox2">
+										<div className="pricileft2">
+											<div className="priciProfl">
+												<img src={require('assets/images/avatar7-sm.png')} />
+											</div>
+											<div className="priciName1">
+												<h4>Monica Salinas</h4>
+												<p className="priciTime1">Hace 50 minutos</p>
+											</div>
+											<div className="secondParativ">
+												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+											</div>
+										</div>
+										<div className="liksIcons3">
+											<p className="like2"><img src={require('assets/images/surface16.png')} /> <span>5</span></p>
+										</div>
+									</div>
+								</div>
+								<div className="techHomepricl">
+									<div className="pricilMain">
+										<div className="pricileft2">
+											<div className="priciProfl">
+												<img src={require('assets/images/group1d.png')} />
+											</div>
+											<div className="priciName1">
+												<h4>Grupo los ACOPLADOS</h4>
+												<span className="blueTechbtn">ACEPTADO</span>
+											</div>
+										</div>
+										<div className="pricirgt2 crn1">
+											<a href="#" className="priciarrrow"> <img src={require('assets/images/crownicon1.png')} /></a>
+											<span>2</span>
 
-									  className="form0te" 
-									  onFinish={()=>this.onFinish()}
-									  onFinishFailed={()=>this.onFinishFailed()}
-									>
-									  <Form.Item  wrapperCol={{ sm: 24 }}
+										</div>
+									</div>
+									<div className="profiles3">
+										<ul className="flexlineo3">
+											<li>
+												<div className="rounded-full1">
+													<img src={require('assets/images/avatar50-sm1.png')} />
+												</div>
+											</li>
+											<li>
+												<div className="rounded-ful2">
+													<img src={require('assets/images/avatar7-sm2.png')} />
+												</div>
+											</li>
+											<li>
+												<div className="rounded-full3">
+													<img src={require('assets/images/avatar6-sm3.png')} />
+												</div>
+											</li>
+											<li>
+												<div className="rounded-full4">
+													<img src={require('assets/images/avatar3-sm4.png')} />
+												</div>
+											</li>
+											<li>
+												<div className="rounded-full5">
+													<img src={require('assets/images/avatar9-sm5.png')} />
+												</div>
+											</li>
+										</ul>
+										<p>5 Personas</p>
+									</div>
 
-										style={{ width: "100%" }}
-									  className="form0te"
-										name="username"
-									   
-										rules={[
-										  {
-											required: true,
-											message: 'Please input your username!',
-										  },
-										]}
-									  >
-										<Input />
-									   
-									  </Form.Item>
+									<div className="liksIcons3 ">
+										<p className="like3"><img src={require('assets/images/msg.png')} /> <span>2</span></p>
+									</div>
+									<div className="line-btm">
+									</div>
+									<div className="jabmbox2">
+										<div className="pricileft2">
+											<div className="priciProfl">
+												<img src={require('assets/images/avatar7-sm.png')} />
+											</div>
+											<div className="priciName1">
+												<h4>Monica Salinas</h4>
+												<p className="priciTime1">Hace 50 minutos</p>
+											</div>
+											<div className="secondParativ">
+												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+											</div>
+										</div>
+										<div className="busin1d">
+											<a href="#">
+												<div className="buzleft1">
+													<img src={require('assets/images/BMC.png')} />
+												</div>
+												<div className="buzrgt">
+													<p>Business Model Canvas files...</p>
+													<span>Hojas de Calculo de Google</span>
+												</div>
+											</a>
+										</div>
+										<div className="liksIcons3">
+											<p className="like2"><img src={require('assets/images/surface16.png')} /> <span>5</span></p>
+										</div>
+									</div>
+								</div>
+							</div>
 
-									 </Form>
-									 <div className="txtareabtnPart">
-								  <div className="textbtnleft2">
-									  <a href="#" className="tchaddbtn0"> <img src={require('assets/images/cmra.png')} /> </a>
-									  <a href="#" className="tchaddbtn0"> <img src={require('assets/images/surface13.png')} /> </a>
-								  </div>
-								  <div className="textRgt2">	
-									  <a href="#" className="tchpostbtn0">Comment</a>
-								  </div>	
-							  </div>
-						  </div>
-					</div>
-				  </div>
-			  </Col>
-			  <Col span={6} >
-				  <div className="publictinsrgt">
-					  
-				  </div>
-			  </Col>
-			</Row>  
-		</div>
+						</div>
+					</Col>
+					<Col span={6} >
+						<div className="publictinsrgt">
+							<div className="lftSidebrgruop">
+								<div className="gropBtn">
+									<Button><img src={require('assets/images/plusgroup.png')} /> NEW GROUP</Button>
+								</div>
+								<div className="line-btm0">
+								</div>
+								<div className="sidegrp1">
+									<h4 className="ex-heading">Group</h4>
+								</div>
+								<div className="gpsleft2">
+									<div className="gp-Img">
+										<img src={require('assets/images/group1d.png')} />
+									</div>
+									<div className="gp-paras">
+										<h4 className="gphging1">Grupo los ACOPLADOS</h4>
+										<p className="gp_para2">5 Personas</p>
+									</div>
+								</div>
+								<div className="gpsleft2">
+									<div className="gp-Img">
+										<img src={require('assets/images/group1d.png')} />
+									</div>
+									<div className="gp-paras">
+										<h4 className="gphging1">Grupo los ACOPLADOS</h4>
+										<p className="gp_para2">5 Personas</p>
+									</div>
+								</div>
+								<div className="gpsleft2">
+									<div className="gp-Img">
+										<img src={require('assets/images/group1d.png')} />
+									</div>
+									<div className="gp-paras">
+										<h4 className="gphging1">Grupo los PENDEJOS</h4>
+										<p className="gp_para2">5 Personas</p>
+									</div>
+
+								</div>
+								<div className="sidegrp1">
+									<h4 className="ex-heading1">Persons</h4>
+								</div>
+								<div className="gpsleft2">
+									<div className="gp-Img1">
+										<img src={require('assets/images/avatar50-sm1.png')} />
+									</div>
+									<div className="gp-paras">
+										<h4 className="gphging1">Grupo los PENDEJOS</h4>
+									</div>
+
+								</div>
+								<div className="gpsleft2">
+									<div className="gp-Img1">
+										<img src={require('assets/images/avatar50-sm1.png')} />
+									</div>
+									<div className="gp-paras">
+										<h4 className="gphging1">Grupo los PENDEJOS</h4>
+									</div>
+
+								</div>
+								<div className="gpsleft2">
+									<div className="gp-Img1">
+										<img src={require('assets/images/avatar50-sm1.png')} />
+									</div>
+									<div className="gp-paras">
+										<h4 className="gphging1">Grupo los PENDEJOS</h4>
+									</div>
+
+								</div>
+							</div>
+						</div>
+					</Col>
+				</Row>
+			</div>
 		)
 	}
 }

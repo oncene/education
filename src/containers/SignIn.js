@@ -4,13 +4,11 @@ import {connect} from "react-redux";
 import {Link} from "react-router-dom";
 
 import {
-  hideMessage,
-  showAuthLoader,
-  userFacebookSignIn,
-  userGithubSignIn,
-  userGoogleSignIn,
-  userSignIn,
-  userTwitterSignIn
+	hideMessage,
+	showAuthLoader,
+	userFacebookSignIn,
+	userGoogleSignIn,
+	userSignIn
 } from "appRedux/actions/Auth";
 import IntlMessages from "util/IntlMessages";
 import CircularProgress from "components/CircularProgress/index";
@@ -66,7 +64,6 @@ class SignIn extends React.Component {
 
                 <FormItem>
                   {getFieldDecorator('email', {
-                    initialValue: "demo@example.com",
                     rules: [{
                       required: true, type: 'email', message: 'The input is not valid E-mail!',
                     }],
@@ -76,22 +73,13 @@ class SignIn extends React.Component {
                 </FormItem>
                 <FormItem>
                   {getFieldDecorator('password', {
-                    initialValue: "demo#123",
+                   
                     rules: [{required: true, message: 'Please input your Password!'}],
                   })(
                     <Input type="password" placeholder="Password"/>
                   )}
                 </FormItem>
-                <FormItem>
-                  {getFieldDecorator('remember', {
-                    valuePropName: 'checked',
-                    initialValue: true,
-                  })(
-                    <Checkbox><IntlMessages id="appModule.iAccept"/></Checkbox>
-                  )}
-                  <span className="gx-signup-form-forgot gx-link"><IntlMessages
-                    id="appModule.termAndCondition"/></span>
-                </FormItem>
+                
                 <FormItem>
                   <Button type="primary" className="gx-mb-0" htmlType="submit">
                     <IntlMessages id="app.userAuth.signIn"/>
@@ -114,22 +102,9 @@ class SignIn extends React.Component {
                         this.props.userFacebookSignIn();
                       }}/>
                     </li>
-                    <li>
-                      <Icon type="github" onClick={() => {
-                        this.props.showAuthLoader();
-                        this.props.userGithubSignIn();
-                      }}/>
-                    </li>
-                    <li>
-                      <Icon type="twitter" onClick={() => {
-                        this.props.showAuthLoader();
-                        this.props.userTwitterSignIn();
-                      }}/>
-                    </li>
                   </ul>
                 </div>
-                <span
-                  className="gx-text-light gx-fs-sm"> demo user email: 'demo@example.com' and password: 'demo#123'</span>
+                
               </Form>
             </div>
 
@@ -159,6 +134,4 @@ export default connect(mapStateToProps, {
   showAuthLoader,
   userFacebookSignIn,
   userGoogleSignIn,
-  userGithubSignIn,
-  userTwitterSignIn
 })(WrappedNormalLoginForm);

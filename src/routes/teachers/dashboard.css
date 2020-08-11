@@ -5,3 +5,107 @@
 .gx-no-header-horizontal {
     padding: 0;
 }
+
+
+/*========start left sidebar=========*/
+.innersidbrs {
+    background: #437CEA;
+    height: 100%;
+    width: 100%;
+    float: left;
+    height: 100vw;
+    border-radius: 0px 30px 0px 0px;
+}
+.innersidbrs .ant-layout-sider {
+    background: #437CEA!important;
+    color: #fff;
+}
+/* #components-layout-demo-side .logo {
+    height: 32px;
+    background: #437CEA!important;
+    margin: 16px;
+  } */
+  
+  .site-layout .site-layout-background {
+    background: #437CEA;
+  }
+  .innersidbrs  .ant-menu-dark, .innersidbrs .ant-menu-dark .ant-menu-sub {
+    color: #fff;
+    background: #437CEA;
+    
+}
+.innersidbrs  .ant-menu-dark .ant-menu-item {
+   
+    color: inherit;
+
+}
+.innersidbrs  .ant-menu-dark .ant-menu-item-selected {
+    color: #ffffff;
+}
+.innersidbrs  li.ant-menu-item.ant-menu-item-selected{
+    padding: 0!important;
+    width: 100%;
+    float: left;
+}
+.tp-sideicn {
+    width: 100%;
+    float: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.innersidbrs aside.ant-layout-sider.ant-layout-sider-dark.ant-layout-sider-has-trigger {
+    width: 100%!important;
+    height: 100%;
+    padding: 5% 5%;
+    border-radius: 0px 30px 0px 0px;
+}
+span.tp-1 {
+    width: 50%;
+    float: left;
+    display: flex;
+    justify-content: flex-start;
+}
+span.tp-2 {
+    width: 100%;
+    float: left;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.innersidbrs .ant-layout-sider .ant-menu-inline .ant-menu-item{
+    padding: 0!important;
+}
+.innersidbrs .ant-menu-inline > .ant-menu-item {
+    height: auto;
+}
+h4.h-1 {
+    font-size: 20px;
+    color: #FFFFFF;
+    line-height: 30px;
+    margin:0;
+    white-space: normal;
+}
+p.h-2 {
+    font-size: 14px;
+    color: #ECF1FC;
+    line-height: 21px;
+    white-space: normal;
+}
+p.h-3{
+    color:#BED4FF;
+    font-size: 14px;
+    line-height: 21px;
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+/*========end left sidebar=========*/

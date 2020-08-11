@@ -2,7 +2,7 @@ import React, {Component} from "react";
 import {connect} from "react-redux";
 import {Avatar, Popover} from "antd";
 import {userSignOut} from "appRedux/actions/Auth";
-
+import '../sidebr-style.css';
 class UserProfile extends Component {
 
   render() {
@@ -16,10 +16,13 @@ class UserProfile extends Component {
     );
 
     return (
-
+      
       <div className="gx-flex-row gx-align-items-center gx-mb-4 gx-avatar-row">
+        <div className="">
+     
+        </div>
        <div className="btnimg3">
-       <img src="https://www.iconsdb.com/icons/preview/white/logout-xxl.png" />
+       <img alt="" src={require("assets/images/Logout1.png")}/> 
        </div>
         <Popover placement="bottomRight" content={userMenuOptions} trigger="click">
           <Avatar src='https://via.placeholder.com/150x150'
@@ -27,6 +30,7 @@ class UserProfile extends Component {
           <span className="gx-avatar-name">Rob Farnandies<i
             className="icon icon-chevron-down gx-fs-xxs gx-ml-2"/></span>
         </Popover>
+  
       </div>
 
     )

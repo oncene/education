@@ -2,12 +2,12 @@ import firebase from "firebase";
 
 // Initialize Firebase
 const config = {
-  apiKey: "AIzaSyBu3XLb7uUfWpPfBD14O44jUOL-OUccqP4",
-  authDomain: "online-education-luckit.firebaseapp.com",
-  databaseURL: "https://online-education-luckit.firebaseio.com",
-  projectId: "online-education-luckit",
-  storageBucket: "online-education-luckit.appspot.com",
-  messagingSenderId: "529337483486"
+  apiKey: "AIzaSyD0jb0wWpqBePjmp00shjJrhFS13DXQ1S8",
+  authDomain: "onlineeducation-bca08.firebaseapp.com",
+  databaseURL: "https://onlineeducation-bca08.firebaseio.com",
+  projectId: "onlineeducation-bca08",
+  storageBucket: "onlineeducation-bca08.appspot.com",
+  messagingSenderId: "751601510102"
 };
 
 firebase.initializeApp(config);
