@@ -1,7 +1,10 @@
 import React, { Component } from "react";
 import { Col, Row, Modal, Button, Form, Input, Select, Checkbox, Timeline, Menu, Dropdown, Switch, Progress } from "antd";
 
-
+import { connect } from "react-redux";
+import {bindActionCreators} from 'redux';
+import InternalSidebar from './InternalSidebar.js';
+import {dashboardSidebar} from "appRedux/actions/Setting";
 import '../home-style.css'
 
 
@@ -22,7 +25,7 @@ const onFinishFailed = errorInfo => {
 	console.log('Failed:', errorInfo);
 };
 
-export default class Presentation extends React.Component {
+class Presentation extends React.Component {
 
 	constructor(props) {
 		super(props);
@@ -30,7 +33,9 @@ export default class Presentation extends React.Component {
 		};
 	}
 
-
+	componentDidMount(){
+		this.props.dashboardSidebar(true );
+	}
 
 
 
@@ -38,6 +43,9 @@ export default class Presentation extends React.Component {
 
 
 		return (
+		<div>
+				<InternalSidebar />
+				<div className={this.props.teachernavcollapsed?"rightside2sidebar":"rightside2"}>
 			<div className="presentationPage1">
 				<div className="createneHeding">
 					<div className="ct-heding">
@@ -69,7 +77,6 @@ export default class Presentation extends React.Component {
 							</Form.Item>
 							<label className="lbl2">Description (*) </label>
 							<Form.Item name={['user', 'introduction']} wrapperCol={{ sm: 24 }}
-
 								style={{ width: "100%" }} >
 								<Input.TextArea />
 							</Form.Item>
@@ -135,9 +142,21 @@ export default class Presentation extends React.Component {
 					</Row>
 				</div>
 			</div>
+				</div>
+			</div>
 
 		)
 	}
 }
 
+
+function mapStateToProps ( state ) {
+  const { navStyle, themeType, locale, pathname,teachernavcollapsed } = state.settings;
+  return { navStyle, themeType, locale, pathname, teachernavcollapsed }
+};
+function mapDispatchToProps(dispatch) {
+     return bindActionCreators({dashboardSidebar: dashboardSidebar}, dispatch)
+
+}
+export default connect(mapStateToProps, mapDispatchToProps)(Presentation);
 

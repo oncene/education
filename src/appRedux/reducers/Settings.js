@@ -26,7 +26,8 @@ const initialSettings = {
     locale: 'en',
     name: 'English',
     icon: 'us'
-  }
+  },
+  teachernavcollapsed: false
 };
 
 const settings = (state = initialSettings, action) => {
@@ -73,6 +74,12 @@ const settings = (state = initialSettings, action) => {
       return {
         ...state,
         locale: action.payload,
+
+      };
+    case "TEACHER_NAV_COLLAPSED":
+      return {
+        ...state,
+        teachernavcollapsed: action.teachernavcollapsed,
 
       };
     default:

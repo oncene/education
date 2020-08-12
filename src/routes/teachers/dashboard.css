@@ -9,12 +9,15 @@
 
 /*========start left sidebar=========*/
 .innersidbrs {
-    background: #437CEA;
-    height: 100%;
-    width: 100%;
+    /* background: #437CEA; */
     float: left;
     height: 100vw;
     border-radius: 0px 30px 0px 0px;
+    width: 281px;
+    /* padding: 2% 2%; */
+    position: fixed;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 .innersidbrs .ant-layout-sider {
     background: #437CEA!important;
@@ -55,10 +58,11 @@
     align-items: center;
 }
 .innersidbrs aside.ant-layout-sider.ant-layout-sider-dark.ant-layout-sider-has-trigger {
-    width: 100%!important;
+    /* width: 100%!important; */
     height: 100%;
-    padding: 5% 5%;
-    border-radius: 0px 30px 0px 0px;
+    padding: 4% 7%;
+    overflow-y: scroll;
+    position: absolute;
 }
 span.tp-1 {
     width: 50%;
@@ -91,6 +95,7 @@ p.h-2 {
     color: #ECF1FC;
     line-height: 21px;
     white-space: normal;
+    margin-bottom: 6px;
 }
 p.h-3{
     color:#BED4FF;
@@ -98,9 +103,59 @@ p.h-3{
     line-height: 21px;
     margin: 0;
 }
-
-
-
+.lfimgsec img {
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+.line-btm1 {
+    border-bottom: 1px solid #759fef;
+    margin: 17px 0px;
+    width: 100%;
+    float: left;
+}
+.lfimgsec1 {
+    float: left;
+    width: 100%;
+    /* display: flex;
+    justify-content: flex-start;
+    align-items: center; */
+    /* padding: 1px 20px; */
+    margin-top:8px;
+    margin-bottom: 8px;
+}
+.lfimgsec1 p {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    line-height: 27px;
+    color: #BED4FF;
+}
+.lfimgsec1 img {
+    margin-right: 11px;
+    width: 25px;
+    height: auto;
+}
+.lfimgsec1.active {
+    background: #5689ec;
+    border-radius: 13px;
+    padding: 9px 19px;
+    color:#fff;
+}
+.lfimgsec1.active p {
+    color: #fff;
+}
+.gx-layout-sider-scrollbar div {
+    overflow-x: hidden!important;
+}
+.ant-layout-sider-trigger {
+    color: #ffffff;
+    background: #437cea!important;
+    width: 17%!important;
+    float: left;
+}
+.gx-main-content-wrapper {
+    background: #f6f9fd;
+}
 
 
 

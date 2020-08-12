@@ -44,8 +44,12 @@
     border-radius: 0px 50px 50px 0px;
     margin-right: 3px;
 }
-
-
+.btnimg3 img {
+    margin-bottom: 15px;
+}
+.gx-layout-sider-scrollbar div {
+    overflow-x: hidden!important;
+}
 
 
 

@@ -1,7 +1,10 @@
 import React, { Component } from "react";
 import { Col, Row, Modal, Button, Form, Input, Select, Checkbox, Timeline, Menu, Dropdown, Switch } from "antd";
 import '../home-style.css'
-
+import { connect } from "react-redux";
+import {bindActionCreators} from 'redux';
+import InternalSidebar from './InternalSidebar.js';
+import {dashboardSidebar} from "appRedux/actions/Setting";
 const layout = {
 	labelCol: { span: 8 },
 	wrapperCol: { span: 16 },
@@ -19,7 +22,7 @@ const onFinishFailed = errorInfo => {
 };
 
 
-export default class Group extends React.Component {
+class Group extends React.Component {
 
 	constructor(props) {
 		super(props);
@@ -27,7 +30,9 @@ export default class Group extends React.Component {
 		};
 	}
 
-
+	componentDidMount(){
+		this.props.dashboardSidebar(true );
+	}
 
 	render() {
 
@@ -101,6 +106,9 @@ export default class Group extends React.Component {
 
 
 		return (
+		<div>
+				<InternalSidebar />
+				<div className={this.props.teachernavcollapsed?"rightside2sidebar":"rightside2"}>
 			<div className="home2tech">
 				<Row gutter={[8, 16]}>
 					<Col span={18} >
@@ -365,8 +373,21 @@ export default class Group extends React.Component {
 					</Col>
 				</Row>
 			</div>
+			</div>
+			</div>
 		)
 	}
 }
 
 
+
+
+function mapStateToProps ( state ) {
+  const { navStyle, themeType, locale, pathname,teachernavcollapsed } = state.settings;
+  return { navStyle, themeType, locale, pathname, teachernavcollapsed }
+};
+function mapDispatchToProps(dispatch) {
+     return bindActionCreators({dashboardSidebar: dashboardSidebar}, dispatch)
+
+}
+export default connect(mapStateToProps, mapDispatchToProps)(Group);

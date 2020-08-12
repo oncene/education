@@ -25,6 +25,9 @@ export function onNavStyleChange(navStyle) {
 export function onLayoutTypeChange(layoutType) {
   return {type: LAYOUT_TYPE, layoutType};
 }
+export function dashboardSidebar(teachernavcollapsed) {
+  return {type: "TEACHER_NAV_COLLAPSED", teachernavcollapsed};
+}
 
 export function switchLanguage(locale) {
   return {

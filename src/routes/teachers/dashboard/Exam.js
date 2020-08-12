@@ -2,7 +2,10 @@ import React, { Component } from "react";
 import { Col, Row, Modal, Button, Form, Input, Select, Checkbox, Timeline, Menu, Dropdown, Radio } from "antd";
 import { DownOutlined } from '@ant-design/icons';
 import '../home-style.css'
-
+import { connect } from "react-redux";
+import {bindActionCreators} from 'redux';
+import InternalSidebar from './InternalSidebar.js';
+import {dashboardSidebar} from "appRedux/actions/Setting";
 const layout = {
 	labelCol: {
 		span: 8,
@@ -51,19 +54,24 @@ const menu6 = (
 		</Menu.Item>
 	</Menu>
 );
-export default class Exam extends React.Component {
+class Exam extends React.Component {
 
 	constructor(props) {
 		super(props);
 		this.state = {
 		};
 	}
-
-
-
+	
+	componentDidMount(){
+		this.props.dashboardSidebar(true );
+	}
+	
 	render() {
 
 		return (
+		<div>
+				<InternalSidebar />
+				<div className={this.props.teachernavcollapsed?"rightside2sidebar":"rightside2"}>
 			<div className="presentationPage1">
 				<div className="createneHeding">
 					<div className="ct-heding">
@@ -262,8 +270,21 @@ export default class Exam extends React.Component {
 					</div>
 				</div>
 			</div>
+				</div>
+			</div>
 		)
 	}
 }
 
 
+
+
+function mapStateToProps ( state ) {
+  const { navStyle, themeType, locale, pathname,teachernavcollapsed } = state.settings;
+  return { navStyle, themeType, locale, pathname, teachernavcollapsed }
+};
+function mapDispatchToProps(dispatch) {
+     return bindActionCreators({dashboardSidebar: dashboardSidebar}, dispatch)
+
+}
+export default connect(mapStateToProps, mapDispatchToProps)(Exam);
