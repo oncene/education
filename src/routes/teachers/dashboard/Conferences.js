@@ -1,7 +1,8 @@
 import React, { Component } from "react";
-import { Col, Row, Modal, Button, Form, Input, Select, Checkbox, Timeline, Menu, Dropdown } from "antd";
+import { Col, Row, Modal, Button, Form, Input, Select, Checkbox, Timeline, Menu, Dropdown, DatePicker, Space } from "antd";
 import { DownOutlined } from '@ant-design/icons';
 import InternalSidebar from './InternalSidebar.js';
+import moment from 'moment';
 import '../home-style.css';
 
 export default class Conferences extends React.Component {
@@ -44,7 +45,26 @@ export default class Conferences extends React.Component {
 
 
     render() {
+        const { RangePicker } = DatePicker;
+        function range(start, end) {
+            const result = [];
+            for (let i = start; i < end; i++) {
+                result.push(i);
+            }
+            return result;
+        }
+        function disabledDate(current) {
+            // Can not select days before today and today
+            return current && current < moment().endOf('day');
+        }
 
+        function disabledDateTime() {
+            return {
+                disabledHours: () => range(0, 24).splice(4, 20),
+                disabledMinutes: () => range(30, 60),
+                disabledSeconds: () => [55, 56],
+            };
+        }
         const menu = (
             <Menu>
                 <Menu.Item>
@@ -258,62 +278,69 @@ export default class Conferences extends React.Component {
                             </Col>
                             <Col span={6} >
                                 <div className="publictinsrgt">
-                                <div className="lftSidebrgruop fde4">
-                                <div className="gropBtn">
-                                        <Button onClick={this.showModal}><img src={require('assets/images/plusgroup.png')} /> NEW GROUP</Button>
+                                    <div className="lftSidebrgruop fde4">
+                                        <div className="gropBtn">
+                                            <Button onClick={this.showModal}><img src={require('assets/images/plusgroup.png')} /> NEW GROUP</Button>
 
-                                        <Modal
-                                            title="   Invite new collaborator"
-                                            visible={this.state.visible}
-                                            onOk={this.handleOk}
-                                            onCancel={this.handleCancel}
-                                            footer={null}
-                                        >
-                                            <div className="moglCollbtion">
-                                                <Form
-                                                    name="basic"
-                                                    initialValues={{ remember: true }}
-                                                    onFinish={this.onFinish}
-                                                    onFinishFailed={this.onFinishFailed}
-                                                >
-                                                    <label className="lbl3">Contributor Email (*) </label>
-                                                    <Form.Item
-                                                        name="username"
-                                                        className="frmcollbortin"
-                                                        rules={[{ required: true, message: 'Please input your username!' }]}
-                                                        wrapperCol={{ sm: 24 }}
-                                                        style={{ width: "100%" }}
+                                            <Modal
+                                                title="   Invite new collaborator"
+                                                visible={this.state.visible}
+                                                onOk={this.handleOk}
+                                                onCancel={this.handleCancel}
+                                                footer={null}
+                                            >
+                                                <div className="moglCollbtion">
+                                                    <Form
+                                                        name="basic"
+                                                        initialValues={{ remember: true }}
+                                                        onFinish={this.onFinish}
+                                                        onFinishFailed={this.onFinishFailed}
                                                     >
-                                                        <Input className="frmcollbortin" />
-                                                    </Form.Item>
-
-                                                    <Form.Item>
-                                                        <div className="btnCollbortin">
-                                                            <Button type="primary" htmlType="submit">
-                                                                <img src={require('assets/images/plusgroup.png')} /> Invite
+                                                        <label className="lbl3">Conference name (*) </label>
+                                                        <Form.Item
+                                                            name="username"
+                                                            className="frmcollbortin"
+                                                            rules={[{ required: true, message: 'Please input your username!' }]}
+                                                            wrapperCol={{ sm: 24 }}
+                                                            style={{ width: "100%" }}
+                                                        >
+                                                            <Input className="frmcollbortin" />
+                                                        </Form.Item>
+                                                        <label className="lbl3">Date (*) </label>
+                                                        <DatePicker className="datw2"
+                                                            format="YYYY-MM-DD HH:mm:ss"
+                                                            disabledDate={disabledDate}
+                                                            disabledTime={disabledDateTime}
+                                                            showTime={{ defaultValue: moment('00:00:00 ', 'HH:mm:ss') }}
+                                                            format="YYYY-MM-DD HH:mm:ss"
+                                                        />
+                                                        <Form.Item>
+                                                            <div className="btnCollbortin">
+                                                                <Button type="primary" htmlType="submit">
+                                                                    <img src={require('assets/images/plusgroup.png')} /> Programed
         												</Button>
-                                                        </div>
-                                                    </Form.Item>
-                                                </Form>
-                                            </div>
-                                        </Modal>
+                                                            </div>
+                                                        </Form.Item>
+                                                    </Form>
+                                                </div>
+                                            </Modal>
 
-                                    </div>
-                                    <div class="line-btm0"></div>
-                              
-                                    <div className="sidegrp1">
-											<h4 className="ex-heading">Conference history</h4>
-										</div>
+                                        </div>
+                                        <div class="line-btm0"></div>
+
+                                        <div className="sidegrp1">
+                                            <h4 className="ex-heading">Conference history</h4>
+                                        </div>
                                         <Timeline>
-										<Timeline.Item>Create a services site 2015-09-01</Timeline.Item>
-										<Timeline.Item>Solve initial network problems 2015-09-01</Timeline.Item>
-										<Timeline.Item>Technical testing 2015-09-01</Timeline.Item>
-										<Timeline.Item>Network problems being solved 2015-09-01</Timeline.Item>
-										<Timeline.Item>Create a services site 2015-09-01</Timeline.Item>
-										<Timeline.Item>Solve initial network problems 2015-09-01</Timeline.Item>
-										<Timeline.Item>Technical testing 2015-09-01</Timeline.Item>
-									</Timeline>
-                                </div>
+                                            <Timeline.Item>Create a services site 2015-09-01</Timeline.Item>
+                                            <Timeline.Item>Solve initial network problems 2015-09-01</Timeline.Item>
+                                            <Timeline.Item>Technical testing 2015-09-01</Timeline.Item>
+                                            <Timeline.Item>Network problems being solved 2015-09-01</Timeline.Item>
+                                            <Timeline.Item>Create a services site 2015-09-01</Timeline.Item>
+                                            <Timeline.Item>Solve initial network problems 2015-09-01</Timeline.Item>
+                                            <Timeline.Item>Technical testing 2015-09-01</Timeline.Item>
+                                        </Timeline>
+                                    </div>
                                 </div>
                             </Col>
                         </Row>

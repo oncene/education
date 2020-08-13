@@ -9,6 +9,7 @@ import Presentation from "./dashboard/Presentation.js";
 import Group from "./dashboard/Group.js";
 import Collaboration from "./dashboard/Collaboration.js";
 import Conferences from "./dashboard/Conferences.js";
+import Ratings from "./dashboard/Ratings.js";
 
 const Main = ({match}) => (
   <Switch>
@@ -20,6 +21,7 @@ const Main = ({match}) => (
     <Route path={`${match.url}/group`} component={Group}/>
     <Route path={`${match.url}/collaboration`} component={Collaboration}/>
     <Route path={`${match.url}/conferences`} component={Conferences}/>
+    <Route path={`${match.url}/ratings`} component={Ratings}/>
   </Switch>
 );
 

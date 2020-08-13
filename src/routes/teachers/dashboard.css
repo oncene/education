@@ -15,9 +15,30 @@
     border-radius: 0px 30px 0px 0px;
     width: 281px;
     /* padding: 2% 2%; */
+    /* position: fixed;
+    overflow-y: scroll;
+    overflow-x: hidden; */
+}
+.innersidbrs aside.ant-layout-sider.ant-layout-sider-dark.ant-layout-sider-has-trigger {
+    /* width: 100%!important; */
+    /* height: 100%;
+    padding: 4% 7%;
+    overflow-y: scroll;
+    position: absolute; */
+}
+.innersidbrs aside.ant-layout-sider.ant-layout-sider-dark {
+    /* width: 100%!important; */
     position: fixed;
     overflow-y: scroll;
     overflow-x: hidden;
+    height: 100%;
+    border-radius: 0px 30px 0px 0px;
+}
+.innersidbrs .ant-layout-sider-children {
+    height: 100%;
+    /* padding: 4% 7%; */
+    overflow-y: scroll;
+    position: absolute;
 }
 .innersidbrs .ant-layout-sider {
     background: #437CEA!important;
@@ -46,40 +67,27 @@
     color: #ffffff;
 }
 .innersidbrs  li.ant-menu-item.ant-menu-item-selected{
-    padding: 0!important;
     width: 100%;
     float: left;
 }
 .tp-sideicn {
     width: 100%;
     float: left;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+   
 }
-.innersidbrs aside.ant-layout-sider.ant-layout-sider-dark.ant-layout-sider-has-trigger {
-    /* width: 100%!important; */
-    height: 100%;
-    padding: 4% 7%;
-    overflow-y: scroll;
-    position: absolute;
-}
+
 span.tp-1 {
     width: 50%;
     float: left;
-    display: flex;
-    justify-content: flex-start;
+  
 }
 span.tp-2 {
-    width: 100%;
+    width: 50%;
     float: left;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    text-align: end;
+ 
 }
-.innersidbrs .ant-layout-sider .ant-menu-inline .ant-menu-item{
-    padding: 0!important;
-}
+
 .innersidbrs .ant-menu-inline > .ant-menu-item {
     height: auto;
 }
@@ -116,15 +124,12 @@ p.h-3{
 .lfimgsec1 {
     float: left;
     width: 100%;
-    /* display: flex;
-    justify-content: flex-start;
-    align-items: center; */
     /* padding: 1px 20px; */
-    margin-top:8px;
-    margin-bottom: 8px;
+    margin-top: 7px;
+    margin-bottom: 7px;
 }
 .lfimgsec1 p {
-    margin: 0;
+    margin: 0;  
     padding: 0;
     font-size: 18px;
     line-height: 27px;
@@ -138,8 +143,8 @@ p.h-3{
 .lfimgsec1.active {
     background: #5689ec;
     border-radius: 13px;
-    padding: 9px 19px;
-    color:#fff;
+    padding: 6px 16px;
+    color: #fff;
 }
 .lfimgsec1.active p {
     color: #fff;
@@ -150,14 +155,14 @@ p.h-3{
 .ant-layout-sider-trigger {
     color: #ffffff;
     background: #437cea!important;
-    width: 17%!important;
-    float: left;
 }
 .gx-main-content-wrapper {
     background: #f6f9fd;
 }
 
-
+.ant-layout-sider-collapsed .ant-menu-vertical .ant-menu-item{
+    padding: 0px 17px !important;
+}
 
 
 

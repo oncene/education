@@ -4,7 +4,7 @@
     float: left;
     padding: 3% 3%;
     overflow-y: scroll;
-    height: 100%;
+    height: 100vmax;
 }
 .wrboz {
     background: #fff;
@@ -1080,7 +1080,7 @@ ul.flexlineo3 li {
 .lftSidebrgruop {
     overflow-y: scroll;
     position: absolute;
-    width: 18%;
+    width: 19%;
     float: left;
     padding-right: 1%;
     display: inline-table;
@@ -1162,12 +1162,7 @@ h4.ex-heading1 {
 .rightside2 {
     width: 80%;
     float: left;
-    margin-left: 19%;
-}
-.rightside2sidebar {
-    width: 100%;
-    float: left;
-    margin-left: 6%;
+    /* margin-left: 19%; */
 }
 .leftSidebr {
     width: 20%;
@@ -1348,14 +1343,121 @@ span.ant-dropdown-trigger {
     justify-content: flex-end;
     align-items: center;
 }
-
-
-
-
-
-
-
-
+.moglCollbtion span.datw2.ant-calendar-picker {
+ 
+    margin: 0px 15px;
+    width: 93%;
+    margin-bottom: 4% ;
+}
+input.ant-calendar-picker-input.ant-input {
+    float: left;
+    width: 100%;
+    border: 1px solid #B0BED7;
+    border-radius: 0px;
+    /* margin-bottom: 6%; */
+}
+h4.rg-heading3{
+    color: #39507C;
+    font-size: 20px;
+    line-height: 30px;
+    margin: 0;
+    letter-spacing: 0px;
+}
+.rg-texth p {
+    color: #7287B0;
+    font-size: 16px;
+    line-height: 25px;
+    letter-spacing: 0.48px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+.rg-allr {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+.rg-texth1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    width: 100%;
+    float: left;
+}
+.rg-texth1 p {
+    color: #7287B0;
+    font-size: 16px;
+    line-height: 25px;
+    letter-spacing: 0.48px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+.rg-img img {
+    width: 90px;
+    height: auto;
+    border-radius: 100px;
+}
+.rg-texth1 img {
+    margin-left: 10px;
+}
+.califlitgind p {
+    color: #39507C;
+    font-size: 26px;
+    line-height: 39px;
+    text-align: center;
+}
+.califlitgind h3 {
+    color: #39507C;
+    text-align: center;
+    font-size: 20px;
+    line-height: 30px;
+    margin: 0;
+    padding: 0;
+}
+.tbleSec2 table {
+    background: #fff;
+    box-shadow: 1px 7px 7px #DBE2EF;
+    border: 1px solid #DBE2EF;
+    border-radius: 15px;
+}
+.tbleSec2 table .ant-table-thead > tr > th {
+    color: #535353;
+    background: #ffffff;
+    border-bottom: 1px solid #e8e8e8;
+}
+.gropBtnv button {
+    border: 1px solid #4D86F4;
+    border-radius: 10px;
+    padding: 21px 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background: #4D86F4;
+    font-size: 18px;
+    line-height: 27px;
+    width: auto;
+    float: left;
+    margin-right: 8%;
+}
+.gropBtnv {
+    width: 100%;
+    float: left;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.gropBtnv img {
+    margin-right: 5%;
+}
 
 
 

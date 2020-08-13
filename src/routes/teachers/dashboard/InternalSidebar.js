@@ -60,7 +60,7 @@ class InternalSidebar extends React.Component {
 									<div className="line-btm1"></div>
 								</div>
 							</Menu.Item>
-							<Menu.Item key="3" >
+							<Menu.Item key="3"  >
 								<div className="lfimgsec1  active">
 								<img alt="" src={require("assets/images/sideleft1.png")} />
 									<span>Home</span>
