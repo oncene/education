@@ -5,10 +5,13 @@ import {
 			Modal, 
 			Button,
 			Form, Input,  Select,
-			Checkbox
+			Checkbox,
+			Upload,
+			Icon
 		} from "antd";
-
+import {connect} from "react-redux";
 import '../dashboard.css'
+import {AddParallel, AddSubjects} from "appRedux/actions/TeacherDashboard";
 
 const layout = {
   labelCol: {
@@ -26,24 +29,17 @@ const tailLayout = {
 };
 const { Option } = Select;
 
-export default class Dashboard extends React.Component{
+class Dashboard extends React.Component{
 
 	constructor(props){
 		super(props);
 		this.state = {
-	    ModalText: 'Content of the modal',
 	    visible: false,
+	    visibleSubject: false,
 	    confirmLoading: false,
+		activeparallel:0
 	  };
 	}
-onFinish = (values) => {
-    console.log('Success:', values);
-  };
-
-  onFinishFailed = (errorInfo) => {
-    console.log('Failed:', errorInfo);
-  };
-
 	
 
 	  showModal = () => {
@@ -52,36 +48,49 @@ onFinish = (values) => {
 	    });
 	  };
 
-	  handleOk = () => {
-    this.setState({ loading: true });
-    setTimeout(() => {
-      this.setState({ loading: false, visible: false });
-    }, 3000);
-  };
+	  showModalSubject = () => {
+	    this.setState({
+	      visibleSubject: true,
+	    });
+	  };
 
-
-
-
-	  
-
-
-
-
+	handleOk = () => {
+		this.setState({ visible: false });
+	};
+	handleOkSubject = () => {
+		this.props.form.validateFields(['matter_parallel', 'matter_description', 'matter_title'],(err, values) => {
+			if (!err) {
+				//this.props.showAuthLoader();
+				this.props.AddSubjects(values.matter_parallel, values.matter_title,values.matter_description);
+				this.props.form.resetFields();
+				this.setState({ visibleSubject: false });
+			}
+		});
+	};
+	handleSubmit = (e) =>{
+		e.preventDefault();
+		this.props.form.validateFields(['parallel_description', 'parallel_title'],(err, values) => {
+			if (!err) {
+				//this.props.showAuthLoader();
+				this.props.AddParallel(values.parallel_title,values.parallel_description);
+				this.props.form.resetFields();
+				this.setState({ visible: false });
+			}
+		});
+	}
+	handleClickParallel = (parallel_id,k)=>{
+		this.setState({activeparallel: k});
+	}
+	handleCancel = ()=>{
+		this.setState({'visible':false});
+	}
+	handleCancelSubject = ()=>{
+		this.setState({'visibleSubject':false});
+	}
 	
-
-
-
-
-
-
 	render(){
-
-
-
-
-
-
-		 const { visible, confirmLoading, ModalText } = this.state;
+		 const {getFieldDecorator} = this.props.form;
+		 const { visible, confirmLoading, visibleSubject } = this.state;
 		return(
 			<div className="tchtestpage">
 				<Row gutter={[8, 16]}>
@@ -107,7 +116,7 @@ onFinish = (values) => {
 								        id="modelBox1"
 								          title=" Create new Parallel"
 								          visible={visible}
-								         onOk={this.handleOk}
+								         onOk={this.handleSubmit}
 								         onCancel={this.handleCancel}
 								          confirmLoading={confirmLoading}
 								           footer={null}
@@ -116,138 +125,78 @@ onFinish = (values) => {
 								         <Form
 									      {...layout}
 									      name="basic"
-									      initialValues={{
-									        remember: true,
-									      }}
-
 									      className="form002" 
-									      onFinish={()=>this.onFinish()}
-									      onFinishFailed={()=>this.onFinishFailed()}
 									    >
-									    <label className="lbl2">School (*) </label>
-									    <Form.Item  wrapperCol={{ sm: 24 }}
-
-style={{ width: "100%" }}
-									     span={24}>
-									          <Select>
-									            <Select.Option value="demo">Demo1</Select.Option>
-									             <Select.Option value="demo">Demo2</Select.Option>
-									          </Select>
-									        </Form.Item>
+									    <label className="lbl2">School </label>
+									    <Form.Item  wrapperCol={{ sm: 24 }} style={{ width: "100%" }} span={24}>
+											{this.props.school_details.school_name}
+									    </Form.Item>
 
 									  <label className="lbl2">Title (*) </label>
-									      <Form.Item  wrapperCol={{ sm: 24 }}
-
-style={{ width: "100%" }}
-									      className="form001"
-									        name="username"
-									        rules={[
-									          {
+									      <Form.Item  wrapperCol={{ sm: 24 }} style={{ width: "100%" }} className="form001">
+										  {getFieldDecorator('parallel_title',{
 									            required: true,
-									            message: 'Please input your username!',
-									          },
-									        ]}
-									      >
+									            message: 'Please input Parallel Title!',
+									          })(
 									        <Input />
-									       
+									       )}
 									      </Form.Item>
 
 									       
 									       <label className="lbl2" >Description (*) </label>
-									         <Form.Item  wrapperCol={{ sm: 24 }}
-
-style={{ width: "100%" }} name={['user', 'Description']} > 
+									         <Form.Item  wrapperCol={{ sm: 24 }} style={{ width: "100%" }} name="description" > 
+											 {getFieldDecorator('parallel_description',{
+									            required: true,
+									            message: 'Please input Parallel description!',
+									          })(
 									        <Input.TextArea />
+											 )}
 									      </Form.Item>
 									 
 
 									    </Form>
 						<div className="sbtrgt"> 
-            <Button  key="submit" type="primary" onClick={this.handleOk}>
+            <Button  key="submit" type="primary" htmlType="submit" onClick={(e)=>this.handleSubmit(e)}>
              + New Parallel
             </Button>
             </div>
       
          
 								        </Modal>
-
-
-
-
 					  					
 					  				</div>
 					  			</Col>
 					  		</Row>
-					  	</div>	
-				  		<div className="pxPralllels1 active">
-				  			<Row gutter={[8, 8]}>
-						  		<Col span={5} >
-						  			<div className="px_high">
-						  				<img src={require('assets/images/surface10.png')} />
-
-						  			</div>
-						  		</Col>
-						  		<Col span={16} >
-						  			<div className="px_high">
-						  				<h3>2C High School</h3>
-						  				<p>
-						  					Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod.
-						  				</p>
-						  			</div>
-						  		</Col>
-						  		<Col  span={3} >
-						  			<div className="treedots">
-						  				 <span>&#8942;</span>
-						  			</div>
-						  		</Col>
-					  		</Row>
-				  		</div>
-				  		<div className="pxPralllels1">
-				  			<Row gutter={[8, 8]}>
-						  		<Col span={5} >
-						  			<div className="px_high">
-						  				<img src={require('assets/images/surface2.png')} />
-
-						  			</div>
-						  		</Col>
-						  		<Col span={16} >
-						  			<div className="px_high">
-						  				<h3>2C High School</h3>
-						  				<p>
-						  					Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod.
-						  				</p>
-						  			</div>
-						  		</Col>
-						  		<Col  span={3} >
-						  			<div className="treedots">
-						  				 <span>&#8942;</span>
-						  			</div>
-						  		</Col>
-					  		</Row>
-				  		</div>
-				  		<div className="pxPralllels1">
-				  			<Row gutter={[8, 8]}>
-						  		<Col span={5} >
-						  			<div className="px_high">
-						  				<img src={require('assets/images/surface2.png')} />
-
-						  			</div>
-						  		</Col>
-						  		<Col span={16} >
-						  			<div className="px_high">
-						  				<h3>2C High School</h3>
-						  				<p>
-						  					Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod.
-						  				</p>
-						  			</div>
-						  		</Col>
-						  		<Col  span={3} >
-						  			<div className="treedots">
-						  				 <span>&#8942;</span>
-						  			</div>
-						  		</Col>
-					  		</Row>
-				  		</div>
+					  	</div>
+						{this.props.parallels.length>0 && this.props.parallels.map(function(parallel, k){	
+						return (
+							<div key ={k} onClick={()=>this.handleClickParallel(parallel.parallel_id, k)} className={"pxPralllels1 "+(this.state.activeparallel == k?'active':'')}>
+								<Row gutter={[8, 8]}>
+									<Col span={5} >
+										<div className="px_high">
+										{this.state.activeparallel == k?<img src={require('assets/images/surface10.png')} />:
+										<img src={require('assets/images/surface2.png')} />}
+										</div>
+									</Col>
+									<Col span={16} >
+										<div className="px_high">
+											<h3>{parallel.title}</h3>
+											<p>
+												{parallel.description}
+											</p>
+										</div>
+									</Col>
+									<Col  span={3} >
+										<div className="treedots">
+											 <span>&#8942;</span>
+										</div>
+									</Col>
+								</Row>
+							</div>
+						);
+						},this)
+						}
+				  		
 				  	</div>
 				  </Col>
 				  <Col span={9} >
@@ -263,9 +212,89 @@ style={{ width: "100%" }} name={['user', 'Description']} >
 				  			</Col>
 				  			<Col span={12} >
 				  				<div className="newParallels">
-				  					<button>
+				  					<Button onClick={this.showModalSubject}>
 				  						<span>&#43; </span> New Subjects	
-				  					</button>
+				  					</Button>
+									<Modal
+								        id="modelBox1"
+								          title=" Create new Subject"
+								          visible={visibleSubject}
+								         onOk={this.handleOkSubject}
+								         onCancel={this.handleCancelSubject}
+								          confirmLoading={confirmLoading}
+								           footer={null}
+								         
+								        >
+								         <Form
+									      {...layout}
+									      name="basic"
+									      className="form002" 
+									    >
+									    <label className="lbl2">School Parallel(*) </label>
+									    <Form.Item  wrapperCol={{ sm: 24 }} style={{ width: "100%" }} span={24}>
+										{getFieldDecorator('matter_parallel',{
+									            required: true,
+									            message: 'Please select School!',
+									          })(
+											<Select>
+											{this.props.parallels.length>0 && this.props.parallels.map(function(parallel,k){
+												return (<Select.Option key={k} value={parallel.parallel_id}>{parallel.title}</Select.Option>)
+											},this)
+											}
+											</Select>
+										)}
+									    </Form.Item>
+
+									  <label className="lbl2">Cover Image (*) </label>
+									      <Form.Item  wrapperCol={{ sm: 24 }} style={{ width: "100%" }} className="form001"
+									        name="username"
+									        rules={[
+									          {
+									            required: true,
+									            message: 'Please input your username!',
+									          },
+									        ]}
+									      >
+									        
+											<Upload>
+												<Button>
+												  <Icon type="upload" /> Click to Upload
+												</Button>
+											  </Upload>
+									       
+									      </Form.Item>
+									  <label className="lbl2">Matter Title (*) </label>
+									      <Form.Item  wrapperCol={{ sm: 24 }} style={{ width: "100%" }} className="form001">
+										  {getFieldDecorator('matter_title',{
+									            required: true,
+									            message: 'Please input Matter Title!',
+									          })(
+									        <Input />
+									       )}
+									      </Form.Item>
+
+									       
+									       <label className="lbl2" >Description (*) </label>
+									        <Form.Item  wrapperCol={{ sm: 24 }} style={{ width: "100%" }} className="form001">
+										  {getFieldDecorator('matter_description',{
+									            required: true,
+									            message: 'Please input Description!',
+									          })(
+									        
+												<Input.TextArea />
+										  )}
+									      </Form.Item>
+									 
+
+									    </Form>
+						<div className="sbtrgt"> 
+            <Button  key="submit" type="primary" onClick={()=>this.handleOkSubject()}>
+             + New Parallel
+            </Button>
+            </div>
+      
+         
+								        </Modal>
 				  				</div>
 				  			</Col>
 				  		</Row>
@@ -289,7 +318,7 @@ style={{ width: "100%" }} name={['user', 'Description']} >
 									  	</div>
 									</Col>  	
 									<Col span={4} className="pdding0">
-										<div class="treedotw">
+										<div className="treedotw">
 											<span>&#8942;</span>
 											<img src={require('assets/images/Enmascarar_grupo_23.png')} />
 										</div>
@@ -535,4 +564,9 @@ style={{ width: "100%" }} name={['user', 'Description']} >
 		);
 	}
 }
-
+const WrappedDashboardForm = Form.create()(Dashboard);
+const mapStateToProps = ({teacherdashboard}) => {
+  const {user_details, school_details, parallels, subjects} = teacherdashboard;
+  return {user_details, school_details, parallels, subjects};
+};
+export default connect(mapStateToProps, {AddParallel, AddSubjects})(WrappedDashboardForm);

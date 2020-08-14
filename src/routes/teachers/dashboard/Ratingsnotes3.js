@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Col, Row, Modal, Button, Form, Input, Select, Checkbox, Timeline, Menu, Dropdown, Table } from "antd";
+import { Col, Row, Modal, Button, Form, Input, Select, Checkbox, Timeline, Menu, Dropdown, Table, Radio } from "antd";
 import { DownOutlined } from '@ant-design/icons';
 import InternalSidebar from './InternalSidebar.js';
 import '../home-style.css';
@@ -8,7 +8,7 @@ import '../home-style.css';
 
 
 
-export default class Ratings extends React.Component {
+export default class Ratingsnotes3 extends React.Component {
 
     constructor(props) {
         super(props);
@@ -16,6 +16,18 @@ export default class Ratings extends React.Component {
             visible: false,
         };
     }
+
+    state = {
+        value: 1,
+    };
+
+
+    onChange = e => {
+        console.log('radio checked', e.target.value);
+        this.setState({
+            value: e.target.value,
+        });
+    };
 
     showModal = () => {
         this.setState({
@@ -48,87 +60,9 @@ export default class Ratings extends React.Component {
 
 
     render() {
-        const columns = [
-            { title: 'Nombre', dataIndex: 'nombre', key: 'nombre' },
-            { title: 'Fecha de entrega', dataIndex: 'fetch', key: 'fetch' },
-            { title: 'Estado', dataIndex: 'estado', key: 'estado' },
-            { title: 'Puntaje', dataIndex: 'punt', key: 'punt' },
-            { title: 'De', dataIndex: 'de', key: 'de' },
-            /* {
-               title: 'Action',
-               dataIndex: '',
-               key: 'x',
-               render: () => <a>Delete</a>,
-             },*/
-        ];
 
-        const data = [
-            {
-                key: 1,
-                nombre: 'Práctica Nro 1 Arte Moderno',
-                fetch: '12-02-2020 10:26 PM',
-                estado: '',
-                punt: '80',
-                de: 100,
-            },
-            {
-                key: 2,
-                nombre: 'Práctica Nro 1 Arte Moderno',
-                fetch: '12-02-2020 10:26 PM',
-                estado: 'Faltante',
-                punt: '80',
-                de: 100,
-            },
-            {
-                key: 3,
-                nombre: 'Práctica Nro 1 Arte Moderno',
-                fetch: '12-02-2020 10:26 PM',
-                estado: '',
-                punt: '80',
-                de: 100,
-            },
-            {
-                key: 4,
-                nombre: 'Práctica Nro 1 Arte Moderno',
-                fetch: '12-02-2020 10:26 PM',
-                estado: '',
-                punt: '80',
-                de: 100,
-            },
-            {
-                key: 5,
-                nombre: <div className="footertb1">
-                <p>Prácticas</p>
-                </div>,
-                fetch: '12-02-2020 10:26 PM',
-                estado: '',
-                punt:  <div className="footertb1"> <p>56.25</p> </div>,
-                de:'',
-            },
-            {
-                key: 6,
-                nombre: <div className="footertb1">
-                <p>Examenes</p>
-                </div>,
-                fetch: '12-02-2020 10:26 PM',
-                estado: '',
-                punt:  <div className="footertb1"> <p>65</p> </div>,
-                de:'',
-                
-            },
-            {
-                key: 6,
-                nombre: <div className="footertb1">
-                <p>TOTAL</p>
-                </div>,
-                fetch: '12-02-2020 10:26 PM',
-                estado: '',
-                punt:  <div className="footertb1"> <p>60.625 %</p> </div>,
-                de:'',
-                
-            },
-        ];
-      
+        const { value } = this.state;
+
         return (
             <div>
                 <InternalSidebar />
@@ -193,25 +127,117 @@ export default class Ratings extends React.Component {
                                         <Row gutter={[8, 16]} >
                                             <Col span={24} >
                                                 <div className="califlitgind">
-                                                    <h3>Calificaciones</h3>
-                                                    <p>Artes Plásticas</p>
-                                                </div>
-                                            </Col>
-                                            <Col span={24} >
-                                                <div className="tbleSec2">
-                                                    <Table
-                                                        columns={columns}
-                                                        expandable={{
-                                                            expandedRowRender: record => <p style={{ margin: 0 }}>{record.description}</p>,
-                                                            rowExpandable: record => record.name !== 'Not Expandable',
-                                                        }}
-                                                        dataSource={data}
-                                                        pagination={false}
-                                                    
-                                                />,
+                                                    <h3>Ratings</h3>
+                                                    <p>Plastic arts</p>
                                                 </div>
                                             </Col>
                                         </Row>
+
+                                        <div className="caerdrow1">
+                                            <span className="ex-paracard-01">
+                                                <h4>Lorem ipsum dolor sit amet, consetetur sadipscing.</h4>
+                                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata.</p>
+
+                                            </span>
+                                        </div>
+                                        <div className="caerdrow1">
+                                            <Row gutter={[8, 16]}>
+                                                <Col span={24} >
+                                                    <span className="ex-paracard-02">
+                                                        <h4>Art is a science?</h4>
+                                                        <div className="radiobtn1d">
+
+                                                            <Radio.Group name="radiogroup" onChange={this.onChange} value={value}>
+                                                                <Radio value={1}> - Yes </Radio>
+                                                                <Radio value={2}> - No </Radio>
+                                                            </Radio.Group>
+                                                        </div>
+
+                                                    </span>
+                                                </Col>
+                                            </Row>
+                                        </div>
+                                        <div className="caerdrow-rg">
+                                            <Row gutter={[8, 16]}>
+                                                <Col span={22} >
+                                                    <span className="ex-paracard-02">
+                                                        <h4>What is the art?</h4>
+                                                        <p> Lorem ipsum dolor sit amet, consetetur sadipscing.</p>
+
+                                                    </span>
+                                                    <div className="line-btm2">
+                                                    </div>
+                                                </Col>
+                                                <Col span={2} >
+                                                    <div className="rg-iconLeft">
+                                                        <img src={require('assets/images/msg01.PNG')} />
+                                                    </div>
+                                                </Col>
+                                            </Row>
+
+                                        </div>
+                                        <div className="caerdrow1">
+                                            <Row gutter={[8, 16]}>
+
+                                                <Col span={24} >
+                                                    <span className="ex-paracard1">
+
+                                                        <h4 className="ex-heading">Since what time did art begin?</h4>
+                                                        <div className="radiobtn1d">
+                                                            <Form.Item name="checkbox-group" wrapperCol={{ sm: 24 }}
+
+                                                                style={{ width: "100%" }}>
+                                                                <Checkbox.Group wrapperCol={{ sm: 24 }}
+
+                                                                    style={{ width: "100%" }}>
+                                                                    <Row>
+                                                                        <Col span={24}>
+                                                                            <Checkbox value="A" style={{ lineHeight: '32px' }} wrapperCol={{ sm: 24 }}
+
+                                                                                style={{ width: "100%" }}>
+                                                                                From contemporary times
+              												</Checkbox>
+                                                                        </Col>
+                                                                        <Col span={24}>
+                                                                            <Checkbox value="b" style={{ lineHeight: '32px' }} wrapperCol={{ sm: 24 }}
+
+                                                                                style={{ width: "100%" }}>
+                                                                                From the 12th century
+              												</Checkbox>
+                                                                        </Col>
+                                                                        <Col span={24}>
+                                                                            <Checkbox value="c" style={{ lineHeight: '32px' }} wrapperCol={{ sm: 24 }}
+
+                                                                                style={{ width: "100%" }}>
+                                                                                Since ever
+              												</Checkbox>
+                                                                        </Col>
+                                                                    </Row>
+                                                                </Checkbox.Group>
+                                                            </Form.Item>
+
+                                                        </div>
+                                                    </span>
+                                                </Col>
+                                            </Row>
+                                        </div>
+                                        <div className="caerdrow1">
+                                            <Row gutter={[8, 16]}>
+                                                <Col span={24} >
+                                                    <span className="ex-paracard-02">
+                                                        <h4>Art is a science?</h4>
+                                                        <div className="radiobtn1d">
+
+                                                            <Radio.Group name="radiogroup" onChange={this.onChange} value={value}>
+                                                                <Radio value={1}> - Yes </Radio>
+                                                                <Radio value={2}> - No </Radio>
+                                                            </Radio.Group>
+                                                        </div>
+
+                                                    </span>
+                                                </Col>
+                                            </Row>
+                                        </div>
                                     </div>
                                 </div>
                             </Col>

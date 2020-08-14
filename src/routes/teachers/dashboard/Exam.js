@@ -65,8 +65,23 @@ class Exam extends React.Component {
 	componentDidMount(){
 		this.props.dashboardSidebar(true );
 	}
+
+	state = {
+        value: 1,
+      };
+   
+    
+      onChange = e => {
+        console.log('radio checked', e.target.value);
+        this.setState({
+          value: e.target.value,
+        });
+      };
+
 	
 	render() {
+		
+		const { value } = this.state;
 
 		return (
 		<div>
@@ -87,11 +102,16 @@ class Exam extends React.Component {
 							<span className="ex-paracard">
 								<h4>Exam Title(*)</h4>
 								<p>Lorem ipsum dolor sit amet, consetetur sadipscing.</p>
+								<div className="line-btm">
+										</div>
 							</span>
 							<span className="ex-paracard">
 								<h4>Activity Details (*)</h4>
 								<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata.</p>
+								<div className="line-btm">
+										</div>
 							</span>
+							
 						</div>
 						<div className="caerdrow2">
 							<Row gutter={[8, 16]}>
@@ -105,17 +125,12 @@ class Exam extends React.Component {
 
 										<h4>Art is a science?</h4>
 										<div className="radiobtn1d">
-											<Form.Item name="radio-group">
-												<Radio.Group>
-													<Radio value="a"> - Yes </Radio>
-												</Radio.Group>
-											</Form.Item>
-											<Form.Item name="radio-group">
-												<Radio.Group>
-													<Radio value="a"> - No </Radio>
-												</Radio.Group>
-											</Form.Item>
-										</div>
+                                                          
+														  <Radio.Group name="radiogroup" onChange={this.onChange} value={value}>
+															  <Radio value={1}> - Yes </Radio>
+															  <Radio value={2}> - No </Radio>
+														  </Radio.Group>
+												  </div>
 									</span>
 								</Col>
 							</Row>
@@ -130,7 +145,7 @@ class Exam extends React.Component {
 								<Col span={22} >
 									<span className="ex-paracard1">
 
-										<h4>Since what time did art begin?</h4>
+										<h4 className="ex-heading">Since what time did art begin?</h4>
 										<div className="radiobtn1d">
 											<Form.Item name="checkbox-group" wrapperCol={{ sm: 24 }}
 

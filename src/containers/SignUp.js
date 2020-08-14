@@ -67,7 +67,7 @@ class SignUp extends React.Component {
                 <p><IntlMessages id="app.userAuth.getAccount"/></p>
               </div>
               <div className="gx-app-logo">
-                <img alt="example" src={require("assets/images/logo.png")}/>
+			  {/*<img alt="example" src={require("assets/images/logo.png")}/>*/}
               </div>
             </div>
 

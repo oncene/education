@@ -8,7 +8,7 @@ import '../home-style.css';
 
 
 
-export default class Ratings extends React.Component {
+export default class Ratings2 extends React.Component {
 
     constructor(props) {
         super(props);
@@ -49,11 +49,10 @@ export default class Ratings extends React.Component {
 
     render() {
         const columns = [
-            { title: 'Nombre', dataIndex: 'nombre', key: 'nombre' },
-            { title: 'Fecha de entrega', dataIndex: 'fetch', key: 'fetch' },
-            { title: 'Estado', dataIndex: 'estado', key: 'estado' },
-            { title: 'Puntaje', dataIndex: 'punt', key: 'punt' },
-            { title: 'De', dataIndex: 'de', key: 'de' },
+            { title: 'Names', dataIndex: 'names', key: 'names' },
+            { title: 'Fouls', dataIndex: 'fouls', key: 'fouls' },
+            { title: 'Score', dataIndex: 'score', key: 'score' },
+            { title: '', dataIndex: 'bell', key: 'bell' },
             /* {
                title: 'Action',
                dataIndex: '',
@@ -65,68 +64,59 @@ export default class Ratings extends React.Component {
         const data = [
             {
                 key: 1,
-                nombre: 'Práctica Nro 1 Arte Moderno',
-                fetch: '12-02-2020 10:26 PM',
-                estado: '',
-                punt: '80',
-                de: 100,
+                names:<div className="imgtbl">
+                    <img alt="" src={require("assets/images/avatar3-sm4.png")} /> <span>Chad Wade</span> 
+                    </div>,
+                fouls: '2',
+                score: '60.62%',
+                bell: <div className="ibell1">
+                <img alt="" src={require("assets/images/bell4.png")} /> <span className="numbell">3</span> 
+                </div>,
             },
             {
                 key: 2,
-                nombre: 'Práctica Nro 1 Arte Moderno',
-                fetch: '12-02-2020 10:26 PM',
-                estado: 'Faltante',
-                punt: '80',
-                de: 100,
+                names:<div className="imgtbl">
+                    <img alt="" src={require("assets/images/avatar3-sm4.png")} /> <span>Chad Wade</span> 
+                    </div>,
+                fouls: '0',
+                score: '60.62%',
+                bell: <div className="ibell1">
+                <img alt="" src={require("assets/images/bell4.png")} /> <span className="numbell">3</span> 
+                </div>,
             },
-            {
-                key: 3,
-                nombre: 'Práctica Nro 1 Arte Moderno',
-                fetch: '12-02-2020 10:26 PM',
-                estado: '',
-                punt: '80',
-                de: 100,
-            },
+            
             {
                 key: 4,
-                nombre: 'Práctica Nro 1 Arte Moderno',
-                fetch: '12-02-2020 10:26 PM',
-                estado: '',
-                punt: '80',
-                de: 100,
+                names:<div className="imgtbl">
+                    <img alt="" src={require("assets/images/avatar3-sm4.png")} /> <span>Chad Wade</span> 
+                    </div>,
+                fouls: '1',
+                score: '62%',
+                bell: <div className="ibell1">
+                <img alt="" src={require("assets/images/bell4.png")} /> <span className="numbell">3</span> 
+                </div>,
             },
             {
                 key: 5,
-                nombre: <div className="footertb1">
-                <p>Prácticas</p>
+                names:<div className="imgtbl">
+                    <img alt="" src={require("assets/images/avatar3-sm4.png")} /> <span>Chad Wade</span> 
+                    </div>,
+                fouls: '2',
+                score: '42%',
+                bell: <div className="ibell1">
+                <img alt="" src={require("assets/images/bell4.png")} /> <span className="numbell">3</span> 
                 </div>,
-                fetch: '12-02-2020 10:26 PM',
-                estado: '',
-                punt:  <div className="footertb1"> <p>56.25</p> </div>,
-                de:'',
             },
             {
                 key: 6,
-                nombre: <div className="footertb1">
-                <p>Examenes</p>
-                </div>,
-                fetch: '12-02-2020 10:26 PM',
-                estado: '',
-                punt:  <div className="footertb1"> <p>65</p> </div>,
-                de:'',
-                
+                names:<div className="footertb1">
+                    <p>COURSE AVERAGE</p>
+                    </div>,
+                fouls: '',
+                score: <div className="footertb1"> <p>69.59 %</p> </div>,
+                bell: '',
             },
-            {
-                key: 6,
-                nombre: <div className="footertb1">
-                <p>TOTAL</p>
-                </div>,
-                fetch: '12-02-2020 10:26 PM',
-                estado: '',
-                punt:  <div className="footertb1"> <p>60.625 %</p> </div>,
-                de:'',
-                
-            },
+          
         ];
       
         return (
@@ -153,50 +143,16 @@ export default class Ratings extends React.Component {
                                                 </Col>
                                             </Row>
                                         </div>
-                                        <Row gutter={[8, 16]}>
-                                            <Col span={12} >
-                                                <div>
-                                                    <Row gutter={[8, 16]} className="rg-allr">
-                                                        <Col span={5} >
-                                                            <div className="rg-img">
-                                                                <img alt="" src={require("assets/images/avatar6-sm3.png")} />
-                                                            </div>
-                                                        </Col>
-                                                        <Col span={19} >
-                                                            <div className="rg-texth">
-                                                                <h4 className="rg-heading3">Carolina Airoa </h4>
-                                                                <p>Docente > Artes Plasticas</p>
-                                                            </div>
-                                                        </Col>
-                                                    </Row>
-                                                </div>
-                                            </Col>
-                                            <Col span={12} >
-                                                <div>
-                                                    <Row gutter={[8, 16]} className="rg-allr">
-                                                        <Col span={19} >
-                                                            <div className="rg-texth1">
-                                                                <h4 className="rg-heading3">Carla Abigail Villegas</h4>
-                                                                <p>carlaabi@gmail.com  <img alt="" src={require("assets/images/mail1.png")} /> </p>
-                                                                <p>Sexto A  <img alt="" src={require("assets/images/mail2.png")} /> </p>
-                                                            </div>
-                                                        </Col>
-                                                        <Col span={5} >
-                                                            <div className="rg-img">
-                                                                <img alt="" src={require("assets/images/avatar3-sm4.png")} />
-                                                            </div>
-                                                        </Col>
-                                                    </Row>
-                                                </div>
-                                            </Col>
-                                        </Row>
                                         <Row gutter={[8, 16]} >
+                                            
                                             <Col span={24} >
-                                                <div className="califlitgind">
-                                                    <h3>Calificaciones</h3>
-                                                    <p>Artes Plásticas</p>
-                                                </div>
+                                                <div className="plasticheading">
+                                                    <h4>Plastic arts students</h4>
+                                               </div>     
                                             </Col>
+                                         </Row>   
+                                        <Row gutter={[8, 16]} >
+                                            
                                             <Col span={24} >
                                                 <div className="tbleSec2">
                                                     <Table

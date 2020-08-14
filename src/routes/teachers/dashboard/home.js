@@ -215,7 +215,7 @@ class Home extends React.Component {
 											</div>
 										</div>
 
-										<div class="secondParativ"><h4>Second part activity</h4><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempo incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris consequat.</p></div>
+										<div className="secondParativ"><h4>Second part activity</h4><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempo incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris consequat.</p></div>
 										<div className="liksIcons3">
 											<p className="like2"><img src={require('assets/images/surface16.png')} /> <span>5</span></p>
 											<p className="like3"><img src={require('assets/images/msg.png')} /> <span>5</span></p>
@@ -229,8 +229,6 @@ class Home extends React.Component {
 												}}
 
 												className="form0te"
-												onFinish={() => this.onFinish()}
-												onFinishFailed={() => this.onFinishFailed()}
 											>
 												<Form.Item wrapperCol={{ sm: 24 }}
 

@@ -9,8 +9,11 @@ import AppLocale from "lngProvider";
 import MainApp from "./MainApp";
 import SignIn from "../SignIn";
 import SignUp from "../SignUp";
+import ResetPassword from "../ResetPassword";
+import ConfirmSignup from "../ConfirmSignup";
 import {setInitUrl} from "appRedux/actions/Auth";
 import {onLayoutTypeChange, onNavStyleChange, setThemeType} from "appRedux/actions/Setting";
+import {getUserDetails} from "appRedux/actions/TeacherDashboard";
 
 import {
   LAYOUT_TYPE_BOXED,
@@ -40,6 +43,13 @@ const RestrictedRoute = ({component: Component, authUser, ...rest}) =>
 
 class App extends Component {
 
+
+	constructor(props){
+		super(props);
+		this.state={
+			singleload:false
+		};
+	}
   setLayoutType = (layoutType) => {
     if (layoutType === LAYOUT_TYPE_FULL) {
       document.body.classList.remove('boxed-layout');
@@ -86,7 +96,11 @@ class App extends Component {
       this.props.onLayoutTypeChange(params.get('layout-type'));
     }
   }
-
+	componentWillReceiveProps(props){
+		if(this.props.authUser && !this.state.singleload){
+			this.props.getUserDetails();
+		}
+	}
   render() {
     const {match, location, layoutType, navStyle, locale, authUser, initURL} = this.props;
 
@@ -94,7 +108,7 @@ class App extends Component {
       if (authUser === null) {
         return ( <Redirect to={'/signin'}/> );
       } else if (initURL === '' || initURL === '/' || initURL === '/signin') {
-        return ( <Redirect to={'/main/dashboard/crypto'}/> );
+        return ( <Redirect to={'/teacher/dashboard'}/> );
       } else {
         return ( <Redirect to={initURL}/> );
       }
@@ -113,6 +127,8 @@ class App extends Component {
           <Switch>
             <Route exact path='/signin' component={SignIn}/>
             <Route exact path='/signup' component={SignUp}/>
+            <Route exact path='/confirmsignup/:id' component={ConfirmSignup}/>
+            <Route exact path='/resetpassword' component={ResetPassword}/>
             <RestrictedRoute path={`${match.url}`} authUser={authUser}
                              component={MainApp}/>
           </Switch>
@@ -127,4 +143,4 @@ const mapStateToProps = ({settings, auth}) => {
   const {authUser, initURL} = auth;
   return {locale, navStyle, layoutType, authUser, initURL}
 };
-export default connect(mapStateToProps, {setInitUrl, setThemeType, onNavStyleChange, onLayoutTypeChange})(App);
+export default connect(mapStateToProps, {setInitUrl, setThemeType, onNavStyleChange, onLayoutTypeChange, getUserDetails})(App);

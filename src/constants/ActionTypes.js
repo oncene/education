@@ -42,3 +42,24 @@ export const UPDATE_CONTACT_SUCCESS='UPDATE_CONTACT_SUCCESS';
 export const DELETE_CONTACT_SUCCESS='DELETE_CONTACT_SUCCESS';
 
 
+
+
+
+
+
+
+
+
+
+// online education
+
+// teacher dashboard
+
+export const GET_USER_DETAILS = 'GET_USER_DETAILS';
+export const GET_SCHOOL_DETAILS = 'GET_SCHOOL_DETAILS';
+export const SHOW_PARALLEL = 'SHOW_PARALLEL';
+export const NEW_PARALLEL = 'NEW_PARALLEL';
+export const SHOW_SUBJECT = 'SHOW_SUBJECT';
+export const NEW_SUBJECT = 'NEW_SUBJECT';
+
+

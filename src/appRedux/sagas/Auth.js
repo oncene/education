@@ -65,12 +65,10 @@ function* createUserWithEmailPassword({payload}) {
   const {email, password} = payload;
   try {
     const signUpUser = yield call(createUserWithEmailPasswordRequest, email, password);
-	console.log(signUpUser);
-	console.log(signUpUser.user);
-	console.log(signUpUser.user.uid);
 	db.collection("users").doc(signUpUser.user.uid).set({
 		email: email,
-		usertype: 'teacher'
+		usertype: 'teacher',
+		status:0
 	  }).then(function() {
 		console.log("Document successfully written!");
 	})

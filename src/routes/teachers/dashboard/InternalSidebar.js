@@ -16,7 +16,7 @@ class InternalSidebar extends React.Component {
 		};
 	}
 	static contextTypes = {
-		router: () => true, 
+		router: () => null, 
 	  }
 
 	state = {
@@ -40,7 +40,7 @@ class InternalSidebar extends React.Component {
 
 		return (
 
-			<div className="leftSidebr">
+			<div className={this.props.teachernavcollapsed?"leftsidebar2":"leftSidebr"}>
 				<div className="innersidbrs">
 					<Sider collapsible collapsed={this.props.teachernavcollapsed} trigger={null}>
 						<div className="logo" />
@@ -54,57 +54,58 @@ class InternalSidebar extends React.Component {
 							<Menu.Item key="2" >
 								<div className="lfimgsec">
 								<img alt="" src={require("assets/images/BG1.png")} />
-									<h4 className="h-1">Plastic Arts</h4>
-									<p className="h-2">Plastic Arts of the second semesters preparatory</p>
-									<p className="h-3">By: Juan Perez</p>
-									<div className="line-btm1"></div>
+									{!this.props.teachernavcollapsed && <h4 className="h-1">Plastic Arts</h4>}
+									{!this.props.teachernavcollapsed && <p className="h-2">Plastic Arts of the second semesters preparatory</p>}
+									{!this.props.teachernavcollapsed && <p className="h-3">By: Juan Perez</p>}
+									{!this.props.teachernavcollapsed && <div className="line-btm1"></div>}
 								</div>
 							</Menu.Item>
 							<Menu.Item key="3"  >
 								<div className="lfimgsec1  active">
 								<img alt="" src={require("assets/images/sideleft1.png")} />
-									<span>Home</span>
+									{!this.props.teachernavcollapsed && <span>Home</span>}
 								</div>
 							</Menu.Item>
 							<Menu.Item key="4" >
 								<div className="lfimgsec1">
 								<img alt="" src={require("assets/images/sdgroup.png")} />
-									<span>Groups</span>
+									{!this.props.teachernavcollapsed && <span>Groups</span>}
 								</div>
 							</Menu.Item>
 							<Menu.Item key="5" >
 								<div className="lfimgsec1">
 								<img alt="" src={require("assets/images/sdColaborations.png")} />
-									<span>Collaborations</span>
+									{!this.props.teachernavcollapsed && <span>Collaborations</span>}
 								</div>
 							</Menu.Item>
 							<Menu.Item key="6" >
 								<div className="lfimgsec1">
 								<img alt="" src={require("assets/images/sdconferemces.png")} />
-									<span>Conferences</span>
+									{!this.props.teachernavcollapsed && <span>Conferences</span>}
 								</div>
 							</Menu.Item>
 							<Menu.Item key="6" >
 								<div className="lfimgsec1">
 								<img alt="" src={require("assets/images/sdratings.png")} />
-									<span>Ratings</span>
+									{!this.props.teachernavcollapsed && <span>Ratings</span>}
 								</div>
 							</Menu.Item>
 							<Menu.Item key="6" >
 								<div className="lfimgsec1">
 								<img alt="" src={require("assets/images/sdprogram.png")} />
-									<span>Program</span>
+									{!this.props.teachernavcollapsed && <span>Program</span>}
 								</div>
 							</Menu.Item>
 							<Menu.Item key="6" >
 								<div className="lfimgsec1">
 								<img alt="" src={require("assets/images/sdchat.png")} />
-									<span>Chat</span>
+									{!this.props.teachernavcollapsed && <span>Chat</span>}
 								</div>
 							</Menu.Item>
 							<Menu.Item key="9">
-								{this.props.teachernavcollapsed && <span className="tp-2" onClick={()=>this.dashboardSidebar()}>  <img alt="" src={require("assets/images/togglebtn.PNG")} /> </span>}
+							
 							</Menu.Item>
+							{this.props.teachernavcollapsed && <span className="tp-2" onClick={()=>this.dashboardSidebar()}>  <img alt="" src={require("assets/images/togglebtn.PNG")} /> </span>}
 						</Menu>
 					</Sider>
 				</div>

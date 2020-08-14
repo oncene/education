@@ -122,7 +122,7 @@ p.h-3{
     float: left;
 }
 .lfimgsec1 {
-    float: left;
+    /* float: left; */
     width: 100%;
     /* padding: 1px 20px; */
     margin-top: 7px;
@@ -157,15 +157,14 @@ p.h-3{
     background: #437cea!important;
 }
 .gx-main-content-wrapper {
-    background: #f6f9fd;
+    background: #fff;
 }
 
 .ant-layout-sider-collapsed .ant-menu-vertical .ant-menu-item{
     padding: 0px 17px !important;
 }
-
-
-
+.ant-upload-select{width: 100%;}
+.ant-upload-select .ant-btn{width: 100%;}
 
 
 /*========end left sidebar=========*/
