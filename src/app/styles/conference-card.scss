@@ -1,0 +1,63 @@
+.nos-online__conference {
+    &-container {
+        &-root-conference {
+            width: 650px;
+            height: 67px;
+            background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+            box-shadow: 0px 5px 6px var(--unnamed-color-dbe2ef);
+            background: #FFFFFF 0% 0% no-repeat padding-box;
+            box-shadow: 0px 5px 6px #DBE2EF;
+            border-radius: 15px;
+        }
+        &-icon-con {
+            width: 59px;
+            height: 42px;
+        }
+        &-card-text {
+            margin-left: 4%;
+        }
+        &-card{
+           display: flex;
+           flex-direction: row;
+           margin-left: 5%;
+        }
+
+        &-button{
+            width: 90px;
+            height: 25px;
+            background: var(--unnamed-color-4d86f4) 0% 0% no-repeat padding-box;
+            background: #4D86F4 0% 0% no-repeat padding-box;
+            border-radius: 10px;
+            opacity: 1;
+            border: none;
+            margin-left: 50%;
+            margin-top: 3%;
+        }
+        &-publication {
+            align-content: flex-start;
+            margin-right: 50%;
+            margin-top: 10%;
+        }
+        &-publication-list {
+            background-color: #B0BED7;
+                width: 34px;
+                height: 33px;
+                border-radius: 50%;
+                border:2px solid white;
+                align-content: center;
+                margin-right: 9px;
+                justify-content: center;
+            
+        }
+
+        &-content{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin-top: 5%;
+
+        }
+
+       
+    }
+}
