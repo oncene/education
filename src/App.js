@@ -4,6 +4,7 @@ import './App.css';
 // import GroupCard from './app/components/common/GroupCard';
 // import HomeCard from './app/components/common/HomeCard';
 // import Exampe from './Exampe';
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Home from './app/features/Home';
 import HomeRoom from './app/features/HomeRoom';
 import StudentHome1 from './app/features/StudentHome1';
@@ -20,6 +21,9 @@ import ChatSection from './app/features/ChatSection';
 import ChatSectionGroup from './app/features/ChatSectionGroup';
 import GroupSection from './app/features/GroupSection';
 import ConferenceSection from './app/features/ConferenceSection';
+import Buttons from './Buttons';
+
+
 
 
 // import LeftMenuBar from './app/components/common/LeftMenuBar';
@@ -27,23 +31,26 @@ import ConferenceSection from './app/features/ConferenceSection';
 
 function App() {
   return (
-    <div className="App">
-      {/* <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header> */}
+    <div >
+      <Router>
+      <Switch>
+       <Route exact path="/" component={Buttons} />
+       <Route exact path="/home" component={Home} />
+        <Route path="/student" component={StudentHome1}></Route>
+        <Route path="/homeroom" component={HomeRoom}></Route>
+        <Route path="/groups" component={Groups}></Route>
+        <Route path="/chatsection" component={ChatSection}></Route>
+        <Route path="/chatsectiongroup" component={ChatSectionGroup}></Route>
+        <Route path="/collaborations" component={Collaborations}></Route>
+        <Route path="/coferences" component={Conference}></Route>
+        <Route path="/groupsection" component={GroupSection}></Route>
+        <Route path="/program" component={Program}></Route>
+        <Route path="/ratings" component={Ratings}></Route>
+        <Route path="/studenthome2" component={StudentHome2}></Route>
+        </Switch>
+        </Router>
       {/* <Home /> */}
-      <StudentHome1 />
+      {/* <StudentHome1 /> */}
       {/* <Card /> */}
       {/* <LeftMenuBar /> */}
       {/* <HomeCard /> */}
@@ -61,6 +68,7 @@ function App() {
   {/* <ChatSectionGroup /> */}
   {/* <GroupSection /> */}
   {/* <ConferenceSection /> */}
+
     </div>
   );
 }

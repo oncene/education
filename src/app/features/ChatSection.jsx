@@ -100,19 +100,19 @@ const  ChatSection=()=> {
                <div className={ChatSection.styles.rightsec} style={{marginLeft:'10%'}}>
                    <img src={ICONS.AVATAR2}/>
                    <div className={ChatSection.styles.chatingSection}>
-                      <p>Juan Jose Torrez <br />Hola como van...</p>
+                      <p style={{marginLeft:'5%'}}>Juan Jose Torrez <br />Hola como van...</p>
                    </div>
                </div>
                <div className={ChatSection.styles.rightsec} style={{marginLeft:'10%'}}>
                    <img src={ICONS.AVATAR4}/>
                    <div className={ChatSection.styles.chatingSection}>
-                      <p>Juan Jose Torrez <br />Hola como van... <img src={ICONS.SMAILY}/></p>
+                      <p style={{marginLeft:'5%'}}>Juan Jose Torrez <br />Hola como van... <img src={ICONS.SMAILY}/></p>
                    </div>
                </div>
                <hr></hr>
                <div className={ChatSection.styles.rightsec}>
                    <div className={ChatSection.styles.chatingSection2}>
-                      <p>Tú <br />Gracias por la Info.</p>
+                      <p style={{marginLeft:'5%'}}>Tú <br />Gracias por la Info.</p>
                    </div>
                    <img src={ICONS.AVATAR3}/>
                </div>

@@ -1,0 +1,23 @@
+.nos-online__menuside-bar {
+    &-container {
+        &-layout-menu{
+           margin-top:30px;
+            width: 65px;
+            height: 731px;
+            background: var(--unnamed-color-4d86f4) 0% 0% no-repeat padding-box;
+            background:#437CEA;
+            opacity: 1;
+            border-top-right-radius: 15px;
+           
+        }
+        &-bg-icon{
+            width:52px;
+            margin-left: 6px;
+            margin-top: 67px;
+        }
+        &-menu-icons {
+            margin-top: 35px;
+            margin-left: 18px;
+        }
+    }
+}

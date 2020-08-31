@@ -70,7 +70,7 @@ const Program=()=> {
                <ProgramCard />
             </div>
             <div className={Program.styles.rightContainer}>
-                <h6 style={{marginTop:"5%"}}>Weights</h6>
+                <h6 style={{marginTop:"5%",}}>Weights</h6>
                 <div className={Program.styles.chatCollaboration}>
                     <img 
                     className={Program.styles.chatIcon}
@@ -85,7 +85,7 @@ const Program=()=> {
                     />
                         <p style={{marginLeft:'4%'}}> <b>Examen</b><br />Evaluado al 100%</p>
                     </div>
-                    <p><b>Considerations</b><br />Los exámenes de prueba, las<br /> puntuaciones obtenidas no son <br />calificadas.</p>
+                    <p style={{marginLeft:'5%'}}><b>Considerations</b><br />Los exámenes de prueba, las<br /> puntuaciones obtenidas no son <br />calificadas.</p>
                 </div>
 
                 <div>

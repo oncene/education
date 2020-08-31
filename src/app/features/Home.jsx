@@ -1,12 +1,12 @@
 import React from 'react'
+import {Link} from "react-router-dom";
 import "../styles/home.scss"
-import history from './../history';
 
 const  Home=()=> {
     return (
         <div className={Home.styles.mainContainer}>
         <div className={Home.styles.buttonContainer}>
-        <button className={Home.styles.studentButton} onClick={() => history.push('/StudentHome')}>STUDENTS</button>
+        <button className={Home.styles.studentButton}>STUDENTS</button>
         </div>
         <div className={Home.styles.buttonContainer}>
         <button className={Home.styles.studentButton}>TEACHERS</button>
@@ -16,6 +16,11 @@ const  Home=()=> {
         </div>
         <div className={Home.styles.buttonContainer}>
         <button className={Home.styles.studentButton}>ADMIN BLANUR</button>
+        </div>
+        <div className={Home.styles.buttonContainer}>
+            <Link to="/">
+        <button className={Home.styles.studentButton}>Home</button>
+        </Link>
         </div>
         </div>
     )

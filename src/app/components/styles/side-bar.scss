@@ -1,0 +1,30 @@
+
+.nos-online__side-bar {
+    &-container {
+        &-layout{
+            width: 76px;
+            height: 731px;
+            background: var(--unnamed-color-4d86f4) 0% 0% no-repeat padding-box;
+            background: #4D86F4 0% 0% no-repeat padding-box;
+            opacity: 1;
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px;
+            margin-top: 30px;
+        }
+        &-icon-size{
+            width:35px;
+            justify-items: center;
+            margin-left: 19px;
+            margin-top: 20px;
+        }
+        &-icons-container {
+            padding-top: 181px;
+        }
+        &-logout-container{
+            margin-top: 100px;
+        }
+        &-avatar {
+            margin-top: 10px;
+        }
+    }
+}

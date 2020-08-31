@@ -65,7 +65,7 @@ const GroupSection=()=> {
                     <hr></hr>
                     <div style={{marginTop:"14%"}}>
                     <button className={GroupSection.styles.anadir}>Anadir</button>
-                    <div className="container">
+                    
                     <button className={GroupSection.styles.publish} data-toggle="modal" data-target="#myModal">Publish</button>
                     <div class="modal fade" id="myModal">
     <div class="modal-dialog modal-lg">
@@ -88,7 +88,7 @@ const GroupSection=()=> {
       </div>
     </div>
   </div>
-                    </div>
+                   
                     </div>
 
                 </div>

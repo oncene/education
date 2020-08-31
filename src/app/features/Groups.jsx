@@ -3,7 +3,6 @@ import "../styles/group.scss"
 import { ICONS} from "../utils/enums/Index";
 import LeftMenuBar from '../components/common/LeftMenuBar';
 import HomeCard from '../components/common/HomeCard';
-import Group from 'antd/lib/input/Group';
 import GroupCard from '../components/common/GroupCard';
 
 
@@ -12,41 +11,41 @@ const Groups=()=> {
         <div className={Groups.styles.mainContainer}>
             <div className={Groups.styles.homeContainer}>  
                 <div className={Groups.styles.leftBar}>
-                <div className={Groups.styles.iconContainer}>
+                <div className={Groups.styles.iconContainer1}>
                     <img 
                     src={ICONS.SURFACE}
-                    className={Groups.styles.surfaceIcon}
+                    className={Groups.styles.surfaceIcon1}
 
                     />
                     </div>
                     <div style={{marginTop:'25%'}}>
                         <img  
                         src={ICONS.FEATURES_LIST}
-                        className={Groups.styles.icons}
+                        className={Groups.styles.icons1}
                         />
                     </div>
                     <div style={{marginTop:'25%'}}>
                         <img
                         src={ICONS.FILE_EXPLORER}
-                        className={Groups.styles.icons}
+                        className={Groups.styles.icons1}
                         />
                     </div>
                     <div style={{marginTop:'25%'}}>
                         <img
                         src={ICONS.CHAT_MESSAGE}
-                        className={Groups.styles.icons}
+                        className={Groups.styles.icons1}
                          />
                     </div>
                     <div style={{marginTop:'25%'}}>
                         <img 
                         src={ICONS.NOTIFICATION}
-                        className={Groups.styles.icons}
+                        className={Groups.styles.icons1}
                         />
                     </div>
                     <div>
                         <img
                         src={ICONS.LOGOUT}
-                        className={Groups.styles.logout}
+                        className={Groups.styles.logout1}
                         />
                     </div>
                     <div>
@@ -61,7 +60,7 @@ const Groups=()=> {
                 <LeftMenuBar />
                 </div>
             </div>
-            <div>
+            <div styles={{ height: '500px', overflowY: 'scroll' }}>
                <div>
                    <GroupCard />
                </div>
