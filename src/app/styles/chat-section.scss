@@ -13,7 +13,7 @@
         &-leftBar {
             // margin-top: 100px;
             left: 60px;
-            width: 90px;
+            width: 80px;
             height: 43rem;
             background: var(--unnamed-color-4d86f4) 0% 0% no-repeat padding-box;
             background: #4D86F4 0% 0% no-repeat padding-box;
@@ -23,6 +23,7 @@
         }
         &-icon-container{
             padding-top: 5rem;
+            margin-left: 15%;
         }
 
         &-icons {
@@ -32,11 +33,13 @@
         &-surface-icon {
             width: 40px;
             height: 55px;
+            margin-left: 15%;
         }
         &-logout {
             margin-top: 3rem;
             width: 40px;
             height: 50px;
+            margin-left: 15%;
         }
         &-user-icon {
             width: 60px;

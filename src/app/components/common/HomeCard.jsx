@@ -19,25 +19,25 @@ const HomeCard =()=> {
                    </div>
                    <div>
                        <img 
-                       style={{float:'right'}}
-                       src={ICONS.SURFACE1}
+                       style={{marginLeft:'830%'}}
+                       src={ICONS.SURFACE15}
                        />
                    </div>
                    
                 </div>
-                <h6>Actividad del segundo parcial</h6>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,<br />
+                <h6 style={{marginLeft:'5%'}}>Actividad del segundo parcial</h6>
+                <p style={{marginLeft:'5%'}}>Lorem ipsum dolor sit amet, consectetur adipisicing elit,<br />
                    sed do eiusmod tempo incididunt ut labore et dolore magna aliqua.<br/>
                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris consequat.</p>
-                <div className={HomeCard.styles.bussinessCard}>
-                <div className={HomeCard.styles.bussinessContent}>
+                <div style={{marginLeft:'5%'}}className={HomeCard.styles.bussinessCard}>
+                <div style={{marginLeft:'5%'}}className={HomeCard.styles.bussinessContent}>
                 <img
                 src={ICONS.BMC}
                 />
               <p><b>Business Model Canvas files...</b><br />Hojas de Calculo de Google</p>
               </div>
             </div>
-            <div className={HomeCard.styles.socialIcons}>
+            <div style={{marginLeft:'5%'}} className={HomeCard.styles.socialIcons}>
                 <div>
                 <img 
                 src={ICONS.LIKE}
@@ -49,7 +49,20 @@ const HomeCard =()=> {
                 />
                 </div>
             </div>
+            <hr></hr>
+            <div className={HomeCard.styles.profile}>
+                <div>
+                <img src={ICONS.AVATAR1}/>
+                </div>
+                <div className={HomeCard.styles.profileContent}>
+                <p><b>Janice Willis</b><br />Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor.</p>
+               
+                </div>
+               
             </div>
+                <input  className={HomeCard.styles.inputField} placeholder="write comment"></input>
+            </div>
+           
         </div>
     )
 }
@@ -62,6 +75,8 @@ HomeCard.styles = {
     bussinessCard : "nos-online__homecard-container-bussiness-card",
     bussinessContent : "nos-online__homecard-container-bussiness-content",
     socialIcons : "nos-online__homecard-container-social-icons",
+    inputField : "nos-online__homecard-container-input-field",
+    
 
 }
 export default HomeCard

@@ -50,6 +50,20 @@ import Rightarrow from "../../../assets/icons/rightarrow.png"
 import Chatsmall from "../../../assets/icons/chatsmall.png"
 import Search from "../../../assets/icons/search.png"
 import Modal from "../../../assets/images/modal.PNG"
+import image from "../../../assets/images/Imagen 1.png"
+import Playleft from "../../../assets/icons/playleft.png"
+import Playright from "../../../assets/icons/playright.png"
+import Playicon from "../../../assets/icons/playicon.png"
+import leftaro1 from "../../../assets/icons/leftaro1.PNG"
+import logo1 from "../../../assets/icons/logo1.PNG"
+import surface13 from "../../../assets/icons/surface13.png"
+import togglebtn from "../../../assets/icons/togglebtn.PNG"
+import surface14 from "../../../assets/icons/surface14.png"
+import surface15 from "../../../assets/icons/surface15.png"
+import crownicon1 from "../../../assets/icons/crownicon1.png"
+import modal2 from "../../../assets/images/modal2.PNG"
+import sideleft1 from "../../../assets/icons/sideleft1.png"
+import xm1 from "../../../assets/icons/xm1.png"
 
 const ICONS = {
  
@@ -156,6 +170,35 @@ const ICONS = {
     SEARCH : Search ,
 
     MODAL : Modal,
+
+    IMAGE : image,
+
+    PLAYLEFT : Playleft,
+
+    PLAYRIGHT : Playright,
+
+    PLAYICON : Playicon,
+
+    LEFTAEO :leftaro1,
+
+    LOGO :logo1 ,
+
+    SURFACE13: surface13 ,
+
+    SURFACE14: surface14 ,
+
+    SURFACE15: surface15 ,
+
+    TOGGLEBTN :togglebtn ,
+
+    CROWNICON :crownicon1 ,
+
+    RATINGMODAL : modal2 ,
+
+    SIDELEFT1 :sideleft1 ,
+
+    XM1 : xm1,
+
 
 };
 

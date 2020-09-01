@@ -6,6 +6,7 @@ import './App.css';
 // import Exampe from './Exampe';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Home from './app/features/Home';
+import HomeRoom1 from './app/features/HomeRoom1';
 import HomeRoom from './app/features/HomeRoom';
 import StudentHome1 from './app/features/StudentHome1';
 import StudentHome2 from './app/features/StudentHome2';
@@ -15,13 +16,17 @@ import ConferenceCard from './app/components/common/ConferenceCard';
 import Conference from './app/features/Conference';
 import RatingTable from './app/components/common/RatingTable';
 import Ratings from './app/features/Rating';
+import Ratings1 from './app/features/Ratings1';
 import ProgramCard from './app/components/common/ProgramCard';
 import Program from './app/features/Program';
 import ChatSection from './app/features/ChatSection';
 import ChatSectionGroup from './app/features/ChatSectionGroup';
+import GroupSection1 from './app/features/GroupSection1';
 import GroupSection from './app/features/GroupSection';
 import ConferenceSection from './app/features/ConferenceSection';
 import Buttons from './Buttons';
+import Program1 from './app/features/Program1';
+
 
 
 
@@ -34,8 +39,8 @@ function App() {
     <div >
       <Router>
       <Switch>
-       <Route exact path="/" component={Buttons} />
-       <Route exact path="/home" component={Home} />
+      <Route exact path="/" component={Buttons} />
+       <Route  path="/home" component={Home} />
         <Route path="/student" component={StudentHome1}></Route>
         <Route path="/homeroom" component={HomeRoom}></Route>
         <Route path="/groups" component={Groups}></Route>
@@ -46,7 +51,13 @@ function App() {
         <Route path="/groupsection" component={GroupSection}></Route>
         <Route path="/program" component={Program}></Route>
         <Route path="/ratings" component={Ratings}></Route>
+        <Route path="/homeroom1" component={HomeRoom1}></Route>
+        <Route path="/rating1" component={Ratings1}></Route>
+        <Route path="/groupsection1" component={GroupSection1}></Route>
+        <Route path="/conferencesection1" component={ConferenceSection}></Route>
+        <Route path="/program1" component={Program1}></Route>
         <Route path="/studenthome2" component={StudentHome2}></Route>
+       
         </Switch>
         </Router>
       {/* <Home /> */}

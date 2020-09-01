@@ -63,7 +63,32 @@ const Buttons=()=> {
            </div>
            <div className={Buttons.styles.buttonContainer}>
            <Link to="groupsection">
+           <button type="button" className={Buttons.styles.studentButton}>GroupSection</button>
+           </Link>
+           </div>
+           <div className={Buttons.styles.buttonContainer}>
+           <Link to="groupsection">
            <button type="button" className={Buttons.styles.studentButton}>Qualification Room</button>
+           </Link>
+           </div>
+           <div className={Buttons.styles.buttonContainer}>
+           <Link to="homeroom1">
+           <button type="button" className={Buttons.styles.studentButton}>Home Room1</button>
+           </Link>
+           </div>
+           <div className={Buttons.styles.buttonContainer}>
+           <Link to="program1">
+           <button type="button" className={Buttons.styles.studentButton}>Program1</button>
+           </Link>
+           </div>
+           <div className={Buttons.styles.buttonContainer}>
+           <Link to="rating1">
+           <button type="button" className={Buttons.styles.studentButton}>Ratings1</button>
+           </Link>
+           </div>
+           <div className={Buttons.styles.buttonContainer}>
+           <Link to="groupsection1">
+           <button type="button" className={Buttons.styles.studentButton}>GroupSection1</button>
            </Link>
            </div>
         </div>
