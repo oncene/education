@@ -23,7 +23,6 @@
         }
         &-icon-container{
             padding-top: 5rem;
-            margin-left:15%;
         }
 
         &-icons {
@@ -38,7 +37,6 @@
             margin-top: 3rem;
             width: 40px;
             height: 50px;
-            margin-left:15%;
         }
         &-user-icon {
             width: 60px;
@@ -115,6 +113,8 @@
             border-radius: 10px;
             opacity: 1;
             border: none;
+            color: white;
+            
         }
 
         &-send-mail{
@@ -125,14 +125,34 @@
             border-radius: 10px;
             opacity: 1;
             border: none;
+            color:white;
         }
         &-modal-container{
             width: 1304px;
-height: 862px;
-border: 1px solid var(--unnamed-color-707070);
-border: 1px solid #707070;
-opacity: 1;
-background-color: blue;
+            height: 862px;
+            border: 1px solid var(--unnamed-color-707070);
+            border: 1px solid #707070;
+            opacity: 1;
+            background-color: blue;
+        }
+        &-send-button {
+            width: 158px;
+            height: 45px;
+            background: var(--unnamed-color-4d86f4) 0% 0% no-repeat padding-box;
+            background: #4D86F4 0% 0% no-repeat padding-box;
+            border-radius: 10px;
+            opacity: 1;
+            border:none;
+            color: white;
+        }
+        &-input-field {
+            width: 466px;
+            height: 39px;
+            background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+            border: 2px solid var(--unnamed-color-b0bed7);
+            background: #FFFFFF 0% 0% no-repeat padding-box;
+            border: 2px solid #B0BED7;
+            opacity: 1;
         }
 
        

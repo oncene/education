@@ -2,7 +2,7 @@
     &-container {
         &-card-container {
             width: 645px;
-            height: 490px;
+            height: 350px;
             background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
             box-shadow: 0px 5px 6px var(--unnamed-color-dbe2ef);
             background: #FFFFFF 0% 0% no-repeat padding-box;
@@ -14,7 +14,7 @@
             display: flex;
             flex-direction: row;
             // justify-content: space-evenly;
-            margin-left: 5%;
+            margin-right: 30%;
         }
         &-teacher {
             width: 47px;
@@ -74,7 +74,29 @@ border-radius: 5px;
 opacity: 1;
 margin-left: 2%;
         }
-
+        &-card-container1 {
+            width: 780px;
+            height: 350px;
+            background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+            box-shadow: 0px 5px 6px var(--unnamed-color-dbe2ef);
+            background: #FFFFFF 0% 0% no-repeat padding-box;
+            box-shadow: 0px 5px 6px #DBE2EF;
+            border-radius: 15px;
+            opacity: 1;
+        }
+        &-comentor-button{
+            width: 110px;
+height: 33px;
+background: var(--unnamed-color-4d86f4) 0% 0% no-repeat padding-box;
+background: #4D86F4 0% 0% no-repeat padding-box;
+border-radius: 10px;
+opacity: 1;
+border:none
+        }
+    &-crm-surface {
+        width: 18px;
+        height: 18px;
+    }
        
         
     }

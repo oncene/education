@@ -75,7 +75,7 @@ const  Ratings1=()=> {
                
             </div>
             <div className={ Ratings1.styles.rightContainer}>
-                <div style={{marginTop:'5%'}}>
+                <div style={{marginTop:'5%',marginLeft:'35%'}}>
                 <button className={Ratings1.styles.print}  data-toggle="modal" data-target="#myModal"><img src={ICONS.PRINT} />PRINT</button>
                 <div class="modal fade" id="myModal" role="dialog">
     <div class="modal-dialog modal-lg">
@@ -95,11 +95,33 @@ const  Ratings1=()=> {
     </div>
   </div>
                 </div>
-                <div style={{marginTop:'5%'}}>
-                <button className={Ratings1.styles.sendMail}><img src={ICONS.MAILBOX}/>SEND TO EMAIL</button>
+                <div style={{marginTop:'5%',marginLeft:'10%'}}>
+                <button className={Ratings1.styles.sendMail} data-toggle="modal" data-target="#myModal1"><img src={ICONS.MAILBOX}/>SEND TO EMAIL</button>
+                <div class="modal" id="myModal1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" style={{color:'#657596',fontSize:'small'}}><img src={ICONS.MSG2}/>Send Notes to an email</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <div class="modal-body">
+         <p style={{color:'#657596',fontSize:'small'}}>Email</p> 
+          <div>
+          <input type="email" className={Ratings1.styles.inputField}></input>
+          </div>
+        </div>
+        
+        <div class="modal-footer">
+          <button type="button" className={Ratings1.styles.sendButton} data-dismiss="modal"><img src={ICONS.MAILBOX}/>Send</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
                 </div>
                 <hr></hr>
-                <div style={{marginTop:'10%'}}>
+                <div style={{marginTop:'10%',marginLeft:'20%'}}>
                     <img src={ICONS.CHART2} />
                 </div>
                 </div>
@@ -124,6 +146,8 @@ Ratings1.styles = {
     avatar:"nos-online__ratings-container-avatar",
     avatar1:"nos-online__ratings-container-avatar1",
     modal:"nos-online__ratings-container-avatar1",
+    sendButton:"nos-online__ratings-container-send-button",
+    inputField:"nos-online__ratings-container-input-field",
    
    
     

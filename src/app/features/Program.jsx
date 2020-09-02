@@ -18,25 +18,25 @@ const Program=()=> {
 
                     />
                     </div>
-                    <div style={{marginTop:'25%'}}>
+                    <div style={{marginTop:'25%',marginLeft:'15%'}}>
                         <img  
                         src={ICONS.FEATURES_LIST}
                         className={Program.styles.icons}
                         />
                     </div>
-                    <div style={{marginTop:'25%'}}>
+                    <div style={{marginTop:'25%',marginLeft:'15%'}}>
                         <img
                         src={ICONS.FILE_EXPLORER}
                         className={Program.styles.icons}
                         />
                     </div>
-                    <div style={{marginTop:'25%'}}>
+                    <div  style={{marginTop:'25%',marginLeft:'15%'}}>
                         <img
                         src={ICONS.CHAT_MESSAGE}
                         className={Program.styles.icons}
                          />
                     </div>
-                    <div style={{marginTop:'25%'}}>
+                    <div  style={{marginTop:'25%',marginLeft:'15%'}}>
                         <img 
                         src={ICONS.NOTIFICATION}
                         className={Program.styles.icons}
@@ -70,7 +70,7 @@ const Program=()=> {
                <ProgramCard />
             </div>
             <div className={Program.styles.rightContainer}>
-                <h6 style={{marginTop:"5%",}}>Weights</h6>
+                <h6 style={{marginTop:"5%",marginLeft:'5%'}}>Weights</h6>
                 <div className={Program.styles.chatCollaboration}>
                     <img 
                     className={Program.styles.chatIcon}

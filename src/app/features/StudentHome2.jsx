@@ -18,31 +18,31 @@ const StudentHome2=()=> {
 
                     />
                     </div>
-                    <div style={{marginLeft:'15%'}}>
+                    <div>
                         <img  
                         src={ICONS.FEATURES_LIST}
                         className={StudentHome2.styles.icons}
                         />
                     </div>
-                    <div style={{marginLeft:'15%'}}>
+                    <div>
                         <img
                         src={ICONS.FILE_EXPLORER}
                         className={StudentHome2.styles.icons}
                         />
                     </div>
-                    <div style={{marginLeft:'15%'}}>
+                    <div>
                         <img
                         src={ICONS.CHAT_MESSAGE}
                         className={StudentHome2.styles.icons}
                          />
                     </div>
-                    <div style={{marginLeft:'15%'}}>
+                    <div>
                         <img 
                         src={ICONS.NOTIFICATION}
                         className={StudentHome2.styles.icons}
                         />
                     </div>
-                    <div style={{marginLeft:'15%'}}>
+                    <div>
                         <img
                         src={ICONS.LOGOUT}
                         className={StudentHome2.styles.logout}

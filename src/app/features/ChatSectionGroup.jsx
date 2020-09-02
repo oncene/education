@@ -16,25 +16,25 @@ const   ChatSectionGroup=()=> {
 
                     />
                     </div>
-                    <div style={{marginTop:'25%'}}>
+                    <div style={{marginTop:'25%',marginLeft:'15%'}}>
                         <img  
                         src={ICONS.FEATURES_LIST}
                         className={  ChatSectionGroup.styles.icons}
                         />
                     </div>
-                    <div style={{marginTop:'25%'}}>
+                    <div style={{marginTop:'25%',marginLeft:'15%'}}>
                         <img
                         src={ICONS.FILE_EXPLORER}
                         className={  ChatSectionGroup.styles.icons}
                         />
                     </div>
-                    <div style={{marginTop:'25%'}}>
+                    <div style={{marginTop:'25%',marginLeft:'15%'}}>
                         <img
                         src={ICONS.CHAT_MESSAGE}
                         className={  ChatSectionGroup.styles.icons}
                          />
                     </div>
-                    <div style={{marginTop:'25%'}}>
+                    <div style={{marginTop:'25%',marginLeft:'15%'}}>
                         <img 
                         src={ICONS.NOTIFICATION}
                         className={  ChatSectionGroup.styles.icons}

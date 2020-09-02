@@ -17,25 +17,25 @@ const Collaborations=()=> {
 
                     />
                     </div>
-                    <div style={{marginTop:'25%'}}>
+                    <div style={{marginTop:'25%',marginLeft:'15%'}}>
                         <img  
                         src={ICONS.FEATURES_LIST}
                         className={Collaborations.styles.icons}
                         />
                     </div>
-                    <div style={{marginTop:'25%'}}>
+                    <div style={{marginTop:'25%',marginLeft:'15%'}}>
                         <img
                         src={ICONS.FILE_EXPLORER}
                         className={Collaborations.styles.icons}
                         />
                     </div>
-                    <div style={{marginTop:'25%'}}>
+                    <div style={{marginTop:'25%',marginLeft:'15%'}}>
                         <img
                         src={ICONS.CHAT_MESSAGE}
                         className={Collaborations.styles.icons}
                          />
                     </div>
-                    <div style={{marginTop:'25%'}}>
+                    <div style={{marginTop:'25%',marginLeft:'15%'}}>
                         <img 
                         src={ICONS.NOTIFICATION}
                         className={Collaborations.styles.icons}
@@ -63,7 +63,7 @@ const Collaborations=()=> {
                 <HomeCard />
             </div>
             <div className={Collaborations.styles.rightContainer}>
-                <h6 style={{marginTop:"5%"}}>Collaborators</h6>
+                <h6 style={{marginTop:"5%",marginLeft:'5%'}}>Collaborators</h6>
                 <div className={Collaborations.styles.chatCollaboration}>
                     <img 
                     className={Collaborations.styles.chatIcon}

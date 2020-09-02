@@ -64,6 +64,8 @@ import crownicon1 from "../../../assets/icons/crownicon1.png"
 import modal2 from "../../../assets/images/modal2.PNG"
 import sideleft1 from "../../../assets/icons/sideleft1.png"
 import xm1 from "../../../assets/icons/xm1.png"
+import msg2 from "../../../assets/icons/msg2.png"
+import cmra from "../../../assets/icons/cmra.png"
 
 const ICONS = {
  
@@ -179,7 +181,7 @@ const ICONS = {
 
     PLAYICON : Playicon,
 
-    LEFTAEO :leftaro1,
+    LEFTARO :leftaro1,
 
     LOGO :logo1 ,
 
@@ -198,6 +200,10 @@ const ICONS = {
     SIDELEFT1 :sideleft1 ,
 
     XM1 : xm1,
+
+    MSG2 :msg2 ,
+
+    CMRA :cmra
 
 
 };

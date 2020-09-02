@@ -25,7 +25,7 @@ const Card=({image,subject,discription,by})=> {
                     />
                 </div>
                 <div className={Card.styles.round}>
-                    <p style={{marginLeft:'28%'}}>5</p>
+                    5
                 </div>
                 </div>
         </div>

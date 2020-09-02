@@ -3,6 +3,7 @@ import "../styles/home-room.scss"
 import { ICONS} from "../utils/enums/Index";
 import LeftMenuBar from '../components/common/LeftMenuBar';
 import HomeCard from '../components/common/HomeCard';
+import HomeCard1 from '../components/common/HomeCard1';
 
 
 const HomeRoom=()=> {
@@ -60,17 +61,11 @@ const HomeRoom=()=> {
                 </div>
             </div>
             <div>
-                <div className={HomeRoom.styles.emptyCard}>
-                    <p style={{marginLeft:'10%'}}>Escribir para publicar...</p>
-                    <hr></hr>
-                    <div style={{marginTop:"14%"}}>
-                    <button className={HomeRoom.styles.anadir}><img src={ICONS.SURFACE13}/>Anadir</button>
-                    <button className={HomeRoom.styles.publish}><img src={ICONS.SURFACE14}/>Publish</button>
-                    </div>
-
-                </div>
-            <div style={{marginTop:'2%'}}>
-                <HomeCard />
+            <div>
+            <HomeCard1 />
+            </div>
+            <div style={{marginTop:'3%'}}>
+            <HomeCard1 />
             </div>
             </div>
             <div className={HomeRoom.styles.rightContainer}>

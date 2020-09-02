@@ -11,41 +11,41 @@ const Groups=()=> {
         <div className={Groups.styles.mainContainer}>
             <div className={Groups.styles.homeContainer}>  
                 <div className={Groups.styles.leftBar}>
-                <div className={Groups.styles.iconContainer1}>
+                <div className={Groups.styles.iconContainer}>
                     <img 
                     src={ICONS.SURFACE}
-                    className={Groups.styles.surfaceIcon1}
+                    className={Groups.styles.surfaceIcon}
 
                     />
                     </div>
-                    <div style={{marginTop:'25%'}}>
+                    <div style={{marginTop:'25%',marginLeft:'15%'}}>
                         <img  
                         src={ICONS.FEATURES_LIST}
-                        className={Groups.styles.icons1}
+                        className={Groups.styles.icons}
                         />
                     </div>
-                    <div style={{marginTop:'25%'}}>
+                    <div style={{marginTop:'25%',marginLeft:'15%'}}>
                         <img
                         src={ICONS.FILE_EXPLORER}
-                        className={Groups.styles.icons1}
+                        className={Groups.styles.icons}
                         />
                     </div>
-                    <div style={{marginTop:'25%'}}>
+                    <div style={{marginTop:'25%',marginLeft:'15%'}}>
                         <img
                         src={ICONS.CHAT_MESSAGE}
-                        className={Groups.styles.icons1}
+                        className={Groups.styles.icons}
                          />
                     </div>
-                    <div style={{marginTop:'25%'}}>
+                    <div style={{marginTop:'25%',marginLeft:'15%'}}>
                         <img 
                         src={ICONS.NOTIFICATION}
-                        className={Groups.styles.icons1}
+                        className={Groups.styles.icons}
                         />
                     </div>
                     <div>
                         <img
                         src={ICONS.LOGOUT}
-                        className={Groups.styles.logout1}
+                        className={Groups.styles.logout}
                         />
                     </div>
                     <div>
@@ -56,24 +56,24 @@ const Groups=()=> {
                     </div>
             </div>
             <div className={Groups.styles.cardMiddle}>
-                <div style={{marginLeft:-15}}>
+                <div>
                 <LeftMenuBar />
                 </div>
             </div>
-            <div styles={{ height: '500px', overflowY: 'scroll' }}>
+            <div >
                <div>
                    <GroupCard />
                </div>
-            <div style={{marginTop:'5%'}}>
+            <div style={{marginTop:'2%',marginLeft:'10%'}}>
                 <HomeCard />
             </div>
             </div>
             <div className={Groups.styles.rightContainer}>
-            <div>
+            <div style={{marginLeft:'10%'}}>
                 <button className={Groups.styles.newGroup}>+ New Group</button>
             </div>
             <hr></hr>
-            <h6>GROUP</h6>
+            <h6 style={{marginLeft:'5%'}}>GROUP</h6>
             <div style={{display:"flex",flexDirection:'row',justifyContent:'center'}}>
                 <img 
                  src={ICONS.GROUP}

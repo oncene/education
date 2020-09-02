@@ -17,25 +17,25 @@ const  Ratings=()=> {
 
                     />
                     </div>
-                    <div style={{marginTop:'25%'}}>
+                    <div style={{marginTop:'25%',marginLeft:'15%'}}>
                         <img  
                         src={ICONS.FEATURES_LIST}
                         className={ Ratings.styles.icons}
                         />
                     </div>
-                    <div style={{marginTop:'25%'}}>
+                    <div style={{marginTop:'25%',marginLeft:'15%'}}>
                         <img
                         src={ICONS.FILE_EXPLORER}
                         className={Ratings.styles.icons}
                         />
                     </div>
-                    <div style={{marginTop:'25%'}}>
+                    <div style={{marginTop:'25%',marginLeft:'15%'}}>
                         <img
                         src={ICONS.CHAT_MESSAGE}
                         className={ Ratings.styles.icons}
                          />
                     </div>
-                    <div style={{marginTop:'25%'}}>
+                    <div style={{marginTop:'25%',marginLeft:'15%'}}>
                         <img 
                         src={ICONS.NOTIFICATION}
                         className={ Ratings.styles.icons}
@@ -75,14 +75,14 @@ const  Ratings=()=> {
                
             </div>
             <div className={ Ratings.styles.rightContainer}>
-                <div style={{marginTop:'5%'}}>
+                <div style={{marginTop:'5%',marginLeft:'3%'}}>
                 <button className={Ratings.styles.print}><img src={ICONS.PRINT}/>PRINT</button>
                 </div>
-                <div style={{marginTop:'5%'}}>
+                <div style={{marginTop:'5%',marginLeft:'3%'}}>
                 <button className={Ratings.styles.sendMail}><img src={ICONS.MAILBOX}/>SEND TO EMAIL</button>
                 </div>
                 <hr></hr>
-                <div style={{marginTop:'10%'}}>
+                <div style={{marginTop:'10%',marginLeft:'10%'}}>
                     <img src={ICONS.CHART2} />
                 </div>
                 </div>
