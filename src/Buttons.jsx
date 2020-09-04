@@ -96,6 +96,11 @@ const Buttons=()=> {
            <button type="button" className={Buttons.styles.studentButton}>HomeRoom2</button>
            </Link>
            </div>
+           <div className={Buttons.styles.buttonContainer}>
+           <Link to="homeroom3">
+           <button type="button" className={Buttons.styles.studentButton}>HomeRoom3</button>
+           </Link>
+           </div>
         </div>
     )
 }

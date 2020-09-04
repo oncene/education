@@ -66,6 +66,8 @@ import sideleft1 from "../../../assets/icons/sideleft1.png"
 import xm1 from "../../../assets/icons/xm1.png"
 import msg2 from "../../../assets/icons/msg2.png"
 import cmra from "../../../assets/icons/cmra.png"
+import imagen from "../../../assets/images/Imagen 4.png"
+
 
 const ICONS = {
  
@@ -203,7 +205,9 @@ const ICONS = {
 
     MSG2 :msg2 ,
 
-    CMRA :cmra
+    CMRA :cmra ,
+
+    IMAGEN : imagen
 
 
 };

@@ -76,10 +76,51 @@ const  Ratings=()=> {
             </div>
             <div className={ Ratings.styles.rightContainer}>
                 <div style={{marginTop:'5%',marginLeft:'3%'}}>
-                <button className={Ratings.styles.print}><img src={ICONS.PRINT}/>PRINT</button>
+                <button className={Ratings.styles.print} data-toggle="modal" data-target="#myModal1"><img src={ICONS.PRINT}/>PRINT</button>
+                <div class="modal fade" id="myModal1">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+      
+        <div class="modal-header">
+          <h4 class="modal-title"></h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <div class="modal-body">
+        <img src={ICONS.RATINGMODAL}/>
+        </div>
+        
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  
                 </div>
                 <div style={{marginTop:'5%',marginLeft:'3%'}}>
-                <button className={Ratings.styles.sendMail}><img src={ICONS.MAILBOX}/>SEND TO EMAIL</button>
+                <button className={Ratings.styles.sendMail} data-toggle="modal" data-target="#myModal"><img src={ICONS.MAILBOX}/>SEND TO EMAIL</button>
+                <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+        <div class="modal-title"><img src={ICONS.MSG2}/>Enviar Notas a un email</div>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        
+        </div>
+        <div class="modal-body">
+          <p>Email</p>
+          <input type="email" className={Ratings.styles.inputField}></input>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal" className={Ratings.styles.sendButton}><img src={ICONS.MAILBOX}/>Send</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
                 </div>
                 <hr></hr>
                 <div style={{marginTop:'10%',marginLeft:'10%'}}>
@@ -106,6 +147,8 @@ Ratings.styles = {
     sendMail:"nos-online__ratings-container-send-mail",
     avatar:"nos-online__ratings-container-avatar",
     avatar1:"nos-online__ratings-container-avatar1",
+    inputField:"nos-online__ratings-container-input-field",
+    sendButton:"nos-online__ratings-container-send-button",
    
    
     

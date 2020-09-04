@@ -28,6 +28,8 @@ import Program1 from './app/features/Program1';
 import HomeCard1 from './app/components/common/HomeCard1';
 import Home1 from './app/features/Home1';
 import HomeRoom2 from './app/features/HomeRoom2';
+import HomeRoom4 from './app/features/HomeRoom4';
+import HomeRoom3 from './app/features/HomeRoom3';
 import HomeRoom1 from './app/features/HomeRoom1';
 import MenuSideBarBig from './app/components/common/MenuSideBarBig';
 
@@ -47,6 +49,7 @@ function App() {
         <Route  path="/home1" component={Home1} />
         <Route  path="/homeroom2" component={HomeRoom2} />
         <Route  path="/homeroom1" component={HomeRoom1} />
+        <Route  path="/homeroom3" component={HomeRoom3} />
        <Route exact path="/" component={Buttons} />
        <Route exact path="/home" component={Home} />
         <Route path="/student" component={StudentHome1}></Route>

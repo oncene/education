@@ -65,7 +65,28 @@ const HomeRoom=()=> {
                     <hr></hr>
                     <div style={{marginTop:"14%"}}>
                     <button className={HomeRoom.styles.anadir}><img src={ICONS.SURFACE13}/>Anadir</button>
-                    <button className={HomeRoom.styles.publish}><img src={ICONS.SURFACE14}/>Publish</button>
+                    <button className={HomeRoom.styles.publish} data-toggle="modal" data-target="#myModal1"><img src={ICONS.SURFACE14}/>Publish</button>
+                    <div class="modal fade" id="myModal1">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+      
+        <div class="modal-header">
+          <h4 class="modal-title"></h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <div class="modal-body">
+        <img src={ICONS.MODAL}/>
+        </div>
+        
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
                     </div>
 
                 </div>
