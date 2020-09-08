@@ -32,6 +32,15 @@ import HomeRoom4 from './app/features/HomeRoom4';
 import HomeRoom3 from './app/features/HomeRoom3';
 import HomeRoom1 from './app/features/HomeRoom1';
 import MenuSideBarBig from './app/components/common/MenuSideBarBig';
+// import ClassCard from './app/teacher/common/ClassCard';
+import SubjectsCard from './app/teacher/common/Chatcard';
+import HomeCard3 from './app/components/common/HomeCard3';
+import ClassCard from './app/teacher/common/ClassCard';
+import Chatcard from './app/teacher/common/Chatcard';
+import TeacherDashboard from './app/teacher/features/TeacherDashboard';
+import PresentationCourse from './app/teacher/features/PresentationCourse';
+import CourseActivity from './app/teacher/features/CourseActivity';
+import ExamCourse from './app/teacher/features/ExamCourse';
 
 
 
@@ -44,13 +53,12 @@ function App() {
     <div >
       <Router>
       <Switch>
-      <Route exact path="/" component={Buttons} />
+      <Route exact path="/" component={ExamCourse} />
         <Route  path="/home" component={Home} />
         <Route  path="/home1" component={Home1} />
         <Route  path="/homeroom2" component={HomeRoom2} />
         <Route  path="/homeroom1" component={HomeRoom1} />
         <Route  path="/homeroom3" component={HomeRoom3} />
-       <Route exact path="/" component={Buttons} />
        <Route exact path="/home" component={Home} />
         <Route path="/student" component={StudentHome1}></Route>
         <Route path="/homeroom" component={HomeRoom}></Route>

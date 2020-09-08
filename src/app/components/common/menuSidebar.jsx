@@ -5,7 +5,7 @@ import { ICONS } from '../../utils/enums/Index'
 const MenuSidebar = () => {
     return (
         <div className={MenuSidebar.styles.menulayoutContainer}>
-            <div>
+            <div> 
                 <img
                 className={MenuSidebar.styles.bgIcon}
                   src={ICONS.BG}

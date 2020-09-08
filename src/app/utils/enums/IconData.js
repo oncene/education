@@ -67,7 +67,15 @@ import xm1 from "../../../assets/icons/xm1.png"
 import msg2 from "../../../assets/icons/msg2.png"
 import cmra from "../../../assets/icons/cmra.png"
 import imagen from "../../../assets/images/Imagen 4.png"
-
+import Parallel from "../../../assets/icons/Button.png"
+import Subjects from "../../../assets/icons/Button1.png"
+import bg4 from "../../../assets/images/BG4.png"
+import bg5 from "../../../assets/images/BG5.png"
+import Surface3 from "../../../assets/images/surface.png"
+import Surface4 from "../../../assets/images/surface4.png"
+import tagp from "../../../assets/icons/tagp.png"
+import cross from "../../../assets/icons/cross1.PNG"
+import activityimage from "../../../assets/images/activityimage.PNG"
 
 const ICONS = {
  
@@ -207,7 +215,27 @@ const ICONS = {
 
     CMRA :cmra ,
 
-    IMAGEN : imagen
+    IMAGEN : imagen,
+
+    BUTTON : Parallel ,
+
+    BUTTON1 : Subjects ,
+
+    BG4 : bg4 ,
+
+    BG5 : bg5 ,
+
+    SURFACE3 : Surface3 ,
+
+    SURFACE4 : Surface4 ,
+
+    TAGP : tagp,
+
+    CROSS : cross ,
+
+    ACTIVITYIMAGE :activityimage,
+
+
 
 
 };
