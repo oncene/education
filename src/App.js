@@ -46,6 +46,7 @@ import TeacherGroupCard from './app/teacher/common/TeacherGroupCard';
 import TeacherGroup from './app/teacher/features/TeacherGroup';
 import TeacherCollaboration from './app/teacher/features/TeacherCollaboration';
 import TeacherConfference from './app/teacher/features/TeacherConfference';
+import TeacherRatingSection from './app/teacher/features/TeacherRatingSection';
 
 
 
@@ -58,7 +59,7 @@ function App() {
     <div >
       <Router>
       <Switch>
-      <Route exact path="/" component={TeacherConfference} />
+      <Route exact path="/" component={TeacherGroup} />
         <Route  path="/teacher" component={TeacherDashboard} />
         <Route  path="/presentation" component={PresentationCourse} />
         <Route  path="/course" component={CourseActivity} />

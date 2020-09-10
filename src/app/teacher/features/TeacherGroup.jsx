@@ -16,7 +16,46 @@ const TeacherGroup = () => {
                 </div>
                 <div className={TeacherGroup.styles.rightContainer}>
                     <div>
-                        <button className={TeacherGroup.styles.newbutton}>+ New Group</button>
+                        <button className={TeacherGroup.styles.newbutton} data-toggle="modal" data-target="#myModal">+ New Group</button>
+                        <div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+   
+        <div class="modal-header">
+          <div className={TeacherGroup.styles.displayContainer} >
+              <img src={ICONS.MSG2}/>
+              <p>Create new Group</p>
+          </div>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+       
+        <div class="modal-body">
+          <div>Group Name (*)</div>
+          <input type='text' className={TeacherGroup.styles.inputField}></input>
+          <div>Members (*)</div>
+          <input type='text' className={TeacherGroup.styles.inputField}></input>
+          <div className={TeacherGroup.styles.displayContainer} style={{padding:'20px'}}>
+              <img src={ICONS.AVATAR3} />
+              <p>Juan Jose Torrez</p>
+              <img src={ICONS.TRASH} className={TeacherGroup.styles.trash}/>
+          </div>
+          <div className={TeacherGroup.styles.displayContainer}>
+              <img src={ICONS.AVATAR4}  style={{marginLeft:'20px'}}/>
+              <p>Juan Jose Torrez</p>
+              <img src={ICONS.TRASH} className={TeacherGroup.styles.trash}/>
+          </div>
+        </div>
+        
+      
+        <div class="modal-footer">
+          <button type="button" className={TeacherGroup.styles.programedButton} data-dismiss="modal">+ New Group</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
                     </div>
                     <hr></hr>
                     <div>Groups</div>
@@ -60,5 +99,9 @@ TeacherGroup.styles = {
     rightContainer: "nos-online__teachergroup-root-right-container",
     newbutton: "nos-online__teachergroup-root-newgroup-button",
     groupImage: "nos-online__teachergroup-root-group-image",
+    inputField: "nos-online__teachergroup-root-input-field",
+    programedButton: "nos-online__teachergroup-root-programed",
+    trash: "nos-online__teachergroup-root-trash",
+
 }
 export default TeacherGroup

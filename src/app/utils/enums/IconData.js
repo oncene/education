@@ -76,9 +76,19 @@ import Surface4 from "../../../assets/images/surface4.png"
 import tagp from "../../../assets/icons/tagp.png"
 import cross from "../../../assets/icons/cross1.PNG"
 import activityimage from "../../../assets/images/activityimage.PNG"
+import bell from "../../../assets/icons/bell.png"
+import studentchart from "../../../assets/images/studentchart.PNG"
+import trash from "../../../assets/icons/trash1.png"
+import plusicon from "../../../assets/icons/plusicon.PNG"
+import minusicon from "../../../assets/icons/minusicon.png"
+
 
 const ICONS = {
  
+    PLUSICON : plusicon ,
+
+    MINUSICON : minusicon, 
+
     CHAT_MESSAGE: Chat_Message,
     
     FEATURES_LIST: Feature_List,
@@ -234,6 +244,12 @@ const ICONS = {
     CROSS : cross ,
 
     ACTIVITYIMAGE :activityimage,
+
+    BELL : bell,
+
+    STUDENTCHART: studentchart,
+
+    TRASH: trash,
 
 
 

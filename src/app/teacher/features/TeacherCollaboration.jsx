@@ -27,7 +27,37 @@ const TeacherCollaboration = () => {
                  </div>
                 </div>
                 <div className={TeacherCollaboration.styles.rightContainer}>
-                       <div style={{padding:'20px'}}>Collabortions</div>
+                    <div>
+                        <button className={TeacherCollaboration.styles.collaborator} data-toggle="modal" data-target="#myModal">+ NEW COLLABORATOR</button>
+                        <div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+   
+        <div class="modal-header">
+          <div className={TeacherCollaboration.styles.displayContainer} >
+              <img src={ICONS.MSG2}/>
+              <p>Invite new collaborator</p>
+          </div>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+       
+        <div class="modal-body">
+          <div>Contributor Email (*)</div>
+          <input type='text' className={TeacherCollaboration.styles.inputField}></input>
+        </div>
+        
+      
+        <div class="modal-footer">
+          <button type="button" className={TeacherCollaboration.styles.programedButton} data-dismiss="modal">+ Invite</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+                    </div>
+                       <div style={{marginTop:'40px',marginLeft:'10px'}}>Collabortions</div>
                        <div className={TeacherCollaboration.styles.displayContainer} style={{marginTop:'5px',marginLeft:'20px'}}>
                        <img src={ICONS.AVATAR2}/>
                        <div style={{marginLeft:'20px'}}>Juan Jose Torrez</div>
@@ -45,5 +75,9 @@ TeacherCollaboration.styles = {
     rightContainer: "nos-online__teachergroup-root-right-container",
     newbutton: "nos-online__teachergroup-root-newgroup-button",
     groupImage: "nos-online__teachergroup-root-group-image",
+    collaborator: "nos-online__teachergroup-root-collaboratorbutton",
+    inputField:'nos-online__teachergroup-root-input-field',
+    programedButton:'nos-online__teachergroup-root-programed'
+
 }
 export default TeacherCollaboration

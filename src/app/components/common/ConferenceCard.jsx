@@ -2,19 +2,20 @@ import React from 'react'
 import "../../styles/conference-card.scss"
 import { ICONS } from '../../utils/enums/Index'
 
-const ConferenceCard=()=> {
+const ConferenceCard=({header,min,icon,colortext,button,colortext1})=> {
     return (
         <div className={ConferenceCard.styles.cardContainer}>
             <div className={ConferenceCard.styles.card}>
             <img
             className={ConferenceCard.styles.iconCon}
-              src={ICONS.CONFERENCE}
+              src={icon}
             />
             <div className={ConferenceCard.styles.cardText}>
-                <p><b>El Arte Moderno</b><br />Hace 10 minutos</p>
-                <p style={{fontSize:'0.5rem',marginTop:'-10%',backgroundColor:'#08DDC1'}}>EN VIVO</p>
+             <p><b>{header}</b><br />{min}</p>
+                <p style={{fontSize:'0.5rem',marginTop:'-10%',backgroundColor:'#08DDC1'}}>{colortext}</p>
+                <p style={{fontSize:'0.5rem',marginTop:'-10%',backgroundColor:'#7C5AC1'}}>{colortext1}</p>
                 </div>
-                <button className={ConferenceCard.styles.button}>UNIRSE</button>
+              <button className={ConferenceCard.styles.button}>{button}</button>
                 </div>
         </div>
     )
