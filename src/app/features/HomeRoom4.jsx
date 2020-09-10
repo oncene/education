@@ -6,7 +6,7 @@ import HomeCard from '../components/common/HomeCard';
 import SideBar from '../components/common/sideBar';
 
 import HomeCard3 from '../components/common/HomeCard3';
-import MenuSidebar from '../components/common/menuSidebar';
+import MenuSidebar from '../components/common/MenuSidebar';
 
 
 const HomeRoom4=()=> {

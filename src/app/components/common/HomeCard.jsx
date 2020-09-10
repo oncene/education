@@ -2,33 +2,31 @@ import React from 'react'
 import "../../styles/home-card.scss"
 import { ICONS} from "../../utils/enums/Index";
 
-const HomeCard =()=> {
+const HomeCard =({icon,icon1,name,minute,designation,text,header})=> {
     return (
         <div>
             <div className={HomeCard.styles.cardContainer}>
                 <div className={HomeCard.styles.profile}>
                     <div>
                    <img 
-                    src={ICONS.AVATAR}
+                    src={icon}
                    /> 
                    </div>
                    <div className={HomeCard.styles.profileContent}>
-                   <h6>Pricilla Talia</h6>
-                   <p style={{color:"#7287B0"}}>10 minutes ago</p>
-                   <p className={HomeCard.styles.teacher}>Teacher</p>
+                   <h6>{name}</h6>
+                   <p style={{color:"#7287B0"}}>{minute}</p>
+                   <p className={HomeCard.styles.teacher}>{designation}</p>
                    </div>
                    <div>
                        <img 
                        style={{float:'right'}}
-                       src={ICONS.SURFACE1}
+                       src={icon1}
                        />
                    </div>
                    
                 </div>
-                <h6>Actividad del segundo parcial</h6>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,<br />
-                   sed do eiusmod tempo incididunt ut labore et dolore magna aliqua.<br/>
-                   Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris consequat.</p>
+                <h6>{header}</h6>
+                <p>{text}</p>
                 <div className={HomeCard.styles.bussinessCard}>
                 <div className={HomeCard.styles.bussinessContent}>
                 <img

@@ -1,7 +1,7 @@
 import React from 'react'
 import "../styles/home-room1.scss"
 import SideBar from '../components/common/sideBar'
-import MenuSidebar from "../components/common/menuSidebar"
+import MenuSidebar from "../components/common/MenuSidebar"
 import { ICONS } from '../utils/enums/Index'
 import MenuSideBarBig from '../components/common/MenuSideBarBig'
 

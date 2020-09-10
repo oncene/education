@@ -41,6 +41,11 @@ import TeacherDashboard from './app/teacher/features/TeacherDashboard';
 import PresentationCourse from './app/teacher/features/PresentationCourse';
 import CourseActivity from './app/teacher/features/CourseActivity';
 import ExamCourse from './app/teacher/features/ExamCourse';
+import TeacherHome from './app/teacher/features/TeacherHome';
+import TeacherGroupCard from './app/teacher/common/TeacherGroupCard';
+import TeacherGroup from './app/teacher/features/TeacherGroup';
+import TeacherCollaboration from './app/teacher/features/TeacherCollaboration';
+import TeacherConfference from './app/teacher/features/TeacherConfference';
 
 
 
@@ -53,11 +58,11 @@ function App() {
     <div >
       <Router>
       <Switch>
-      <Route exact path="/" component={ExamCourse} />
-        <Route  path="/home" component={Home} />
-        <Route  path="/home1" component={Home1} />
-        <Route  path="/homeroom2" component={HomeRoom2} />
-        <Route  path="/homeroom1" component={HomeRoom1} />
+      <Route exact path="/" component={TeacherConfference} />
+        <Route  path="/teacher" component={TeacherDashboard} />
+        <Route  path="/presentation" component={PresentationCourse} />
+        <Route  path="/course" component={CourseActivity} />
+        <Route  path="/exam" component={ ExamCourse} />
         <Route  path="/homeroom3" component={HomeRoom3} />
        <Route exact path="/home" component={Home} />
         <Route path="/student" component={StudentHome1}></Route>

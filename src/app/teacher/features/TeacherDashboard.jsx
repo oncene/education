@@ -138,7 +138,7 @@ const TeacherDashboard = () => {
             </div>
             <div className={TeacherDashboard.styles.sCards}>
                 <Card 
-                 image={ICONS.BG}
+                 image={ICONS.BG1}
                  subject="Plastic Arts"
                  discription="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy."
                  by="Juan Gabriel Torrez"

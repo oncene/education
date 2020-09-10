@@ -61,7 +61,7 @@ const HomeRoom=()=> {
             </div>
             <div>
                 <div className={HomeRoom.styles.emptyCard}>
-                    <p style={{marginLeft:'10%'}}>Escribir para publicar...</p>
+                    <p style={{marginLeft:'10%'}}>Write to post...</p>
                     <hr></hr>
                     <div style={{marginTop:"14%"}}>
                     <button className={HomeRoom.styles.anadir}><img src={ICONS.SURFACE13}/>Anadir</button>

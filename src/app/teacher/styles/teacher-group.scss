@@ -1,0 +1,48 @@
+.nos-online__teachergroup {
+    &-root {
+      &-containerteacher{
+        width: 1600px;
+        height: 789px;
+        background: #EDF0F5 0% 0% no-repeat padding-box;
+        opacity: 1;
+       }
+       &-group-display{
+           display: flex;
+           flex-direction: row;
+       }
+       &-middle-container{
+        width: 824px;
+        height: 731px;
+        background: #F6F9FD 0% 0% no-repeat padding-box;
+        opacity: 1;
+        margin-top: 30px;
+       }
+       &-right-container{
+        width: 362px;
+        height: 731px;
+        background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        border-radius: 0px 30px 30px 0px;
+        opacity: 1;
+        margin-top: 30px;
+       }
+       &-newgroup-button{
+        width: 180px;
+    height: 39px;
+    background: var(--unnamed-color-4d86f4) 0% 0% no-repeat padding-box;
+    background: #4D86F4 0% 0% no-repeat padding-box;
+    border-radius: 10px;
+    opacity: 1;
+    color: white;
+    border: none;
+    /* padding: 17px; */
+    margin-top: 23px;
+    align-items: center;
+    margin-left: 83px;
+       }
+       &-group-image{
+        width: 32px;
+        height: 30px;
+       }
+    }
+}

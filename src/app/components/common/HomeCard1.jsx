@@ -52,12 +52,14 @@ const HomeCard1 =()=> {
             <hr></hr>
                 <input  className={HomeCard1.styles.inputField} placeholder="write comment"></input>
             </div>
-            <div style={{marginTop:'-3%',marginLeft:'5%'}} >
+            <div>
+            <div style={{marginTop:'-27px',marginLeft:'10px'}}>
                 <img className={HomeCard1.styles.crmSur} src={ICONS.CMRA}/>
                 <img className={HomeCard1.styles.crmSur} style={{marginLeft:'1%'}} src={ICONS.SURFACE13}/>
             </div>
-            <div style={{marginTop:'-1%',marginLeft:'40%'}}>
+            <div style={{marginTop:'-30px',float:'right'}}>
            <button className={HomeCard1.styles.comentorButton}>Comentor</button>
+           </div>
            </div>
         </div>
     )

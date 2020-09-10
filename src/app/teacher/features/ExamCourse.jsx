@@ -1,7 +1,7 @@
 import React from 'react'
 import "../../teacher/styles/presentation-card.scss"
 import SideBar from '../../components/common/sideBar'
-import MenuSidebar from '../../components/common/menuSidebar'
+import MenuSidebar from '../../components/common/MenuSidebar'
 import { ICONS } from '../../utils/enums/Index'
 
 const ExamCourse = () => {

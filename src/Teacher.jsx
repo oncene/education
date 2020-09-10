@@ -7,31 +7,31 @@ const Buttons=()=> {
     return (
         <div>
             <div>
-            <Link to="/teacher">
-           <button type="button"  className={Buttons.styles.studentButton}>Dashboard</button>
+            <Link to="/home">
+           <button type="button"  className={Buttons.styles.studentButton}>Home</button>
            </Link>
            </div>
            <div className={Buttons.styles.buttonContainer}>
-               <Link to="/presentation">
-           <button type="button"  className={Buttons.styles.studentButton}>PresentationCourse</button>
+               <Link to="/student">
+           <button type="button"  className={Buttons.styles.studentButton}>Student Home1</button>
            </Link>
            </div>
            <div className={Buttons.styles.buttonContainer}>
-               <Link to="exam">
-           <button type="button" className={Buttons.styles.studentButton}>ExamCourse</button>
-           </Link>
-           </div>
-           <div className={Buttons.styles.buttonContainer}>
-           <Link to="course">
-           <button type="button" className={Buttons.styles.studentButton}>CourseActivity</button>
+               <Link to="studenthome2">
+           <button type="button" className={Buttons.styles.studentButton}>Student Home2</button>
            </Link>
            </div>
            <div className={Buttons.styles.buttonContainer}>
            <Link to="homeroom">
-           <button type="button" className={Buttons.styles.studentButton}>Home</button>
+           <button type="button" className={Buttons.styles.studentButton}>Home Room</button>
            </Link>
            </div>
-           {/* <div className={Buttons.styles.buttonContainer}>
+           <div className={Buttons.styles.buttonContainer}>
+           <Link to="groups">
+           <button type="button" className={Buttons.styles.studentButton}>Groups</button>
+           </Link>
+           </div>
+           <div className={Buttons.styles.buttonContainer}>
            <Link to="collaborations">
            <button type="button" className={Buttons.styles.studentButton}>collaboratins</button>
            </Link>
@@ -100,7 +100,7 @@ const Buttons=()=> {
            <Link to="homeroom3">
            <button type="button" className={Buttons.styles.studentButton}>HomeRoom3</button>
            </Link>
-           </div> */}
+           </div>
         </div>
     )
 }
@@ -109,4 +109,4 @@ Buttons.styles = {
     studentButton:"nos-online__add-home-container-studentButton",
     buttonContainer:"nos-online__add-home-container-buttonContainer"
 }
-export default Buttons
+export default Teacher

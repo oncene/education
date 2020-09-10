@@ -6,6 +6,12 @@ import { ICONS } from '../../utils/enums/Index'
 const SideBar = () => {
     return (
         <div className={SideBar.styles.layoutContainer}>
+             <div>
+                <img 
+                   className={SideBar.styles.iconsSize1}
+                   src={ICONS.LOGO}
+                />
+            </div>
             <div className={SideBar.styles.iconsContainer}>
             <div>
                 <img 
@@ -56,6 +62,7 @@ const SideBar = () => {
 SideBar.styles={
     layoutContainer:"nos-online__side-bar-container-layout",
     iconsSize:'nos-online__side-bar-container-icon-size',
+    iconsSize1:'nos-online__side-bar-container-icon-size1',
     iconsContainer:'nos-online__side-bar-container-icons-container',
     logoutContainer:'nos-online__side-bar-container-logout-container',
     avatar:'nos-online__side-bar-container-avatar'
