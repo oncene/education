@@ -1,0 +1,8 @@
+- Install xampp 5.6 version
+- Take clone of the code to the xampp/htdocs location
+- Configure the database connections in database.php of config file
+- open http://localhost/phpmyadmin
+- create a database
+- Import sql file to the database
+- check whether the mysql and apache server are running in xampp control panel
+- then open the link http://localhost/[PROJECT NAME]
