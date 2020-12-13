@@ -83,7 +83,8 @@ foreach($sub as $row):
                                 <td><?php echo $row['date']." ".$row['time'];?></td>
                                 <td><?php echo $row['description']?></td>
                                 <td class="text-center bolder">
-                                    <a href="<?php echo base_url();?>admin/live/<?php echo base64_encode($row['live_id']);?>" style="color:gray;"><span><i style="color:gray;" class="picons-thin-icon-thin-0139_window_new_extern_full_screen_maximize"></i></span></a>
+                                    <!--<a href="<?php echo base_url();?>admin/live/<?php echo base64_encode($row['live_id']);?>" style="color:gray;"><span><i style="color:gray;" class="picons-thin-icon-thin-0139_window_new_extern_full_screen_maximize"></i></span></a>-->
+                                    <a href="<?php echo $row['meeting_url']?>" style="color:gray;"><span><i style="color:gray;" class="picons-thin-icon-thin-0139_window_new_extern_full_screen_maximize"></i></span></a>
                                     <a href="javascript:void(0);" onclick="showAjaxModal('<?php echo base_url();?>modal/popup/modal_live/<?php echo $row['live_id'];?>');" style="color:gray;"> <span><i class="picons-thin-icon-thin-0001_compose_write_pencil_new"></i></span> </a>
                                     <a style="color:grey;" onClick="return confirm('<?php echo get_phrase('confirm_delete');?>')" href="<?php echo base_url();?>admin/meet/delete/<?php echo $row['live_id']?>/<?php echo $data;?>"><i class="picons-thin-icon-thin-0056_bin_trash_recycle_delete_garbage_empty"></i></a>
                                 </td>

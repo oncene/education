@@ -43,13 +43,13 @@
         
         <!-- Admissions Access -->
         <?php if($this->db->get_where('account_role', array('type' => 'admissions'))->row()->permissions == 1 || $admin_type == 1):?>
-            <!--<li>
-                <a href="<?php echo base_url();?>admin/new_student/" data-toggle="tooltip" data-placement="right" data-original-title="<?php echo get_phrase('admissions');?>">
-                    <div class="left-menu-icon">
-                        <i class="picons-thin-icon-thin-0729_student_degree_science_university_school_graduate"></i>
-                    </div>
-                </a>
-            </li>-->
+            <!--<li>-->
+            <!--    <a href="<?php echo base_url();?>admin/new_student/" data-toggle="tooltip" data-placement="right" data-original-title="<?php echo get_phrase('admissions');?>">-->
+            <!--        <div class="left-menu-icon">-->
+            <!--            <i class="picons-thin-icon-thin-0729_student_degree_science_university_school_graduate"></i>-->
+            <!--        </div>-->
+            <!--    </a>-->
+            <!--</li>-->
         <?php endif;?>
         <!-- End Admissions Access -->
         
@@ -91,13 +91,13 @@
 
           <!-- Attendance Access -->
           <?php if($this->db->get_where('account_role', array('type' => 'attendance'))->row()->permissions == 1 || $admin_type == 1):?>
-            <!--<li>
+            <li>
               <a href="<?php echo base_url();?>admin/attendance/" data-toggle="tooltip" data-placement="right" data-original-title="<?php echo get_phrase('attendance');?>">
                 <div class="left-menu-icon">
                   <i class="os-icon picons-thin-icon-thin-0023_calendar_month_day_planner_events"></i>
                 </div>
               </a>
-            </li>-->
+            </li>
           <?php endif;?>
 
           <!-- Calendar Access -->
@@ -179,13 +179,13 @@
 
           <!-- Classrooms Access -->
           <?php if($this->db->get_where('account_role', array('type' => 'classrooms'))->row()->permissions == 1 || $admin_type == 1):?>        
-            <!--<li>
+            <li>
               <a href="<?php echo base_url();?>admin/classrooms/" data-toggle="tooltip" data-placement="right" data-original-title="<?php echo get_phrase('classrooms');?>">
                 <div class="left-menu-icon">
                   <i class="os-icon picons-thin-icon-thin-0047_home_flat"></i>
                 </div>
               </a>
-            </li>-->
+            </li>
           <?php endif;?>
 
           <!-- Payments Access -->
@@ -284,14 +284,14 @@
 
         <!-- Admissions Access -->
         <?php if($this->db->get_where('account_role', array('type' => 'admissions'))->row()->permissions == 1 || $admin_type == 1):?>
-          <li>
-            <a href="<?php echo base_url();?>admin/new_student/">
-              <div class="left-menu-icon">
-                <i class="picons-thin-icon-thin-0729_student_degree_science_university_school_graduate"></i>
-              </div>
-              <span class="left-menu-title"><?php echo get_phrase('admissions');?></span>
-            </a>
-          </li> 
+          <!--<li>-->
+          <!--  <a href="<?php echo base_url();?>admin/new_student/">-->
+          <!--    <div class="left-menu-icon">-->
+          <!--      <i class="picons-thin-icon-thin-0729_student_degree_science_university_school_graduate"></i>-->
+          <!--    </div>-->
+          <!--    <span class="left-menu-title"><?php echo get_phrase('admissions');?></span>-->
+          <!--  </a>-->
+          <!--</li> -->
         <?php endif;?>
 
          <!-- Class Routine Access -->
@@ -320,14 +320,14 @@
 
         <!-- Library Access -->
         <?php if($this->db->get_where('account_role', array('type' => 'library'))->row()->permissions == 1 || $admin_type == 1):?>
-          <li>
-            <a href="<?php echo base_url();?>admin/library/">
-              <div class="left-menu-icon">
-                <i class="os-icon picons-thin-icon-thin-0017_office_archive"></i>
-              </div>
-              <span class="left-menu-title"><?php echo get_phrase('library');?></span>
-            </a>
-          </li>
+          <!--<li>-->
+          <!--  <a href="<?php echo base_url();?>admin/library/">-->
+          <!--    <div class="left-menu-icon">-->
+          <!--      <i class="os-icon picons-thin-icon-thin-0017_office_archive"></i>-->
+          <!--    </div>-->
+          <!--    <span class="left-menu-title"><?php echo get_phrase('library');?></span>-->
+          <!--  </a>-->
+          <!--</li>-->
         <?php endif;?>
 
         <!-- Attendance Access -->
@@ -368,14 +368,14 @@
 
         <!-- Polls Access -->
         <?php if($this->db->get_where('account_role', array('type' => 'polls'))->row()->permissions == 1 || $admin_type == 1):?>        
-          <li>
-            <a href="<?php echo base_url();?>admin/polls/">
-              <div class="left-menu-icon">
-                <i class="os-icon picons-thin-icon-thin-0385_graph_pie_chart_statistics"></i>
-              </div>
-              <span class="left-menu-title"><?php echo get_phrase('polls');?></span>
-            </a>
-          </li>
+          <!--<li>-->
+          <!--  <a href="<?php echo base_url();?>admin/polls/">-->
+          <!--    <div class="left-menu-icon">-->
+          <!--      <i class="os-icon picons-thin-icon-thin-0385_graph_pie_chart_statistics"></i>-->
+          <!--    </div>-->
+          <!--    <span class="left-menu-title"><?php echo get_phrase('polls');?></span>-->
+          <!--  </a>-->
+          <!--</li>-->
         <?php endif;?>
 
         <!-- Notifications Access -->
@@ -391,14 +391,14 @@
         <?php endif;?>
         <!-- Behavior Access -->
         <?php if($this->db->get_where('account_role', array('type' => 'behavior'))->row()->permissions == 1 || $admin_type == 1):?>        
-          <li>
-            <a href="<?php echo base_url();?>admin/request_student/">
-              <div class="left-menu-icon">
-                <i class="picons-thin-icon-thin-0389_gavel_hammer_law_judge_court"></i>
-              </div>
-              <span class="left-menu-title"><?php echo get_phrase('behavior');?></span>
-            </a>
-          </li>
+          <!--<li>-->
+          <!--  <a href="<?php echo base_url();?>admin/request_student/">-->
+          <!--    <div class="left-menu-icon">-->
+          <!--      <i class="picons-thin-icon-thin-0389_gavel_hammer_law_judge_court"></i>-->
+          <!--    </div>-->
+          <!--    <span class="left-menu-title"><?php echo get_phrase('behavior');?></span>-->
+          <!--  </a>-->
+          <!--</li>-->
         <?php endif;?>
 
         <!-- News Access -->
@@ -415,14 +415,14 @@
 
         <!-- School Bus Access -->
         <?php if($this->db->get_where('account_role', array('type' => 'school_bus'))->row()->permissions == 1 || $admin_type == 1):?>        
-          <li>
-            <a href="<?php echo base_url();?>admin/school_bus/">
-              <div class="left-menu-icon">
-                <i class="os-icon picons-thin-icon-thin-0470_bus_transport"></i>
-              </div>
-              <span class="left-menu-title"><?php echo get_phrase('school_bus');?></span>
-            </a>
-          </li>
+          <!--<li>-->
+          <!--  <a href="<?php echo base_url();?>admin/school_bus/">-->
+          <!--    <div class="left-menu-icon">-->
+          <!--      <i class="os-icon picons-thin-icon-thin-0470_bus_transport"></i>-->
+          <!--    </div>-->
+          <!--    <span class="left-menu-title"><?php echo get_phrase('school_bus');?></span>-->
+          <!--  </a>-->
+          <!--</li>-->
         <?php endif;?>
 
         <!-- Classrooms Access -->
@@ -544,14 +544,14 @@
 
         <!-- Admissions Access -->
         <?php if($this->db->get_where('account_role', array('type' => 'admissions'))->row()->permissions == 1 || $admin_type == 1):?>
-          <li>
-            <a href="<?php echo base_url();?>admin/new_student/">
-              <div class="left-menu-icon">
-                <i class="picons-thin-icon-thin-0729_student_degree_science_university_school_graduate"></i>
-              </div>
-              <span class="left-menu-title"><?php echo get_phrase('admissions');?></span>
-            </a>
-          </li> 
+          <!--<li>-->
+          <!--  <a href="<?php echo base_url();?>admin/new_student/">-->
+          <!--    <div class="left-menu-icon">-->
+          <!--      <i class="picons-thin-icon-thin-0729_student_degree_science_university_school_graduate"></i>-->
+          <!--    </div>-->
+          <!--    <span class="left-menu-title"><?php echo get_phrase('admissions');?></span>-->
+          <!--  </a>-->
+          <!--</li> -->
         <?php endif;?>
 
          <!-- Class Routine Access -->
@@ -628,14 +628,14 @@
 
         <!-- Polls Access -->
         <?php if($this->db->get_where('account_role', array('type' => 'polls'))->row()->permissions == 1 || $admin_type == 1):?>        
-          <li>
-            <a href="<?php echo base_url();?>admin/polls/">
-              <div class="left-menu-icon">
-                <i class="os-icon picons-thin-icon-thin-0385_graph_pie_chart_statistics"></i>
-              </div>
-              <span class="left-menu-title"><?php echo get_phrase('polls');?></span>
-            </a>
-          </li>
+          <!--<li>-->
+          <!--  <a href="<?php echo base_url();?>admin/polls/">-->
+          <!--    <div class="left-menu-icon">-->
+          <!--      <i class="os-icon picons-thin-icon-thin-0385_graph_pie_chart_statistics"></i>-->
+          <!--    </div>-->
+          <!--    <span class="left-menu-title"><?php echo get_phrase('polls');?></span>-->
+          <!--  </a>-->
+          <!--</li>-->
         <?php endif;?>
 
         <!-- Notifications Access -->
@@ -652,14 +652,14 @@
 
         <!-- Behavior Access -->
         <?php if($this->db->get_where('account_role', array('type' => 'behavior'))->row()->permissions == 1 || $admin_type == 1):?>        
-          <li>  
-            <a href="<?php echo base_url();?>admin/request_student/">
-              <div class="left-menu-icon">
-                <i class="picons-thin-icon-thin-0389_gavel_hammer_law_judge_court"></i>
-              </div>
-              <span class="left-menu-title"><?php echo get_phrase('behavior');?></span>
-            </a>
-          </li>
+          <!--<li>  -->
+          <!--  <a href="<?php echo base_url();?>admin/request_student/">-->
+          <!--    <div class="left-menu-icon">-->
+          <!--      <i class="picons-thin-icon-thin-0389_gavel_hammer_law_judge_court"></i>-->
+          <!--    </div>-->
+          <!--    <span class="left-menu-title"><?php echo get_phrase('behavior');?></span>-->
+          <!--  </a>-->
+          <!--</li>-->
         <?php endif;?>
 
         <!-- News Access -->
@@ -676,14 +676,14 @@
 
         <!-- School Bus Access -->
         <?php if($this->db->get_where('account_role', array('type' => 'school_bus'))->row()->permissions == 1 || $admin_type == 1):?>        
-          <li>
-            <a href="<?php echo base_url();?>admin/school_bus/">
-              <div class="left-menu-icon">
-                <i class="os-icon picons-thin-icon-thin-0470_bus_transport"></i>
-              </div>
-              <span class="left-menu-title"><?php echo get_phrase('school_bus');?></span>
-            </a>  
-          </li>
+          <!--<li>-->
+          <!--  <a href="<?php echo base_url();?>admin/school_bus/">-->
+          <!--    <div class="left-menu-icon">-->
+          <!--      <i class="os-icon picons-thin-icon-thin-0470_bus_transport"></i>-->
+          <!--    </div>-->
+          <!--    <span class="left-menu-title"><?php echo get_phrase('school_bus');?></span>-->
+          <!--  </a>  -->
+          <!--</li>-->
         <?php endif;?>
 
         <!-- Classrooms Access -->

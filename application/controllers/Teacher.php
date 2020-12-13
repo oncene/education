@@ -48,6 +48,23 @@ class Teacher extends CI_Controller
             $data['subject_id']         = $this->input->post('subject_id');
             $data['section_id']         = $this->input->post('section_id');
             $data['user_id'] = $this->session->userdata('login_user_id');
+            $ParamCheck = 'createattendeePW=ap&meetingID='.$data['room'].'&moderatorPW=mp&name='.$this->input->post('title').'8cd8ef52e8e101574e400365b55e11a6';
+            
+            
+            $checksum = sha1($ParamCheck);
+              $curl_handle=curl_init();
+              curl_setopt($curl_handle,CURLOPT_URL,'http://test-install.blindsidenetworks.com/bigbluebutton/api/create?attendeePW=ap&meetingID='.$data['room'].'&moderatorPW=mp&name='.$this->input->post('title').'&checksum='.$checksum.'');
+              curl_setopt($curl_handle,CURLOPT_CONNECTTIMEOUT,2);
+              curl_setopt($curl_handle,CURLOPT_RETURNTRANSFER,1);
+              $buffer = curl_exec($curl_handle);
+              curl_close($curl_handle);
+              
+            $data['create_meeting_url'] = 'http://test-install.blindsidenetworks.com/bigbluebutton/api/create?attendeePW=ap&meetingID='.$data['room'].'&moderatorPW=mp&name='.$this->input->post('title').'&checksum='.$checksum.'';
+            
+            $ParamjoinCheck = 'joinfullName=User+3446292&meetingID='.$data['room'].'&password=ap&redirect=true8cd8ef52e8e101574e400365b55e11a6';
+            $checksumJoin = sha1($ParamjoinCheck);
+            
+            $data['meeting_url'] = 'http://test-install.blindsidenetworks.com/bigbluebutton/api/join?fullName=User+3446292&meetingID='.$data['room'].'&password=ap&redirect=true&checksum='.$checksumJoin.'';
             $this->db->insert('live',$data);  
             $this->session->set_flashdata('flash_message' , get_phrase('successfully_added'));
             redirect(base_url() . 'teacher/meet/'.$param2, 'refresh');

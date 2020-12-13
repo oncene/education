@@ -181,7 +181,7 @@
             <span class="left-menu-title"><?php echo get_phrase('class_routine');?></span>
           </a>
         </li>
-        <!--<li>
+        <li>
           <a href="<?php echo base_url();?>student/attendance_report/">
             <div class="left-menu-icon">
               <i class="os-icon picons-thin-icon-thin-0023_calendar_month_day_planner_events"></i>

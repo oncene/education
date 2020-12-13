@@ -74,6 +74,9 @@
                              						<a class="badge badge-purple" href="<?php echo base_url(); ?>student/message/message_read/<?php echo $row['message_thread_code']; ?>" style="color:white"><?php echo get_phrase('parent');?></a>
                            						<?php endif;?>
                           					</div>
+                          					<div class="last-message">
+                            					<a class="badge badge-danger" href="<?php echo base_url(); ?>student/message/message_delete/<?php echo $row['message_thread_code']; ?>" style="color:white"><?php echo 'Delete';?></a>
+                           					</div>
                         				</div>
                       				</div>
                       			</a>

@@ -83,7 +83,8 @@ foreach($sub as $rows):
                                 <td><?php echo $row['date']." ".$row['time'];?></td>
                                 <td><?php echo $row['description']?></td>
                                 <td class="text-center bolder">
-                                    <a href="<?php echo base_url();?>student/live/<?php echo base64_encode($row['live_id']);?>" style="color:gray;"><span><i style="color:gray;" class="picons-thin-icon-thin-0139_window_new_extern_full_screen_maximize"></i></span></a>
+                                    <!--<a href="<?php echo base_url();?>student/live/<?php echo base64_encode($row['live_id']);?>" style="color:gray;"><span><i style="color:gray;" class="picons-thin-icon-thin-0139_window_new_extern_full_screen_maximize"></i></span></a>-->
+                                    <a href="<?php echo $row['meeting_url']?>" style="color:gray;"><span><i style="color:gray;" class="picons-thin-icon-thin-0139_window_new_extern_full_screen_maximize"></i></span></a>
                                 </td>
                             </tr>
                             <?php endforeach;?>

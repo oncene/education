@@ -169,9 +169,9 @@
             <div class="left-menu-icon">
               <i class="picons-thin-icon-thin-0029_time_watch_clock_wall"></i>
             </div>
-            <span class="left-menu-title"><?php echo 
+            <span class="left-menu-title"><?php echo 'Subject';
 			//get_phrase('class_routine');
-			 'Subject';
+			 
 			?></span>
           </a>
         </li>
@@ -191,14 +191,14 @@
             <span class="left-menu-title"><?php echo get_phrase('behavior');?></span>
           </a>
         </li>
-        <li>
-          <a href="<?php echo base_url();?>teacher/manage_attendance/">
-            <div class="left-menu-icon">
-              <i class="os-icon picons-thin-icon-thin-0023_calendar_month_day_planner_events"></i>
-            </div>
-            <span class="left-menu-title"><?php echo get_phrase('attendance');?></span>
-          </a>
-        </li>
+        <!--<li>-->
+        <!--  <a href="<?php echo base_url();?>teacher/manage_attendance/">-->
+        <!--    <div class="left-menu-icon">-->
+        <!--      <i class="os-icon picons-thin-icon-thin-0023_calendar_month_day_planner_events"></i>-->
+        <!--    </div>-->
+        <!--    <span class="left-menu-title"><?php echo get_phrase('attendance');?></span>-->
+        <!--  </a>-->
+        <!--</li>-->
          <li>
           <a href="<?php echo base_url();?>teacher/news/">
             <div class="left-menu-icon">
@@ -207,14 +207,14 @@
             <span class="left-menu-title"><?php echo get_phrase('news');?></span>
           </a>
         </li>
-        <li>
-          <a href="<?php echo base_url();?>teacher/library/">
-            <div class="left-menu-icon">
-              <i class="os-icon picons-thin-icon-thin-0017_office_archive"></i>
-            </div>
-            <span class="left-menu-title"><?php echo get_phrase('library');?></span>
-          </a>
-        </li>
+        <!--<li>-->
+        <!--  <a href="<?php echo base_url();?>teacher/library/">-->
+        <!--    <div class="left-menu-icon">-->
+        <!--      <i class="os-icon picons-thin-icon-thin-0017_office_archive"></i>-->
+        <!--    </div>-->
+        <!--    <span class="left-menu-title"><?php echo get_phrase('library');?></span>-->
+        <!--  </a>-->
+        <!--</li>-->
         <li>
           <a href="<?php echo base_url();?>teacher/request/">
             <div class="left-menu-icon">
@@ -333,14 +333,14 @@
             <span class="left-menu-title"><?php echo get_phrase('behavior');?></span>
           </a>
         </li>
-        <li>
-          <a href="<?php echo base_url();?>teacher/manage_attendance/">
-            <div class="left-menu-icon">
-              <i class="os-icon picons-thin-icon-thin-0023_calendar_month_day_planner_events"></i>
-            </div>
-            <span class="left-menu-title"><?php echo get_phrase('attendance');?></span>
-          </a>
-        </li>
+        <!--<li>-->
+        <!--  <a href="<?php echo base_url();?>teacher/manage_attendance/">-->
+        <!--    <div class="left-menu-icon">-->
+        <!--      <i class="os-icon picons-thin-icon-thin-0023_calendar_month_day_planner_events"></i>-->
+        <!--    </div>-->
+        <!--    <span class="left-menu-title"><?php echo get_phrase('attendance');?></span>-->
+        <!--  </a>-->
+        <!--</li>-->
          <li>
           <a href="<?php echo base_url();?>teacher/news/">
             <div class="left-menu-icon">
@@ -349,14 +349,14 @@
             <span class="left-menu-title"><?php echo get_phrase('news');?></span>
           </a>
         </li>
-        <li>
-          <a href="<?php echo base_url();?>teacher/library/">
-            <div class="left-menu-icon">
-              <i class="os-icon picons-thin-icon-thin-0017_office_archive"></i>
-            </div>
-            <span class="left-menu-title"><?php echo get_phrase('library');?></span>
-          </a>
-        </li>
+        <!--<li>-->
+        <!--  <a href="<?php echo base_url();?>teacher/library/">-->
+        <!--    <div class="left-menu-icon">-->
+        <!--      <i class="os-icon picons-thin-icon-thin-0017_office_archive"></i>-->
+        <!--    </div>-->
+        <!--    <span class="left-menu-title"><?php echo get_phrase('library');?></span>-->
+        <!--  </a>-->
+        <!--</li>-->
         <li>
           <a href="<?php echo base_url();?>teacher/request/">
             <div class="left-menu-icon">

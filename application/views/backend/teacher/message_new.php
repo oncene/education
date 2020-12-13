@@ -28,7 +28,10 @@
                                     <?php echo $this->db->get_where('teacher', array('teacher_id' => $row['teacher_id']))->row()->first_name." ".$this->db->get_where('teacher', array('teacher_id' => $row['teacher_id']))->row()->last_name; ?></option>
                                 <?php endforeach; ?>
                             </optgroup>
-                            <optgroup label="<?php echo get_phrase('parents');?>">
+                            <optgroup label="<?php echo 
+                           // get_phrase('parents');
+                            "secretary";
+                            ?>">
                             <?php
                                 $parents = $this->db->get('parent')->result_array();
                                 foreach ($parents as $row):

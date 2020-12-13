@@ -9,9 +9,11 @@
 			<div class="row">	
 				<?php 
     				$student_info = $this->db->get_where('enroll' , array('student_id' => $this->session->userdata('login_user_id') , 'year' => $running_year))->result_array();
+    				
     				$exams = $this->db->get('exam')->result_array();
     				foreach ($student_info as $row1):
     				foreach ($exams as $row2):
+    				   
 				?>
 				<div class="col-sm-12">
 					<div class="element-box lined-primary shadow">

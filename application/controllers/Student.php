@@ -667,6 +667,7 @@ class Student extends CI_Controller
         }
 
         $student = $this->db->get_where('student' , array('student_id' => $student_id))->result_array();
+       
         foreach ($student as $row)
         {
             if($row['student_id'] == $this->session->userdata('login_user_id'))
@@ -681,6 +682,7 @@ class Student extends CI_Controller
         $class_id     = $this->db->get_where('enroll' , array('student_id' => $student_id , 'year' => $this->db->get_where('settings' , array('type' => 'running_year'))->row()->description))->row()->class_id;
         $student_name = $this->db->get_where('student' , array('student_id' => $student_id))->row()->name;
         $class_name   = $this->db->get_where('class' , array('class_id' => $class_id))->row()->name;
+       
         $page_data['page_name']  =   'my_marks';
         $page_data['page_title'] =   get_phrase('marks');
         $page_data['class_id']   =   $class_id;
@@ -958,6 +960,14 @@ class Student extends CI_Controller
         {
             $page_data['current_message_thread_code'] = $param2;
             $this->crud_model->mark_thread_messages_read($param2);
+        }
+        
+        if($param1 == 'message_delete')
+        {
+            $this->db->where('message_thread_code', $param2);
+            $this->db->delete('message_thread');
+            $this->session->set_flashdata('flash_message', get_phrase('successfully_deleted'));
+            redirect(base_url() . 'student/message/', 'refresh');
         }
 
         $page_data['infouser'] = $param2;

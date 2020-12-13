@@ -476,6 +476,16 @@
                     <canvas id="myChart" width="400" height="400"></canvas>
                   </div>
                 </div>
+                
+                <div class="ui-block paddingtel">
+                    <div class="ui-block-title">
+                    <h6 class="title"><?php echo get_phrase('performance');?></h6>
+                  </div>
+                  <div class="ui-block-content">
+                    <canvas id="myChart-2" width="400" height="400"></canvas>
+                  </div>
+                </div>
+                
                 <div class="header-spacer"></div>
               </div>
             </div>
@@ -859,4 +869,53 @@ function number_format(number, decimals, dec_point, thousands_point) {
         } else {
             alert("Try using Chrome, Firefox or WebKit");
         }
+</script>
+
+<?php
+$subject_details = $this->db->get_where('subject', array('teacher_id >' => 0))->result_array();
+
+$subject_name = array();
+$subject_results = array();
+foreach($subject_details as $k=>$v){
+    
+    array_push($subject_name,$v['name']);
+    
+    $subject_results_data = $this->db->select_sum( 'mark_obtained' )->group_by('subject_id')->get_where('mark', array('subject_id'=>$v['subject_id']))->result_array();
+    // echo "<pre>";
+    // print_r($subject_results_data);
+    // exit;
+    array_push($subject_results,$subject_results_data[0]['mark_obtained']);
+}
+
+
+
+?>
+
+<script>
+var ctx = document.getElementById("myChart-2");
+
+var performanceData = {
+  labels: <?php echo json_encode($subject_name);?>,
+  datasets: [{
+    label: "Subject Performance",
+    data: <?php echo json_encode($subject_results);?>,
+  }]
+};
+ 
+var chartOptions = {
+  legend: {
+    display: true,
+    position: 'top',
+    labels: {
+      boxWidth: 80,
+      fontColor: 'black'
+    }
+  }
+};
+
+var myChart = new Chart(ctx, {
+    type: 'line',
+    data: performanceData,
+    options: chartOptions
+});
 </script>
